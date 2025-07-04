@@ -1,0 +1,19 @@
+---
+title: "Feel the Vibes: AI-assisted Coding"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    toc: true
+editor: visual
+---
+
+## Slide 1
+
+This is the first slide.
+
+---
+
+## Slide 2
+
+Here is another slide.
