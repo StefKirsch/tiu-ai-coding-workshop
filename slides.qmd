@@ -8,11 +8,43 @@ format:
 editor: visual
 ---
 
-## Slide 1
+## Introduction and basics
 
-This is the first slide.
+Some things to mention here:
 
----
+-   Brief explanation of LLMs
+-   Distinction between models, reasoning models and agents
+-   Why AI is so good at coding. Lot's of code online.
+-   [Moore's law](https://theaidigest.org/time-horizons) for AI agents
+-   Models, reasoning VS non-Reasoning and why the former is better at coding
+-   Ways of interacting with the LLM
+    -   Chatbot
+    -   API
+    -   IDE plugins
+    -   Agents (automatically calls API with prompts)
+-   Prompting: How to write a good prompt
+    -   Role call: Rubber duck
+    -   Say what style you want
+        -   tidyverse, dplyr, R4DS, the package you use most
+        -   Easy to read code (FAIR)
+        -   No niche technologies and frameworks
+        -   "Code that explains itself" -\> OSAH card
+    -   Tell it all it needs to know
+    -   Know what you want first, then ask
+    -   What works best: ask for advice, not solutions
+    -   (Optional:) If you do want a solution: Prompt engineering. Think of using GPS navigation
+        -   Task = Your Target destination
+        -   Context = Current location & conditions
+        -   Reference = Route options available
+        -   Evaluate = Examine best path forward
+        -   Iterate = If needed, recalculate route
+-   Typical tasks
+-   I am using framework/package/context X. How do I do... (e.g. Jupyter notebook)
+-   Research packages and frameworks that already do what you need (FAIR)
+-   Refactoring
+-   Generate synthetic data
+-   Feedback (Context becomes super important here to not get lost on a tangent)
+
 
 ## Slide 2
 
