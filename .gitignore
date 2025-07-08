@@ -4,3 +4,5 @@
 .Ruserdata
 
 /.quarto/
+
+docs # for now we ignore this to avoid merge conflcts during development
