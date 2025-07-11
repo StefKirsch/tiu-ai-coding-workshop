@@ -4,7 +4,10 @@ format:
   revealjs:
     theme: default
     slide-number: true
+    progress: true
     toc: true
+    toc-depth: 2
+    incremental: true
 editor: visual
 ---
 
