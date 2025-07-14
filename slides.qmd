@@ -7,7 +7,9 @@ format:
     progress: true
     toc: true
     toc-depth: 2
-    incremental: true
+    incremental: false
+    smaller: true               # global smaller font size
+    scrollable: true
 editor: visual
 ---
 
