@@ -45,12 +45,13 @@ editor: visual
 ## Some quick definitions
 
 <details markdown="block">
-<summary markdown="span">*AI‑assisted coding* VS *Vibe Coding*</summary>
+<summary markdown="span">*AI‑assisted Coding* VS *Vibe Coding*</summary>
 
 We want you to feel the vibes here, not surrender to them.
 
-**AI‑assisted coding** uses tools such as Copilot or ChatGPT to automate or speed up everyday coding tasks.
-**Vibe Coding** goes further, letting the AI shape the *feel* of the code—naming, structure, even playful flourishes—so the result “has a vibe”.
+**AI‑assisted coding** means using the AI as an assistant that helps you plan, write and understand code. You are still in the driver seat and have to make all important decisions. This is good, because it makes it easier (but not inevitable) that you understand what you actually produce.
+
+**Vibe Coding** goes further and delegates basically all decision-making to the AI. This can of course be very powerful, but it is basically impossible to understand what the code actually does and it can make it very challenging to fix bugs later on. Most importantly, it increases the risk of oversights that could then go completely unnoticed.
 
 </details>
 
