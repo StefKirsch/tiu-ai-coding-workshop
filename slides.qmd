@@ -71,6 +71,10 @@ All data protection considerations have to be made regardless of the fact if a g
 -   Rules of funders and journals
 
 
+```{=html}
+<iframe src="https://giphy.com/embed/ZikyVyLF7aEaQ" width="480" height="360" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+```
+
 ## University guidelines
 
 General
