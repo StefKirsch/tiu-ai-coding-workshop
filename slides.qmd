@@ -11,6 +11,7 @@ format:
     incremental: false
     smaller: true               # global smaller font size
     scrollable: true
+bibliography: references.bib
 editor: visual
 ---
 
@@ -25,6 +26,17 @@ This is the first slide.
 Here is another slide.
 
 # Applicable Guidelines and Regulations
+
+## What is AI anyway
+
+![](https://media1.tenor.com/m/fHz7wfvakO8AAAAd/theyre-the-same-picture-the-office.gif){width="900" style="max-height:unset;"} 
+
+<details markdown="block">
+<summary markdown="span">The EU AI Act has a very broad definition</summary>
+
+> ‘AI system’ means a machine-based system that is designed to operate with varying levels of autonomy and that may exhibit adaptiveness after deployment, and that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments;
+
+</details>
 
 ## Why is AI use potentially problematic?
 
