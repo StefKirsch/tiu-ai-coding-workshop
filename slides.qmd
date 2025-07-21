@@ -258,7 +258,7 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilites built in.
 :::
 :::::
 
-## Promot "engineering"
+## Prompt "engineering"
 
 A little overhyped...
 
@@ -275,9 +275,9 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 
 -   Mindset: Ask for advice, not for solutions
 -   Either very broad or very specific
-   -   Ask for a battle plan
-    -   Think in building blocks afterwards
-    -   Assemble them yourself
+-   Ask for a battle plan 
+    -   Think in building blocks afterwards 
+    - Assemble them yourself
 -   Ask advice on how to do it well
 -   Ask if you overlooked anything
 
