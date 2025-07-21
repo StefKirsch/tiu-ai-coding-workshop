@@ -159,16 +159,20 @@ Journals
 
     -   Require statement on AI use
 
-    -   Exact list of AI models and prompts as soon as it touches data *OR* when used to develop code and the analysis methods
+    -   Exact list of AI models and prompts as soon as it touches data *or* when used to develop code and the analysis methods
 
--   In most cases no explicit restriction for AI-assisted creation of code and analysis.
+-   Most journals don't have explicit policy around AI-assisted creation of code and analyses.
 
 ::: {.callout-tip}
 ## Our Recommendation
 
 -   Stick to the most strict guidelines of relevant funders & journals in your field
 
+-   Per funder and journal, inquire what is meant by AI. It might be something that you are not considering.
+
 -   Don't bootstrap your own way of doing things. Look up best practices and ask for advice!
+
+
 
 :::
 
