@@ -11,6 +11,7 @@ format:
     incremental: false
     smaller: true               # global smaller font size
     scrollable: true
+bibliography: references.bib
 editor: visual
 ---
 
@@ -43,6 +44,18 @@ editor: visual
 -   Crucial to **understand**, **tweak** and **test** the code
 
 ## Some quick definitions
+
+<details markdown="block">
+<summary markdown="span">*Software in Research* VS *Research Software*</summary>
+
+This is a very important distinction! Here is the definition by @gruenpeter_2021_5504016, that summarizes the results of the FAIR4RS working group:
+
+> “**Research Software** includes **source code files, algorithms, scripts, computational workflows and executables** that were **created during the research process** or **for a research purpose**. 
+> 
+> Software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc) that are used **for research** but were **not created during or with a clear research intent** should be considered **software in research** and not Research Software.”
+
+</details>
+
 
 <details markdown="block">
 <summary markdown="span">*AI‑assisted Coding* VS *Vibe Coding*</summary>
@@ -295,3 +308,8 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 ## Slide 2
 
 Here is another slide.
+
+## References
+
+::: {#refs}
+:::
