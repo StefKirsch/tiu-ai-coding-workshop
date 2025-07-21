@@ -85,7 +85,7 @@ General
 
 GPAI specific
 
--   [AI guidelines for Researchers](https://www.tilburguniversity.edu/intranet/organization-policy/strategy/infrastructure/research-infrastructure/ai-guidelines-researchers)
+-   [AI guidelines for researchers](https://www.tilburguniversity.edu/intranet/organization-policy/strategy/infrastructure/research-infrastructure/ai-guidelines-researchers)
 
 <details markdown="block">
 <summary markdown="span">Guidelines are there to help you</summary>
@@ -173,7 +173,7 @@ The GDPR makes no distinction between publicly available and non-publicly availa
 ::: {.callout-important}
 ## Data transfer via automated systems
 
-Be careful with tools that interact with an API by themselves and where you can't inspect and approve the prompts yourself. They might transfer sensitive data from your working directory without your knowledge.
+Be careful with tools that interact with an API by themselves and where you can't inspect and approve the prompts yourself. They might transfer sensitive data from your working directory, without your knowledge.
 
 Examples are: Windsurf, GitHub Copilot and Agentic development tools.
 
