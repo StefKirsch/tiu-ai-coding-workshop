@@ -3,6 +3,7 @@ title: "Feel the Vibes: AI-assisted Coding"
 format:
   revealjs:
     theme: default
+    css:  styles-overrides.scss  
     slide-number: true
     progress: true
     toc: true
@@ -17,8 +18,160 @@ editor: visual
 
 This is the first slide.
 
----
+------------------------------------------------------------------------
 
 ## Slide 2
 
 Here is another slide.
+
+# Applicable Guidelines and Regulations
+
+## Why is AI use potentially problematic?
+
+::::columns
+:::column
+### 🔒 Information, knowledge and data safety
+
+-   Computationally heavy &rarr; Need to run in the cloud
+-   Not European
+-   New
+
+<details markdown="block">
+<summary markdown="span">Is AI really special?</summary>
+
+All data protection considerations have to be made regardless of the fact if a given system is considered **AI or not**. There is a common misconception that AI itself is the problem, e.g. because the models are trained on the prompts. That is not correct. Instead, the issue lies with with **cloud-based systems** where the institution does not have a **data processing agreement** with the supplier. 
+
+</details>
+
+:::
+
+
+:::column
+### 🎓 Integrity
+
+-   GenAI Will happily attempt to do anything
+-   Obscure failure modes
+    -   Hallucinations
+    -   Lack of self-criticism
+-   Plagiarism question
+-   More material can be created faster
+    -   Bigger chance of mistakes
+    -   Greater potential for forgery
+
+:::
+
+
+::::
+
+## Guiding Principles
+
+-   Adherence to local guidelines and checklists
+-   Compliance with national and EU legislation
+-   Research integrity and clear end responsibility
+-   Rules of funders and journals
+
+
+## University guidelines
+
+General
+
+-   [Information security policy](https://www.tilburguniversity.edu/about/conduct-and-integrity/privacy-and-security/information-security)
+-  [Knowledge security](https://www.tilburguniversity.edu/about/conduct-and-integrity/privacy-and-security/knowledge-security)
+-   [Data protection](https://www.tilburguniversity.edu/about/conduct-and-integrity/privacy-and-security/privacy-policy)
+
+GPAI specific
+
+-   [AI guidelines for Researchers](https://www.tilburguniversity.edu/intranet/organization-policy/strategy/infrastructure/research-infrastructure/ai-guidelines-researchers)
+
+<details markdown="block">
+<summary markdown="span">Guidelines are there to help you</summary>
+
+In practice, it can be quite challenging to be and stay up to date with the latest regulations. University guidelines should be viewed as a practical interpretation for you as the end user. Unfortunately, the university can't relieve you from your legal and ethical responsibilities, so you should do your due diligence and check rules and regulations that could be applicable to you yourself. 
+
+</details>
+
+::: {.callout-tip}
+## Ask for advice
+
+Talk to your school's information manager, data steward or the central Research Data Office for support.
+
+:::
+
+## National and EU law
+
+-   GDPR
+-   Intellectual property rights (for text, data and software)
+-   EU AI Act
+
+
+## Research integrety
+
+<details markdown="block">
+<summary markdown="span">Just as any research output, the same principles also apply to **code**!</summary>
+
+In the past, **Research Software** has often been considered as a necessary intermediate product of research, but was often not worth mentioning or publishing. Times have changed though, and both Tilburg University, but also many funders and journals consider **Research software** as a relevant and crucial output that is worth highlighting and discussing. This is for two reasons:
+
+1. From an Open Science and FAIR perspective, sharing your code creates the necessary transparency on how you got to your results, so that your research becomes trustworthy.
+2. Universities, funders and journals have noticed that we still often reinvent the wheel for new projects. Creating software that is easy to reuse in other projects can thus be enormously beneficial in advancing the science faster and significantly cheaper.
+
+Software has been contributing to the results of published research for a long time, and has therefore always been subject to research integrety principles. In modern times though, we see more and more that integrity in software development is not only assumed anymore, but also tested for more and more. 
+
+</details>
+
+In particular relevant for genAI use:
+
+- No fraudulent activities
+    -   Data fabrication
+    -   Manipulation of data, analyses and results
+
+- Ensure reproducibility and transparency
+
+    -   [Data Handling and Methods Reporting](https://www.tilburguniversity.edu/research/social-and-behavioral-sciences/science-committee) (TSB)
+    -   [Guideline Replication Package](https://www.tilburguniversity.edu/research/economics-and-management/replication-package) (TiSEM)
+
+## Rules of funders and journals
+
+NWO
+
+-   Generative AI allowed for applicants
+
+Journals
+
+-   GenAI Policies vary a lot, from ... to:
+
+    -   No restriction of AI use at all
+
+    -   Require statement on AI use
+
+    -   Exact list of AI models and prompts as soon as it touches data *OR* when used to develop code and the analysis methods
+
+-   In most cases no explicit restriction for AI-assisted creation of code and analysis.
+
+::: {.callout-tip}
+## Our Recommendation
+
+-   Stick to the most strict guidelines of relevant funders & journals in your field
+
+-   Don't bootstrap your own way of doing things. Look up best practices and ask for advice!
+
+:::
+
+## Common compliance slips
+
+::: {.callout-important}
+## GDPR also applies to publically available data
+
+The GDPR makes no distinction between publicly available and non-publicly available data. That means that personal data, even if found online, should not be entered into cloud-based (AI) systems.
+
+:::
+
+
+::: {.callout-important}
+## Data transfer via automated systems
+
+Be careful with tools that interact with an API by themselves and where you can't inspect and approve the prompts yourself. They might transfer sensitive data from your working directory without your knowledge.
+
+Examples are: Windsurf, GitHub Copilot and Agentic development tools.
+
+:::
+
