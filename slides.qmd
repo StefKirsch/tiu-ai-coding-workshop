@@ -19,25 +19,59 @@ editor: visual
 
 ## 🤷‍♂️ Which model should I use?
 
+::: callout-note
+## For more info:
+
+[video](https://www.youtube.com/watch?v=uluRM4yIras)
+:::
+
 Open AI has a bunch of different models, and not the best indication of how to use them.
 
 ![](images/choice_of_models.png)
 
-[**GPT 4 Series:**]{.underline}
+## 📝[**GPT 4 Series\*:**]{.underline}
 
-***Keywords: fast, cheap, multimodal (include 3 screenshots- one for writing a draft of an email, one for planning work for a project, and the last one generating art for a thesis cover)***
+***\*: Not including the new 4.1 models***
 
--   Use the 4 series for tasks are easier to review and/or creative.
+**Strengths:** Fast, Cheap and Multimodal
 
--   They are capable of multi-modal outputs (*think drafts of emails, TODOs, planning the week, generating images).*
-
--   The 4 series returns answers **very quickly** but also often lack accuracy required for more complicated tasks. Supplying it with tasks that require reasoning will very quickly backfire.
+**Limitations:** Inability to execute complex tasks, Generic/ Unclear solutions
 
 ![](images/4o_1.PNG)
 
 ![](images/4o_2.PNG)
 
-[**o3: (think of use cases here and paste screenshots)**]{.underline}
+## 🧠[**o3**]{.underline}
+
+**Strengths**: Reasoning, Accuracy on complex tasks and Depth
+
+**Limitations:** Limited availability, Longer response times
+
+![](images/o3_reasoning.PNG)
+
+## 💨[**o4 mini high**]{.underline}
+
+**Strengths:** Logic, Reasoning, Coding, Speed
+
+**Limitations:** Smaller model, Inaccurate for more complex tasks
+
+## Notes: Coding Models and Projects
+
+::: callout-note
+## Navigating coding models
+
+*Try experimenting with the o3 model as a fallback!*
+
+I always start out using o4 mini for my coding problems and see how well it does. If you run into its limitations very early on, that's a good sign that a larger model (like o3) is a better choice. This way, you also avoid exhausting your o3 limit!
+:::
+
+::: callout-note
+## Using Projects
+
+I have found using projects to be a fantastic aid in managing my chats and using them mindfully. They also allow adding a specific context or media that ChatGPT will keep in its memory for future chats. The organization does not have to be perfect, but it definitely helped my to organize my work flow a bit better (figuring out when to start a new chat, also having an overview of the types of questions that warranted a conversation with ChatGPT)
+
+![](images/Projects_callout.png){width="834"}
+:::
 
 ## 🤞 How should I ideally use it?
 
