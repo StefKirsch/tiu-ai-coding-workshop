@@ -3,6 +3,7 @@ title: "Feel the Vibes: AI-assisted Coding"
 format:
   revealjs:
     theme: default
+    css:  styles-overrides.scss  
     slide-number: true
     progress: true
     toc: true
@@ -10,15 +11,305 @@ format:
     incremental: false
     smaller: true               # global smaller font size
     scrollable: true
+bibliography: references.bib
 editor: visual
 ---
 
-## Slide 1
+# Introduction and basics
 
-This is the first slide.
+## LLMs in a nutshell {.center}
 
----
+```{=html}
+<iframe 
+  width="600"
+  height="400"
+  src="https://www.youtube.com/embed/LPZh9BOjkQs?si=ifls2CZBbVzfF9nM" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+```
+
+## Why are LLMs so good at coding?
+
+-   Lots of **code** and **documentation** online
+-   Relatively clear rules
+-   ... but it is truly amazing.
+
+## How well are LLMs doing right now?
+
+-   LLMs and agents can do more and more complex tasks, see [Moore's Law for AI agents](https://theaidigest.org/time-horizons)
+-   Reliability issues remain (more on that later)
+-   Crucial to **understand**, **tweak** and **test** the code
+
+## Some quick definitions
+
+<details markdown="block">
+<summary markdown="span">*Software in Research* VS *Research Software*</summary>
+
+This is a very important distinction! Here is the definition by @gruenpeter_2021_5504016, that summarizes the results of the FAIR4RS working group:
+
+> “**Research Software** includes **source code files, algorithms, scripts, computational workflows and executables** that were **created during the research process** or **for a research purpose**. 
+> 
+> Software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc) that are used **for research** but were **not created during or with a clear research intent** should be considered **software in research** and not Research Software.”
+
+</details>
+
+
+<details markdown="block">
+<summary markdown="span">*AI‑assisted Coding* VS *Vibe Coding*</summary>
+
+We want you to feel the vibes here, not surrender to them.
+
+**AI‑assisted coding** means using the AI as an assistant that helps you plan, write and understand code. You are still in the driver seat and have to make all important decisions. This is good, because it makes it easier (but not inevitable) that you understand what you actually produce.
+
+**Vibe Coding** goes further and delegates basically all decision-making to the AI. This can of course be very powerful, but it is basically impossible to understand what the code actually does and it can make it very challenging to fix bugs later on. Most importantly, it increases the risk of oversights that could then go completely unnoticed.
+
+</details>
+
+<iframe src="https://giphy.com/embed/yIh6EVwpd2VJ6NbNNY"
+  width="480"
+  height="269"
+  frameborder="0"
+  class="giphy-embed"
+  allowfullscreen>
+</iframe>
+
+<details markdown="block">
+<summary markdown="span">Tokens</summary>
+
+A **token** is the model’s smallest chunk of text—typically 3 – 4 characters. "All" LLMs do is predict the most likely token to come next.
+
+</details>
+
+<details markdown="block">
+<summary markdown="span">*Prompt* and *Output*</summary>
+
+The **prompt** is what you add to the context to create the next piece of output. 
+The **output** (completion) is the model’s response generated from that prompt.
+
+</details>
+
+<details markdown="block">
+<summary markdown="span">Context</summary>
+
+For longer, real‑life chats it’s often more useful to not think in prompts, but in the full **context**. The context is the full window of tokens the model can “see”, i.e. the chat history plus anything else the LLM provider adds to the context.
+LLMs have a limited context size, which means they will at some point "forget" what they saw earlier in the conversation.
+
+</details>
+
+
+## Plain LLM VS Reasoning Models
+
+::::: columns
+
+::: column
+
+### Standard LLM
+
+```{=html}
+<iframe src="https://giphy.com/embed/tTyTbFF9uEbPW"
+        width="480" height="270"
+        style="display:block; margin:0 auto;"
+        frameborder="0" allowfullscreen>
+</iframe>
+```
+
+<details markdown="block">
+<summary markdown="span">More info</summary>
+
+Standard models produce output by producing tokens. Their context is the entire previous conversation, including the response that is currently generated.
+
+All logic (“thinking”) happens internally and ad‑hoc.
+</details>
+
+:::
+
+::: column
+
+### Reasoning model
+
+```{=html}
+<iframe src="https://giphy.com/embed/WTDvmZyUDlngcu7q5L"
+        width="480" height="270"
+        style="display:block; margin:0 auto;"
+        frameborder="0" allowfullscreen>
+</iframe>
+```
+
+<details markdown="block">
+<summary markdown="span">More info</summary>
+
+Reasoning models have the ability **and** have been specifically trained to produce tokens in **two phases**.
+
+1. Thinking tokens: These serve as a scratchpad, for making a plan, noting things down for later, taking notes of what didn't work etc. The model is aware that this is not part of the output. You can inspect this as the user, even though proprietary providers will typically show you a summary of the thinking process and not the whole output.
+
+2. The user-facing output: The model considers this as the "actual" output. This phase is basically how non-reasoning models operate, but in this case, we have all the notes from the previous phase, which can help a lot in producing a better result.
+
+</details>
+
+
+
+:::
+
+:::::
+
+## Plain LLM VS Reasoning Models
+
+![](images/non-reasoning.png){width="900" style="max-height:unset;"} 
+
+## Plain LLM VS Reasoning Models
+
+![](images/reasoning.png){width="900" style="max-height:unset;"} 
+
+## When to use which type of model
+
+:::: columns
+
+:::column
+### Standard LLM
+
+-   "Small" questions (e.g. on syntax)
+-   Whenever there is little context
+-   Writing
+-   ...
+
+:::
+
+:::column
+### Reasoning models
+
+-   Whenever the standard LLM fails
+-   Suggesting case-specific solutions
+-   Web search, research, exploration on new concepts
+-   ...
+
+:::
+
+::::
+
+::: {.callout-tip}
+## Best practice
+
+Play around with different models in different cases and get a feeling for yourself.
+:::
+
+## What is an Agent then? {.incremental}
+
+-   **Standard definition**: Something that has (1) **a goal** and (2) can take **actions in the real world**.
+-   **Narrow definition**: A meta-LLM that can call other tools (including other LLMs), can access the command line and can write files.
+
+::: {.callout-note}
+Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in.
+:::
+
+## Ways of interacting with an LLM (1/2)
+
+::::: columns
+::: column
+### Chatbot
+
+![](https://images.seeklogo.com/logo-png/50/1/chatgpt-logo-png_seeklogo-503286.png){width="30%"} ![](https://images.seeklogo.com/logo-png/61/1/microsoft-copilot-logo-png_seeklogo-619562.png){width="30%"} ![](https://images.seeklogo.com/logo-png/55/1/claude-logo-png_seeklogo-554540.png){width="30%"}
+
+-   Tops ✅
+    -   Model choice
+    -   Iterate on prompts
+    -   Lots of control (including which data you enter -\> *GDPR compliance*)
+-   Flops ❌
+    -   Copy pasting
+    -   No further automation
+    -   Only aware of the context you give it
+:::
+
+::: column
+### (API)
+
+-   Not really relevant for coding
+:::
+:::::
+
+## Ways of interacting with an LLM (2/2)
+
+::::: columns
+::: column
+### IDE plugins
+
+![](https://images.seeklogo.com/logo-png/40/1/github-copilot-logo-png_seeklogo-407787.png){width="30%"} ![](https://analyticsindiamag.com/wp-content/uploads/2025/04/windsurf-featured-1300x731.png){width="45%"}
+
+-   Tops ✅
+    -   Automation
+    -   Context-aware of your codebase
+    -   Different modes of interaction (autocomplete, chat)
+-   Flops ❌
+    -   No control over what gets transmitted -\> critical for GDPR and IP
+    -   Can get expensive for API calls
+:::
+
+::: column
+### Agents
+
+![](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*clU4bA8DttJiyPnrRBVLWw.png){width="45%"}
+
+![](https://i.ytimg.com/vi/oB4JR98KRAA/mqdefault.jpg){width="45%"}
+
+-   Goal + write access to your codebase
+-   Automatically calls API with prompts.
+:::
+:::::
+
+## Prompt "engineering"
+
+A little overhyped...
+
+<details markdown="block">
+<summary markdown="span">More info</summary>
+
+**Prompt engineering** is important when you ask an LLM for a complete solution or when you develop an application that routinely talks to an LLM API. In those cases phrasing and "strategic" considerations can make a big difference. 
+
+For day-to-day use and especially AI-assisted coding, you typically don't need to overthink (engineer) your prompts as long as you keep in mind a couple of things.
+
+</details>
+
+### 🤔 What to ask for
+
+-   Mindset: Ask for advice, not for solutions
+-   Either very broad or very specific
+-   Ask for a battle plan 
+    -   Think in building blocks afterwards 
+    - Assemble them yourself
+-   Ask advice on how to do it well
+-   Ask if you overlooked anything
+
+### 💡 How to ask
+
+-   Tell it all it needs to know
+    -   It can't read your mind, it doesn't know anything about you or your project
+    -   ... and even if it does, it probably it doesn't know what that means
+-   "How do I xyz?" instead of "Do xyz for me."
+-   Be specific in your requirements (you can discuss them before with AI)
+-   Your role: Product manager and quality assurance
+
+## Typical tasks
+
+-   I am using framework/package/context X. How do I do... (e.g. Jupyter notebook, R tidyverse)
+
+-   Research packages and frameworks that already do what you need (FAIR)
+
+-   Refactoring
+
+-   Generate synthetic data
+
+-   Feedback on existing code (context & style becomes super important here to not get lost on a tangent)
+
+
+## Questions? {.center style="text-align:center;"}
 
 ## Slide 2
 
 Here is another slide.
+
+## References
+
+::: {#refs}
+:::
