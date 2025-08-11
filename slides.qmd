@@ -33,7 +33,7 @@ editor: visual
 
 ## Why are LLMs so good at coding?
 
--   Lot's of **code** and **documentation** online
+-   Lots of **code** and **documentation** online
 -   Relatively clear rules
 -   ... but it is truly amazing.
 
@@ -94,7 +94,7 @@ The **output** (completion) is the model’s response generated from that prompt
 <details markdown="block">
 <summary markdown="span">Context</summary>
 
-For longer, real‑life chats it’s often more useful to not think in prompts, but it the full **context**. The context is the full window of tokens the model can “see”, i.e. the chat history plus anthing else the LLM provider adds to the context.
+For longer, real‑life chats it’s often more useful to not think in prompts, but in the full **context**. The context is the full window of tokens the model can “see”, i.e. the chat history plus anything else the LLM provider adds to the context.
 LLMs have a limited context size, which means they will at some point "forget" what they saw earlier in the conversation.
 
 </details>
@@ -141,9 +141,9 @@ All logic (“thinking”) happens internally and ad‑hoc.
 <details markdown="block">
 <summary markdown="span">More info</summary>
 
-Reasoning models have the ability **and** have been specifically trained to produce tokes in **two phases**.
+Reasoning models have the ability **and** have been specifically trained to produce tokens in **two phases**.
 
-1. Thinking tokes: These serve as a scratchpad, for making a plan, noting things down for later, taking notes of what didn't work etc. The model is aware that this is not part of the output. You can inspect this as the user, even though propriety providers will typically show you a summary of the thinking process and not the whole output.
+1. Thinking tokens: These serve as a scratchpad, for making a plan, noting things down for later, taking notes of what didn't work etc. The model is aware that this is not part of the output. You can inspect this as the user, even though proprietary providers will typically show you a summary of the thinking process and not the whole output.
 
 2. The user-facing output: The model considers this as the "actual" output. This phase is basically how non-reasoning models operate, but in this case, we have all the notes from the previous phase, which can help a lot in producing a better result.
 
@@ -201,7 +201,7 @@ Play around with different models in different cases and get a feeling for yours
 -   **Narrow definition**: A meta-LLM that can call other tools (including other LLMs), can access the command line and can write files.
 
 ::: {.callout-note}
-Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilites built in.
+Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in.
 :::
 
 ## Ways of interacting with an LLM (1/2)
@@ -300,7 +300,7 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 
 -   Generate synthetic data
 
--   Feedback on existing code (context & stlye becomes super important here to not get lost on a tangent)
+-   Feedback on existing code (context & style becomes super important here to not get lost on a tangent)
 
 
 ## Questions? {.center style="text-align:center;"}
