@@ -7,7 +7,7 @@ format:
     slide-number: true
     progress: true
     toc: true
-    toc-depth: 2
+    toc-depth: 1
     incremental: false
     smaller: true               # global smaller font size
     scrollable: true
