@@ -17,63 +17,68 @@ editor: visual
 
 # Best Practices
 
-## 🤷‍♂️ Which model should I use?
+## 😅 How should I use ChatGPT?
 
-::: callout-note
-## For more info:
+Thankfully, we no longer need to navigate different models for our tasks, thanks to GPT5.
 
-[video](https://www.youtube.com/watch?v=uluRM4yIras)
+::: columns
+::: {.column width="50%"}
+🔴
+
+![](images/choice_of_models.png){width="500"}
+
+-   1\. Different models for different tasks.
+
+-    4o series for writing/ planning.
+
+-    o3, o4 mini and o4 mini high for coding and logical reasoning.
 :::
 
-Open AI has a bunch of different models, and not the best indication of how to use them.
+::: {.column width="50%"}
+💚
 
-![](images/choice_of_models.png)
+![](images/GPT5.png){width="500"}
 
-## 📝[**GPT 4 Series\*:**]{.underline}
-
-***\*: Not including the new 4.1 models***
-
-**Strengths:** Fast, Cheap and Multimodal
-
-**Limitations:** Inability to execute complex tasks, Generic/ Unclear solutions
-
-![](images/4o_1.PNG)
-
-![](images/4o_2.PNG)
-
-## 🧠[**o3**]{.underline}
-
-**Strengths**: Reasoning, Accuracy on complex tasks and Depth
-
-**Limitations:** Limited availability, Longer response times
-
-![](images/o3_reasoning.PNG)
-
-## 💨[**o4 mini high**]{.underline}
-
-**Strengths:** Logic, Reasoning, Coding, Speed
-
-**Limitations:** Smaller model, Inaccurate for more complex tasks
-
-## Notes: Coding Models and Projects
-
-::: callout-note
-## Navigating coding models
-
-*Try experimenting with the o3 model as a fallback!*
-
-I always start out using o4 mini for my coding problems and see how well it does. If you run into its limitations very early on, that's a good sign that a larger model (like o3) is a better choice. This way, you also avoid exhausting your o3 limit!
+-   Picks the appropriate model based on the task at hand!
 :::
+:::
+
+## Using it for writing
+
+## Using it for coding
+
+-   Use it to understand code.
+
+-   Use it to brainstorm on how to tackle problems.
+
+-   Use it for advice on specific problems, with constraints, etc
+
+-   Get satisfaction of solving a hard problem NOT by thinking of the solution, but understanding the solution and understanding why it's smart
+
+-   Whats missing in your approach? Ask it to find flaws on what your current solution is. Judge its answer too.
+
+-   Role call
+
+    -   Rubber duck- debugging method for programmers
+
+    -   Experienced research software developer in the style of
+
+    -   Teacher prompt -\> Ethan mollick
+
+## Side note: Using Projects
 
 ::: callout-note
 ## Using Projects
 
-I have found using projects to be a fantastic aid in managing my chats and using them mindfully. They also allow adding a specific context or media that ChatGPT will keep in its memory for future chats. The organization does not have to be perfect, but it definitely helped my to organize my work flow a bit better (figuring out when to start a new chat, also having an overview of the types of questions that warranted a conversation with ChatGPT)
+I have found using projects to be a fantastic aid in managing my chats and using them mindfully.
 
-![](images/Projects_callout.png){width="834"}
+-   Add specific context or media that ChatGPT will keep in its memory for future chats.
+-   Better workflow for different projects with corresponding chats
 :::
 
-## 🤞 How should I ideally use it?
+![](images/Projects_callout.png){width="834"}
+
+## 
 
 ------------------------------------------------------------------------
 
