@@ -51,7 +51,7 @@ Here is another slide.
 <details markdown="block">
 <summary markdown="span">Is AI really special?</summary>
 
-All data protection considerations have to be made regardless of the fact if a given system is considered **AI or not**. There is a common misconception that AI itself is the problem, e.g. because the models are trained on the prompts. That is not correct. Instead, the issue lies with with **cloud-based systems** where the institution does not have a **data processing agreement** with the supplier. 
+All data protection considerations have to be made regardless of the fact whether a given system is considered **AI or not**. There is a common misconception that AI itself is the problem, e.g. because the models are trained on the prompts. **That is not correct**. Instead, the issue lies with **cloud-based systems** for which your institution/employer does not have a **data processing agreement** with the supplier. 
 
 </details>
 
@@ -61,7 +61,7 @@ All data protection considerations have to be made regardless of the fact if a g
 :::column
 ### 🎓 Integrity
 
--   GenAI Will happily attempt to do anything
+-   GenAI will happily attempt to do anything
 -   Obscure failure modes
     -   Hallucinations
     -   Lack of self-criticism
@@ -102,7 +102,7 @@ GPAI specific
 <details markdown="block">
 <summary markdown="span">Guidelines are there to help you</summary>
 
-In practice, it can be quite challenging to be and stay up to date with the latest regulations. University guidelines should be viewed as a practical interpretation for you as the end user. Unfortunately, the university can't relieve you from your legal and ethical responsibilities, so you should do your due diligence and check rules and regulations that could be applicable to you yourself. 
+In practice, it can be quite challenging to be and stay up to date with the latest regulations. University guidelines should be viewed as a practical interpretation for you as the end user. Unfortunately, the university can't relieve you from your legal and ethical responsibilities, so you should do your due diligence and check which rules and regulations apply in your situation. 
 
 </details>
 
@@ -120,21 +120,21 @@ Talk to your school's information manager, data steward or the central Research 
 -   EU AI Act
 
 
-## Research integrety
+## Research integrity
 
 <details markdown="block">
 <summary markdown="span">Just as any research output, the same principles also apply to **code**!</summary>
 
-In the past, **Research Software** has often been considered as a necessary intermediate product of research, but was often not worth mentioning or publishing. Times have changed though, and both Tilburg University, but also many funders and journals consider **Research software** as a relevant and crucial output that is worth highlighting and discussing. This is for two reasons:
+In the past, **Research Software** has often been considered as a necessary intermediate product of research, but was often not worth mentioning or publishing. Times have changed though, and both Tilburg University, but also many funders and journals consider **Research Software** as a relevant and crucial output that is worth highlighting and discussing. This is for two reasons:
 
 1. From an Open Science and FAIR perspective, sharing your code creates the necessary transparency on how you got to your results, so that your research becomes trustworthy.
 2. Universities, funders and journals have noticed that we still often reinvent the wheel for new projects. Creating software that is easy to reuse in other projects can thus be enormously beneficial in advancing the science faster and significantly cheaper.
 
-Software has been contributing to the results of published research for a long time, and has therefore always been subject to research integrety principles. In modern times though, we see more and more that integrity in software development is not only assumed anymore, but also tested for more and more. 
+Software has been contributing to the results of published research for a long time, and has therefore always been subject to research integrity principles. In modern times though, we see more and more that integrity in software development is not only assumed anymore, but also tested for more and more. 
 
 </details>
 
-In particular relevant for genAI use:
+In particular relevant for GenAI use:
 
 - No fraudulent activities
     -   Data fabrication
@@ -155,7 +155,7 @@ Journals
 
 -   GenAI policies vary a lot, from ... to:
 
-    -   No restriction of AI use at all
+    -   No restriction on AI use at all
 
     -   Require statement on AI use
 
@@ -168,7 +168,7 @@ Journals
 
 -   Stick to the most strict guidelines of relevant funders & journals in your field
 
--   Per funder and journal, inquire what is meant by AI. It might be something that you are not considering.
+-   For each funder and journal, check what they mean by 'AI'.
 
 -   Don't bootstrap your own way of doing things. Look up best practices and ask for advice!
 
@@ -179,7 +179,7 @@ Journals
 ## Common compliance slips
 
 ::: {.callout-important}
-## GDPR also applies to publically available data
+## GDPR also applies to publicly available data
 
 The GDPR makes no distinction between publicly available and non-publicly available data. That means that personal data, even if found online, should not be entered into cloud-based (AI) systems.
 
@@ -189,7 +189,7 @@ The GDPR makes no distinction between publicly available and non-publicly availa
 ::: {.callout-important}
 ## Data transfer via automated systems
 
-Be careful with tools that interact with an API by themselves and where you can't inspect and approve the prompts yourself. They might transfer sensitive data from your working directory, without your knowledge.
+Be careful with tools that interact with an API by themselves and where you can't inspect and approve the prompts yourself. They might transfer sensitive data from your working directory without your knowledge.
 
 Examples are: Windsurf, GitHub Copilot and Agentic development tools.
 
