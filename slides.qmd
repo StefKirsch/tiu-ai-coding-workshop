@@ -17,7 +17,7 @@ editor: visual
 
 # Best Practices
 
-## 😅 How should I use ChatGPT?
+## 😵 Which model do I use?
 
 Thankfully, we no longer need to navigate different models for our tasks, thanks to GPT5.
 
@@ -27,11 +27,11 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 
 ![](images/choice_of_models.png){width="500"}
 
--   1\. Different models for different tasks.
+-   Different models for different tasks.
 
--    4o series for writing/ planning.
+-   4o series for writing/ planning.
 
--    o3, o4 mini and o4 mini high for coding and logical reasoning.
+-   o3, o4 mini and o4 mini high for coding and logical reasoning.
 :::
 
 ::: {.column width="50%"}
@@ -43,13 +43,47 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 :::
 :::
 
-## Using it for writing
+## 🚫 How to (not) have it write code
 
-## Using it for coding
+::: callout-note
+## 🏆 Golden Rule 1
 
--   Use it to understand code.
+**It is your responsibility to have enough context into the problem. The lesser context you have, the less effective it might be in the long run.**
+:::
 
--   Use it to brainstorm on how to tackle problems.
+![](images/GPT5_context_1.png) **Thus began the cycle of debugging ChatGPTs code:**
+
+-   Code provided doesn't run locally:
+
+![](images/GPT5_context_2.png)
+
+-   Features that work in canvas fail in my machine:
+
+![](images/GPT5_context_3.png)
+
+[**End result of such workflows**:]{.underline}
+
+-   You end up debugging ChatGPTs code way more than you would like.
+
+-   Takes longer overall (even if the start was quick)
+
+## ✅ How to have it write code
+
+
+**1. Narrow the scope of the problem**
+
+::: callout-note
+🏆 Golden Rule 2
+
+**Narrow and specific problems enable you to have more control and understanding of your own code and the AI generated code.**
+:::
+
+![](images/GPT5_specific_problem_1.png){height=20%}
+
+**2. Understanding code with it**
+
+
+*brainstorm* with it on how to tackle problems.
 
 -   Use it for advice on specific problems, with constraints, etc
 
@@ -59,13 +93,17 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 
 -   Role call
 
-    -   Rubber duck- debugging method for programmers
+-   Rubber duck- debugging method for programmers
 
-    -   Experienced research software developer in the style of
+-   Experienced research software developer in the style of
 
-    -   Teacher prompt -\> Ethan mollick
+-   Teacher prompt -\> Ethan mollick
 
-## Side note: Using Projects
+## 📏 Notes on prompt engineering
+
+## ☃️ When to take a break from it
+
+## 🏁 Using Projects
 
 ::: callout-note
 ## Using Projects
@@ -78,7 +116,7 @@ I have found using projects to be a fantastic aid in managing my chats and using
 
 ![](images/Projects_callout.png){width="834"}
 
-## 
+
 
 ------------------------------------------------------------------------
 
