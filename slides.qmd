@@ -7,7 +7,7 @@ format:
     slide-number: true
     progress: true
     toc: true
-    toc-depth: 2
+    toc-depth: 1
     incremental: false
     smaller: true               # global smaller font size
     scrollable: true
@@ -51,7 +51,9 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 **It is your responsibility to have enough context into the problem. The lesser context you have, the less effective it might be in the long run.**
 :::
 
-![](images/GPT5_context_1.png) **Thus began the cycle of debugging ChatGPTs code:**
+![](images/GPT5_context_1.png)
+
+## Thus began the cycle of debugging ChatGPTs code
 
 -   Code provided doesn't run locally:
 
@@ -61,27 +63,69 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 
 ![](images/GPT5_context_3.png)
 
-[**End result of such workflows**:]{.underline}
+## End result of such workflows
 
 -   You end up debugging ChatGPTs code way more than you would like.
 
 -   Takes longer overall (even if the start was quick)
 
-## ✅ How to have it write code
+<iframe src="https://giphy.com/embed/Ty9Sg8oHghPWg" width="480" height="480" style frameBorder="0" class="giphy-embed" allowFullScreen>
 
+</iframe>
+
+<p><a href="https://giphy.com/gifs/mrw-song-myself-Ty9Sg8oHghPWg">via GIPHY</a></p>
+
+## ✅ How to have it write code
 
 **1. Narrow the scope of the problem**
 
 ::: callout-note
-🏆 Golden Rule 2
+## 🏆 Golden Rule 2
 
 **Narrow and specific problems enable you to have more control and understanding of your own code and the AI generated code.**
 :::
 
-![](images/GPT5_specific_problem_1.png){height=20%}
+![](images/GPT5_specific_problem_1.png){height="30%"}
 
-**2. Understanding code with it**
+## 
 
+![](images/GPT5_specific_problem_2.png){height="15%"}
+
+## 
+
+**2. 💡 Understanding code with it**
+
+-   Breaking down unfamiliar code
+
+![](images/GPT5_understand_code_1.png)
+
+## 
+
+-   Improving your own code base (pt1)
+
+![](images/GPT5_understand_code_2.png)
+
+-   A glimpse of the response: ![](images/GPT5_understand_code_3.png)
+
+## 
+
+-   Improving your own code base (pt2) - *including use-case*
+
+![](images/GPT5_understand_code_4.png){width="30%"}
+
+## 📓 Takeaways for AI powered code reviews
+
+-   ChatGPT generally has very high standards (looks into both major and very minor issues) - be mindful of its feedback and gauge what is most useful for you.
+-   Giving more context into the use-case of your code will help it better tailor its response for you.
+-   Don't give yourself a headache going too deep into its feedback, its important to know that responses will vary even if the same prompt is sent again. Keep re-reading the first point until you are convinced 🎈
+
+<iframe src="https://giphy.com/embed/RleRfnqeBrr3uKIRog" width="480" height="271" style frameBorder="0" class="giphy-embed" allowFullScreen>
+
+</iframe>
+
+<p><a href="https://giphy.com/gifs/JamieNCommons-heartbreak-jamie-n-commons-jnc-RleRfnqeBrr3uKIRog">via GIPHY</a></p>
+
+## 
 
 *brainstorm* with it on how to tackle problems.
 
@@ -115,8 +159,6 @@ I have found using projects to be a fantastic aid in managing my chats and using
 :::
 
 ![](images/Projects_callout.png){width="834"}
-
-
 
 ------------------------------------------------------------------------
 
