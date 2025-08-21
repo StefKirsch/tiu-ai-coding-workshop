@@ -125,25 +125,54 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 
 <p><a href="https://giphy.com/gifs/JamieNCommons-heartbreak-jamie-n-commons-jnc-RleRfnqeBrr3uKIRog">via GIPHY</a></p>
 
+## 📏 Prompt engineering (continued)
+
+-   Limit verbosity (in general), you can always dig for more if *you* want
+
+::: columns
+::: {.column width="50%"}
+🔴
+
+![](images/GPT5_prompt_engineering_1.png){width="500"}
+:::
+
+::: {.column width="50%"}
+💚
+
+![](images/GPT5_prompt_engineering_2.png){width="500"}
+:::
+:::
+
 ## 
 
-*brainstorm* with it on how to tackle problems.
+-   Asking to focus on clarity over conciseness
 
--   Use it for advice on specific problems, with constraints, etc
+::: columns
+::: {.column width="50%"}
+🔴
 
--   Get satisfaction of solving a hard problem NOT by thinking of the solution, but understanding the solution and understanding why it's smart
+![](images/GPT5_prompt_engineering_3.png){width="500"}
+:::
 
--   Whats missing in your approach? Ask it to find flaws on what your current solution is. Judge its answer too.
+::: {.column width="50%"}
+💚
 
--   Role call
+![](images/GPT5_prompt_engineering_4.png){width="500"}
+:::
+:::
 
--   Rubber duck- debugging method for programmers
+## 
 
--   Experienced research software developer in the style of
+-   On assigning roles and more
 
--   Teacher prompt -\> Ethan mollick
+<details>
 
-## 📏 Notes on prompt engineering
+<summary>More examples with resources</summary>
+
+1.  [Ethan Mollick on prompt engineering](https://www.moreusefulthings.com/instructor-prompts)
+2.  [TU Delft's wiki on prompting ChatGPT for researchers](https://hri-wiki.tudelft.nl/llm/chat-gpt-prompts)
+
+</details>
 
 ## ☃️ When to take a break from it
 
