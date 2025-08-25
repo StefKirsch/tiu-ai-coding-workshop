@@ -73,7 +73,6 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 
 </iframe>
 
-<p><a href="https://giphy.com/gifs/mrw-song-myself-Ty9Sg8oHghPWg">via GIPHY</a></p>
 
 ## ✅ How to have it write code
 
@@ -123,7 +122,7 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 
 </iframe>
 
-<p><a href="https://giphy.com/gifs/JamieNCommons-heartbreak-jamie-n-commons-jnc-RleRfnqeBrr3uKIRog">via GIPHY</a></p>
+
 
 ## 📏 Prompt engineering (continued)
 
@@ -161,9 +160,16 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 :::
 :::
 
+
 ## 
 
--   On assigning roles and more
+- On assigning roles and more
+
+
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/X7YjqKk-7Y0?si=hYKV42m7p6FMOUWD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  
+  </iframe>
 
 <details>
 
@@ -175,6 +181,31 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 </details>
 
 ## ☃️ When to take a break from it
+
+
+- Frustration with ChatGPT 
+
+::: columns
+::: {.column width="70%"}
+
+
+![](images/GPT5_frustration_1.png)
+:::
+
+::: {.column width="30%"}
+
+
+ <iframe 
+  src="https://giphy.com/embed/y1WDIwAZRSmru" width="400" height="300" style="" frameBorder="0" class="giphy-embed" allowFullScreen>
+  </iframe>
+  
+:::
+:::
+
+##
+
+- Your collaboration turns into dependence
+
 
 ## 🏁 Using Projects
 
