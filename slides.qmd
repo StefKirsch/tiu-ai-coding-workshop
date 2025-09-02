@@ -484,7 +484,7 @@ Shortcuts often turn out costly in the end.
 
 Find a workflow that balances efficiency and sustainability and that works for you. Then stick to it.
 
-## Pitfall 2 - Punching above our weight
+## Pitfall 2 - Punching above your weight
 
 ::::: columns
 ::: column
@@ -551,8 +551,6 @@ This means that the model will forget what was said earlier, especially if it wa
 
 ## Pitfall 3b - Muddy the (context) water
 
-![](https://i.imgflip.com/a4v36z.jpg){width="500" style="max-height:unset;"}
-
 <details>
 
 <summary>A little context hygiene goes a long way.</summary>
@@ -562,6 +560,8 @@ Many of the advertised features, like "custom instructions," "memory," and "proj
 Unfortunately, all the extra context is typically hidden from the user, at least while chatting with the model. At the time of writing, however, most providers allow you to inspect, modify, or delete unwanted context fluff, albeit it being scattered across various corners of the UI. A quick web search or asking the AI of choice can typically help you identify and remove the culprits, though.
 
 </details>
+
+![](https://i.imgflip.com/a4v36z.jpg){width="500" style="max-height:unset;"}
 
 ## References
 
