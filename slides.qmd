@@ -17,31 +17,77 @@ editor: visual
 
 # Best Practices
 
-## 😵 Which model do I use?
+## 😵 Which model do I use? pt. 1
 
 Thankfully, we no longer need to navigate different models for our tasks, thanks to GPT5.
 
-::: columns
-::: {.column width="50%"}
-🔴
 
-![](images/choice_of_models.png){width="500"}
+![](images/choice_of_models.png){height=50%}
 
 -   Different models for different tasks.
 
 -   4o series for writing/ planning.
 
 -   o3, o4 mini and o4 mini high for coding and logical reasoning.
+
+
+<details markdown="block">
+<summary markdown="span">More about this</summary>
+
+
+- For a coding task, try using the o4 mini models first, they are much faster than o3.
+- If you think the o4 models are not able to achieve your task, go with o3- it is a bigger reasoning model that can go more in-depth (at the cost of taking more time)
+
+
+</details>
+
+## 😵 Which model do I use? pt. 2
+
+
+![](images/GPT5.png)
+
+-   Picks the appropriate model based on the task at hand!*
+
+<details markdown="block">
+<summary markdown="span">*More about this</summary>
+
+
+- GPT5 may not always do this. It is at best, using key words in your prompt to gauge task complexity (and deciding further course of action) 
+- Sometimes it will think way too little and sometimes start reasoning about something it doesn't need to.
+- It is always an advantage to know a bit about the different models. This video tells you about them in detail and with usecases.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uluRM4yIras?si=3caDpUQO9zF904OO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</details>
+
+
+## 👥 Use Git
+::: columns
+
+::: {.column width="50%"}
+![](images/version_control_1.jpeg)
 :::
 
 ::: {.column width="50%"}
-💚
+- Git helps you track versions of your code as you progress through time ⌚  
 
-![](images/GPT5.png){width="500"}
+- Git enables you to have a contingency! 🔐
 
--   Picks the appropriate model based on the task at hand!
+- No matter how you change your code always have a back up!💾
 :::
+
 :::
+
+
+##
+
+use git diff **before pushing your script**
+
+provide resources and links
+
+`<a href="https://imgflip.com/i/a4ullf"`{=html}<img src="https://i.imgflip.com/a4ullf.jpg" title="made at imgflip.com"/></a>
+
+-   add two slides for diffs
 
 ## 🚫 How to (not) have it write code
 
@@ -73,12 +119,11 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 
 </iframe>
 
-
 ## ✅ How to have it write code
 
 **1. Narrow the scope of the problem**
 
-::: callout-note
+::: { .callout-note }
 ## 🏆 Golden Rule 2
 
 **Narrow and specific problems enable you to have more control and understanding of your own code and the AI generated code.**
@@ -122,8 +167,6 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 
 </iframe>
 
-
-
 ## 📏 Prompt engineering (continued)
 
 -   Limit verbosity (in general), you can always dig for more if *you* want
@@ -160,16 +203,13 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 :::
 :::
 
-
 ## 
 
-- On assigning roles and more
+-   On assigning roles and more
 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/X7YjqKk-7Y0?si=hYKV42m7p6FMOUWD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/X7YjqKk-7Y0?si=hYKV42m7p6FMOUWD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-  
-  </iframe>
+    </iframe>
 
 <details>
 
@@ -182,30 +222,23 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 
 ## ☃️ When to take a break from it
 
-
-- Frustration with ChatGPT 
+-   Frustration with ChatGPT
 
 ::: columns
 ::: {.column width="70%"}
-
-
 ![](images/GPT5_frustration_1.png)
 :::
 
 ::: {.column width="30%"}
+<iframe src="https://giphy.com/embed/y1WDIwAZRSmru" width="400" height="300" style frameBorder="0" class="giphy-embed" allowFullScreen>
 
-
- <iframe 
-  src="https://giphy.com/embed/y1WDIwAZRSmru" width="400" height="300" style="" frameBorder="0" class="giphy-embed" allowFullScreen>
-  </iframe>
-  
+</iframe>
 :::
 :::
 
-##
+## 
 
-- Your collaboration turns into dependence
-
+-   Your collaboration turns into dependence
 
 ## 🏁 Using Projects
 
