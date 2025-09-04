@@ -472,9 +472,109 @@ The GDPR makes no distinction between publicly available and non-publicly availa
 Be careful with tools that interact with an API by themselves and where you can't inspect and approve the prompts yourself. They might transfer sensitive data from your working directory without your knowledge.
 
 Examples are: Windsurf, GitHub Copilot and Agentic development tools.
+:::
+
+# Pitfalls
+
+## Pitfall 1 - Taking shortcuts
+
+<details markdown="block">
+<summary markdown="span">Shortcuts often turn out costly in the end.</summary>
+
+It is very tempting to just ask the AI to do a whole work package for you, especially when you are under time pressure. Even worse still, the code will probably work, which hides the potential cost in the long run.
+
+The result is often code that doesn't fit the logic and style of the rest of your project, adds unnecessary dependencies or in some other way does not fit well into the bigger picture.
+
+</details>
+
+
+![](https://i.imgflip.com/a4v6za.jpg)
+
+
+::: {.callout-tip}
+## Our Recommendation
+
+Find a workflow that balances *efficiency* and *sustainability* and that works for you. Then stick to it.
 
 :::
 
+
+## Pitfall 2 - Punching above your weight
+
+
+::: {style="text-align:center"}
+![](images/dum_dum.png){width=600 style="max-height:unset;"}
+:::
+
+
+<details>
+
+<summary>Only ask AI to do what you could also do yourself.</summary>
+
+The sustainable route of using AI is to not have it write code that you could not have produced yourself. This of course doesn't mean that you can't ask AI **help you** write that code!
+
+::: {.callout-tip}
+## Our Recommendation
+
+We recommend that you only (fully) outsource tasks to AI that are basically trivial for you.
+:::
+
+</details>
+
+## Pitfall 3 - Context conundrums
+
+::::: columns
+::: column
+The context in the example of ChatGPT
+
+-   The system prompt 
+
+-   Custom instructions
+
+-   "Memory" 
+
+-   Project context 
+
+-   ??? 
+
+-   Your prompts and the model's responses (the conversation)
+:::
+::: column
+![](https://i.imgflip.com/a4uupf.jpg){width="500" style="max-height:unset;"}
+:::
+:::::
+
+
+
+
+## Pitfall 3a - Context window overflow
+
+
+<details>
+
+<summary>LLMs can only remember so much</summary>
+
+Especially in longer conversations, you can quickly exceed the functional context window, which is often much less than the nominal ones (e.g., 10k words for ChatGPT 5).
+
+This means that the model will forget what was said earlier, especially if it was somewhere in the middle of the conversation.
+
+</details>
+
+![](https://i.imgflip.com/a4v4gn.jpg){width="500" style="max-height:unset;"}
+
+## Pitfall 3b - Muddy the (context) water
+
+<details>
+
+<summary>A little context hygiene goes a long way.</summary>
+
+Many of the advertised features, like "custom instructions," "memory," and "projects," boil down to adding extra context to the conversation history (aka context stuffing). In most cases, this is helpful and feels like genuine personalization that adds convenience. But it can also lead to strange outcomes when the AI can't quite decide which bit of the context is actually relevant at a given time. It can also change the behavior of the model in unexpected ways.
+
+Unfortunately, all the extra context is typically hidden from the user, at least while chatting with the model. At the time of writing, however, most providers allow you to inspect, modify, or delete unwanted context fluff, albeit it being scattered across various corners of the UI. A quick web search or asking the AI of choice can typically help you identify and remove the culprits, though.
+
+</details>
+
+![](https://i.imgflip.com/a4v36z.jpg){width="500" style="max-height:unset;"}
 
 ## References
 
