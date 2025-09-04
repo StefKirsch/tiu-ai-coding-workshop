@@ -478,33 +478,46 @@ Examples are: Windsurf, GitHub Copilot and Agentic development tools.
 
 ## Pitfall 1 - Taking shortcuts
 
-Shortcuts often turn out costly in the end.
+<details markdown="block">
+<summary markdown="span">Shortcuts often turn out costly in the end.</summary>
+
+It is very tempting to just ask the AI to do a whole work package for you, especially when you are under time pressure. Even worse still, the code will probably work, which hides the potential cost in the long run.
+
+The result is often code that doesn't fit the logic and style of the rest of your project, adds unnecessary dependencies or in some other way does not fit well into the bigger picture.
+
+</details>
+
 
 ![](https://i.imgflip.com/a4v6za.jpg)
 
-Find a workflow that balances efficiency and sustainability and that works for you. Then stick to it.
+
+::: {.callout-tip}
+## Our Recommendation
+
+Find a workflow that balances *efficiency* and *sustainability* and that works for you. Then stick to it.
+
+:::
+
 
 ## Pitfall 2 - Punching above your weight
 
-::::: columns
-::: column
-![](images/dum_dum.png){width="500" style="max-height:unset;"}
+
+::: {style="text-align:center"}
+![](images/dum_dum.png){width=600 style="max-height:unset;"}
 :::
 
-::: column
-```{=html}
-<iframe src="https://giphy.com/embed/4559yWLyv3huw" width="480" height="269" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-```
-:::
-:::::
 
 <details>
 
-<summary>Only ask it to do what you could also do yourself.</summary>
+<summary>Only ask AI to do what you could also do yourself.</summary>
 
 The sustainable route of using AI is to not have it write code that you could not have produced yourself. This of course doesn't mean that you can't ask AI **help you** write that code!
 
-We recommend that you only (fully) outsource tasks to AI that are basically trivial fo you to do.
+::: {.callout-tip}
+## Our Recommendation
+
+We recommend that you only (fully) outsource tasks to AI that are basically trivial for you.
+:::
 
 </details>
 
