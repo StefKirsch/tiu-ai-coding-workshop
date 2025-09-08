@@ -21,8 +21,7 @@ editor: visual
 
 Thankfully, we no longer need to navigate different models for our tasks, thanks to GPT5.
 
-
-![](images/choice_of_models.png){height=50%}
+![](images/choice_of_models.png){height="50%"}
 
 -   Different models for different tasks.
 
@@ -30,64 +29,85 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 
 -   o3, o4 mini and o4 mini high for coding and logical reasoning.
 
+<details>
 
-<details markdown="block">
-<summary markdown="span">More about this</summary>
+<summary>More about this</summary>
 
-
-- For a coding task, try using the o4 mini models first, they are much faster than o3.
-- If you think the o4 models are not able to achieve your task, go with o3- it is a bigger reasoning model that can go more in-depth (at the cost of taking more time)
-
+-   For a coding task, try using the o4 mini models first, they are much faster than o3.
+-   If you think the o4 models are not able to achieve your task, go with o3- it is a bigger reasoning model that can go more in-depth (at the cost of taking more time)
 
 </details>
 
 ## 😵 Which model do I use? pt. 2
 
-
 ![](images/GPT5.png)
 
--   Picks the appropriate model based on the task at hand!*
+-   Picks the appropriate model based on the task at hand!\*
 
-<details markdown="block">
-<summary markdown="span">*More about this</summary>
+<details>
 
+<summary>\*More about this</summary>
 
-- GPT5 may not always do this. It is at best, using key words in your prompt to gauge task complexity (and deciding further course of action) 
-- Sometimes it will think way too little and sometimes start reasoning about something it doesn't need to.
-- It is always an advantage to know a bit about the different models. This video tells you about them in detail and with usecases.
+-   GPT5 may not always do this. It is at best, using key words in your prompt to gauge task complexity (and deciding further course of action)
+-   Sometimes it will think way too little and sometimes start reasoning about something it doesn't need reasoning for.
+-   It is always an advantage to know a bit about the different models. This video tells you about them in detail and with use-cases.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uluRM4yIras?si=3caDpUQO9zF904OO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uluRM4yIras?si=3caDpUQO9zF904OO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
 
 </details>
 
+## 👥 Using version control and Git
 
-## 👥 Use Git
 ::: columns
+::: {.column width="50%"}
+##### Without Git
+
+Summary: nightmare 👹 <iframe src="https://giphy.com/embed/2KAGlmkPywhZS"
+        width="247" height="480"
+        frameborder="0" allowfullscreen></iframe>
+:::
 
 ::: {.column width="50%"}
-![](images/version_control_1.jpeg)
+##### With Git
+
+-   Git keeps every change safe and rewindable
+-   You can always fall back to a working version
+
+<img src="images/version_control_2.jpeg" width="300"/>
+:::
 :::
 
-::: {.column width="50%"}
-- Git helps you track versions of your code as you progress through time ⌚  
+<details>
 
-- Git enables you to have a contingency! 🔐
+<summary>Learn more about what git is and how you can use it</summary>
 
-- No matter how you change your code always have a back up!💾
+-   [A fantastic guide to using git and github](https://www.youtube.com/watch?v=RGOj5yH7evk&t=360s) 🍏
+-   [What is Gitlab and how it may be a better choice than Github](https://www.incredibuild.com/blog/gitlab-vs-github-comparison)?⚖
+
+</details>
+
+## Using `git diff`
+
+The command `git diff` tells you exactly what changed in your code.
+
+::: callout-tip
+# Using `git add`
+
+Remember to use `git add <file_name>` **before** you use `git diff`. Git will only track changes for a file that is added to its system.
 :::
 
+::: callout-warning
+# `git diff` and AI written code
+
+-   Using `git diff` is crucial when using ChatGPT to write code.
+-   Even with a near-perfect prompting, tt can change parts of your code that you did not intend on changing which makes things messy even with version control.
 :::
 
+![](images/git_diff_1.png)
 
-##
-
-use git diff **before pushing your script**
-
-provide resources and links
-
-`<a href="https://imgflip.com/i/a4ullf"`{=html}<img src="https://i.imgflip.com/a4ullf.jpg" title="made at imgflip.com"/></a>
-
--   add two slides for diffs
+![](images/git_diff_2.png)
 
 ## 🚫 How to (not) have it write code
 
@@ -123,7 +143,7 @@ provide resources and links
 
 **1. Narrow the scope of the problem**
 
-::: { .callout-note }
+::: callout-note
 ## 🏆 Golden Rule 2
 
 **Narrow and specific problems enable you to have more control and understanding of your own code and the AI generated code.**
@@ -167,43 +187,29 @@ provide resources and links
 
 </iframe>
 
-## 📏 Prompt engineering (continued)
+## 📏 Prompt engineering - verbosity
 
 -   Limit verbosity (in general), you can always dig for more if *you* want
 
-::: columns
-::: {.column width="50%"}
-🔴
+![](images/GPT5_prompt_engineering_1.png)
 
-![](images/GPT5_prompt_engineering_1.png){width="500"}
-:::
 
-::: {.column width="50%"}
-💚
+## ...
 
 ![](images/GPT5_prompt_engineering_2.png){width="500"}
-:::
-:::
 
-## 
+## 📏 Prompt engineering - clarity over concisensess
 
 -   Asking to focus on clarity over conciseness
 
-::: columns
-::: {.column width="50%"}
-🔴
 
 ![](images/GPT5_prompt_engineering_3.png){width="500"}
-:::
 
-::: {.column width="50%"}
-💚
+## ...
 
 ![](images/GPT5_prompt_engineering_4.png){width="500"}
-:::
-:::
 
-## 
+## 📏 Prompt engineering - assigning roles
 
 -   On assigning roles and more
 
@@ -220,13 +226,14 @@ provide resources and links
 
 </details>
 
-## ☃️ When to take a break from it
+## ☃️ When to take a break 
 
--   Frustration with ChatGPT
+-   *Subtle* signs of frustration
 
 ::: columns
 ::: {.column width="70%"}
 ![](images/GPT5_frustration_1.png)
+
 :::
 
 ::: {.column width="30%"}
@@ -236,13 +243,22 @@ provide resources and links
 :::
 :::
 
-## 
+::: columns
+::: {.column width="60%"}
+- Collaboration turns into dependence - *your problem is still yours to solve;with or without it*
+:::
 
--   Your collaboration turns into dependence
+::: {.column width="40%"}
+<iframe 
+ src="https://giphy.com/embed/4foAPrZ3GVzWM" width="480" height="240" style="" frameBorder="0" class="giphy-embed" allowFullScreen>
+</iframe>
+:::
+:::
+
 
 ## 🏁 Using Projects
 
-::: callout-note
+::: callout-tip
 ## Using Projects
 
 I have found using projects to be a fantastic aid in managing my chats and using them mindfully.
