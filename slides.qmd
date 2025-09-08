@@ -269,8 +269,4 @@ I have found using projects to be a fantastic aid in managing my chats and using
 
 ![](images/Projects_callout.png){width="834"}
 
-------------------------------------------------------------------------
 
-## Slide 2
-
-Here is another slide.
