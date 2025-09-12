@@ -189,59 +189,77 @@ Play around with different models in different cases and get a feeling for yours
 Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in.
 :::
 
-## 🔀 Ways of interacting with an LLM (1/2)
+## 🔀 Ways of interacting with an LLM
+
+### Chatbot
+
+![](https://images.seeklogo.com/logo-png/50/1/chatgpt-logo-png_seeklogo-503286.png){width="20%"} ![](https://images.seeklogo.com/logo-png/61/1/microsoft-copilot-logo-png_seeklogo-619562.png){width="20%"} ![](https://images.seeklogo.com/logo-png/55/1/claude-logo-png_seeklogo-554540.png){width="20%"}
+
 
 ::: columns
 ::: column
-### Chatbot
 
-![](https://images.seeklogo.com/logo-png/50/1/chatgpt-logo-png_seeklogo-503286.png){width="30%"} ![](https://images.seeklogo.com/logo-png/61/1/microsoft-copilot-logo-png_seeklogo-619562.png){width="30%"} ![](https://images.seeklogo.com/logo-png/55/1/claude-logo-png_seeklogo-554540.png){width="30%"}
+#### Tops ✅
 
--   Tops ✅
-    -   Model choice
-    -   Iterate on prompts
-    -   Lots of control (including which data you enter -\> *GDPR compliance*)
--   Flops ❌
-    -   Copy pasting
-    -   No further automation
-    -   Only aware of the context you give it
+- Model choice
+- Iterate on prompts
+- Lots of control (including which data you enter -\> *GDPR compliance*)
+
+:::
+::: column
+
+#### Flops ❌
+
+-   Copy pasting
+-   No further automation
+-   Only aware of the context you give it
+
+:::
 :::
 
-::: column
+## 🔀 Ways of interacting with an LLM
+
 ### (API)
 
 -   Not really relevant for coding
-:::
-:::
 
-## 🔀 Ways of interacting with an LLM (2/2)
 
-::: columns
-::: column
+## 🔀 Ways of interacting with an LLM
+
 ### IDE plugins
 
 ![](https://images.seeklogo.com/logo-png/40/1/github-copilot-logo-png_seeklogo-407787.png){width="30%"} ![](https://analyticsindiamag.com/wp-content/uploads/2025/04/windsurf-featured-1300x731.png){width="45%"}
 
--   Tops ✅
-    -   Automation
-    -   Context-aware of your codebase
-    -   Different modes of interaction (autocomplete, chat)
--   Flops ❌
-    -   No control over what gets transmitted -\> critical for GDPR and IP
-    -   Can get expensive for API calls
+::: columns
+::: column
+
+#### Tops ✅
+  -   Automation
+  -   Context-aware of your codebase
+  -   Different modes of interaction (autocomplete, chat)
+    
+:::
+::: column
+
+
+#### Flops ❌
+  -   No control over what gets transmitted -\> critical for GDPR and IP
+  -   Can get expensive for API calls
+
+:::
 :::
 
-::: column
+
+## 🔀 Ways of interacting with an LLM
+
 ### Agents
 
-![](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*clU4bA8DttJiyPnrRBVLWw.png){width="45%"}
-
-![](https://i.ytimg.com/vi/oB4JR98KRAA/mqdefault.jpg){width="45%"}
+![](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*clU4bA8DttJiyPnrRBVLWw.png){width="30%"} 
+![](https://i.ytimg.com/vi/oB4JR98KRAA/mqdefault.jpg){width="30%"}
 
 -   Goal + write access to your codebase
 -   Automatically calls API with prompts.
-:::
-:::
+
 
 ## 🔧 Prompt "engineering"
 
@@ -257,6 +275,9 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 
 </details>
 
+:::columns
+:::column
+
 ### 🤔 What to ask for
 
 -   Mindset: Ask for advice, not for solutions
@@ -267,14 +288,39 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 -   Ask advice on how to do it well
 -   Ask if you overlooked anything
 
+:::
+:::column
+
 ### 💡 How to ask
 
 -   Tell it all it needs to know
-    -   It can't read your mind, it doesn't know anything about you or your project
-    -   ... and even if it does, it probably it doesn't know what that means
+
+<details>
+
+<summary>More info</summary>
+
+Remember: AI can't read your mind!
+-   It doesn't know anything about you or your project
+-   … and even if it does, it probably it doesn’t know what that means
+-\> Talk to AI like to a new colleague that still needs a lot of onboarding. Tell it what it needs to know and how to make sense of it.
+
+</details>    
+
 -   "How do I xyz?" instead of "Do xyz for me."
 -   Be specific in your requirements (you can discuss them before with AI)
--   Your role: Product manager and quality assurance
+
+:::
+:::
+
+## 🔧 Prompt "engineering"
+
+::: callout-tip
+## Your role
+
+Product manager and quality assurance
+
+:::
+
 
 ## Typical tasks
 
