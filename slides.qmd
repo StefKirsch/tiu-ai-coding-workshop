@@ -1,5 +1,5 @@
 ---
-title: "Feel the Vibes: AI-assisted Coding"
+title: "🤖😎 Feel the Vibes: AI-assisted Coding"
 format:
   revealjs:
     theme: default
@@ -17,7 +17,7 @@ editor: visual
 
 # Introduction and basics
 
-## LLMs in a nutshell {.center}
+## 🧠 LLMs in a nutshell {.center}
 
 ```{=html}
 <iframe 
@@ -30,19 +30,19 @@ editor: visual
   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
 ```
-## Why are LLMs so good at coding?
+## ✨ Why are LLMs so good at coding?
 
 -   Lots of **code** and **documentation** online
 -   Relatively clear rules
 -   ... but it is truly amazing.
 
-## How well are LLMs doing right now?
+## 🦾 How well are LLMs doing right now?
 
 -   LLMs and agents can do more and more complex tasks, see [Moore's Law for AI agents](https://theaidigest.org/time-horizons)
 -   Reliability issues remain (more on that later)
 -   Crucial to **understand**, **tweak** and **test** the code
 
-## Some quick definitions
+## 📝 Some quick definitions
 
 <details>
 
@@ -96,7 +96,7 @@ For longer, real‑life chats it’s often more useful to not think in prompts, 
 
 </details>
 
-## Plain LLM VS Reasoning Models
+## 🤔 Plain LLM VS Reasoning Models
 
 ::: columns
 ::: column
@@ -144,15 +144,15 @@ Reasoning models have the ability **and** have been specifically trained to prod
 :::
 :::
 
-## Plain LLM VS Reasoning Models
+## 🤔 Plain LLM VS Reasoning Models
 
 ![](images/non-reasoning.png){width="900" style="max-height:unset;"}
 
-## Plain LLM VS Reasoning Models
+## 🤔 Plain LLM VS Reasoning Models
 
 ![](images/reasoning.png){width="900" style="max-height:unset;"}
 
-## When to use which type of model
+## ❔ When to use which type of model
 
 ::: columns
 ::: column
@@ -180,7 +180,7 @@ Reasoning models have the ability **and** have been specifically trained to prod
 Play around with different models in different cases and get a feeling for yourself.
 :::
 
-## What is an Agent then? {.incremental}
+## 🕴 What is an Agent then? {.incremental}
 
 -   **Standard definition**: Something that has (1) **a goal** and (2) can take **actions in the real world**.
 -   **Narrow definition**: A meta-LLM that can call other tools (including other LLMs), can access the command line and can write files.
@@ -189,7 +189,7 @@ Play around with different models in different cases and get a feeling for yours
 Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in.
 :::
 
-## Ways of interacting with an LLM (1/2)
+## 🔀 Ways of interacting with an LLM (1/2)
 
 ::: columns
 ::: column
@@ -214,7 +214,7 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 :::
 :::
 
-## Ways of interacting with an LLM (2/2)
+## 🔀 Ways of interacting with an LLM (2/2)
 
 ::: columns
 ::: column
@@ -243,7 +243,7 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 :::
 :::
 
-## Prompt "engineering"
+## 🔧 Prompt "engineering"
 
 A little overhyped...
 
@@ -293,7 +293,7 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 
 # Applicable Guidelines and Regulations
 
-## What is AI anyway
+## 🤖 What is AI anyway
 
 ![](https://media1.tenor.com/m/fHz7wfvakO8AAAAd/theyre-the-same-picture-the-office.gif){width="900" style="max-height:unset;"}
 
@@ -305,7 +305,7 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 
 </details>
 
-## Why is AI use potentially problematic?
+## 🚨 Why is AI use potentially problematic?
 
 ::: columns
 ::: column
@@ -338,7 +338,7 @@ All data protection considerations have to be made regardless of the fact whethe
 :::
 :::
 
-## Guiding Principles
+## 💡 Guiding Principles
 
 -   Adherence to local guidelines and checklists
 -   Compliance with national and EU legislation
@@ -348,7 +348,7 @@ All data protection considerations have to be made regardless of the fact whethe
 ```{=html}
 <iframe src="https://giphy.com/embed/ZikyVyLF7aEaQ" width="480" height="360" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 ```
-## University guidelines
+## 🎓 University guidelines
 
 General
 
@@ -374,13 +374,13 @@ In practice, it can be quite challenging to be and stay up to date with the late
 Talk to your school's information manager, data steward or the central Research Data Office for support.
 :::
 
-## National and EU law
+## ⚖ National and EU law
 
 -   GDPR
 -   Intellectual property rights (for text, data and software)
 -   EU AI Act
 
-## Research integrity
+## 🎓 Research integrity
 
 <details>
 
@@ -407,7 +407,7 @@ In particular relevant for GenAI use:
     -   [Data Handling and Methods Reporting](https://www.tilburguniversity.edu/research/social-and-behavioral-sciences/science-committee) (TSB)
     -   [Guideline Replication Package](https://www.tilburguniversity.edu/research/economics-and-management/replication-package) (TiSEM)
 
-## Rules of funders and journals
+## 📚 Rules of funders and journals
 
 NWO
 
@@ -435,7 +435,7 @@ Journals
 -   Don't bootstrap your own way of doing things. Look up best practices and ask for advice!
 :::
 
-## Common compliance slips
+## ⛸ Common compliance slips
 
 ::: callout-important
 ## GDPR also applies to publicly available data
@@ -709,7 +709,7 @@ I have found using projects to be a fantastic aid in managing my chats and using
 
 # Pitfalls
 
-## Pitfall 1 - Taking shortcuts
+## ✂ Pitfall 1 - Taking shortcuts
 
 <details>
 
@@ -729,7 +729,7 @@ The result is often code that doesn't fit the logic and style of the rest of you
 Find a workflow that balances *efficiency* and *sustainability* and that works for you. Then stick to it.
 :::
 
-## Pitfall 2 - Punching above your weight
+## 🥊 Pitfall 2 - Punching above your weight
 
 ::: {style="text-align:center"}
 ![](images/dum_dum.png){width="600" style="max-height:unset;"}
@@ -749,7 +749,7 @@ We recommend that you only (fully) outsource tasks to AI that are basically triv
 
 </details>
 
-## Pitfall 3 - Context conundrums
+## 🎛 Pitfall 3 - Context conundrums
 
 ::: columns
 ::: column
@@ -773,7 +773,7 @@ The context in the example of ChatGPT
 :::
 :::
 
-## Pitfall 3a - Context window overflow
+## 🌊 Pitfall 3a - Context window overflow
 
 <details>
 
@@ -787,7 +787,7 @@ This means that the model will forget what was said earlier, especially if it wa
 
 ![](https://i.imgflip.com/a4v4gn.jpg){width="500" style="max-height:unset;"}
 
-## Pitfall 3b - Muddy the (context) water
+## 🐷 Pitfall 3b - Muddy the (context) water
 
 <details>
 
