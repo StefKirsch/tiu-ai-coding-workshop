@@ -494,35 +494,12 @@ Examples are: Windsurf, GitHub Copilot and Agentic development tools.
 
 ## 👥 Using version control and Git
 
-**Without Git**
+Git is a version control system designed to track changes in your source code during software development.
+
+**With Git**
 
 ::: columns
 ::: {.column width="50%"}
-::: columns
-
-<iframe src="https://giphy.com/embed/2KAGlmkPywhZS" width="247" height="480" frameborder="0" allowfullscreen>
-
-</iframe>
-:::
-:::
-
-::: {.column width="50%"}
-
-::: columns
-##### Summary: nightmare 👹
-
--   Difficulty maintaining versions.
-
--   No clue which version contains what changes.
-:::
-:::
-:::
-
-## 👥 Using version control and Git
-
-::: columns
-::: {.column width="50%"}
-**With git:**
 
 ![](https://i.imgflip.com/a64www.jpg){width="700" style="max-height:unset;"}
 :::
@@ -532,14 +509,11 @@ Examples are: Windsurf, GitHub Copilot and Agentic development tools.
 
 -   Git keeps every change safe and rewindable.
 
-```{=html}
 <!-- -->
-```
+
 -   You can always fall back to a working version.
 :::
 :::
-
-##### 
 
 <details>
 
@@ -549,6 +523,30 @@ Examples are: Windsurf, GitHub Copilot and Agentic development tools.
 -   [What is Gitlab and how it may be a better choice than Github](https://www.incredibuild.com/blog/gitlab-vs-github-comparison)?⚖
 
 </details>
+
+## 👥 Using version control and Git
+
+**Without Git**
+
+::: columns
+::: {.column width="50%"}
+::: columns
+<iframe src="https://giphy.com/embed/2KAGlmkPywhZS" width="247" height="480" frameborder="0" allowfullscreen>
+
+</iframe>
+:::
+:::
+
+::: {.column width="50%"}
+::: columns
+##### Summary: nightmare 👹
+
+-   Difficulty maintaining versions.
+
+-   No clue which version contains what changes.
+:::
+:::
+:::
 
 ## Using `git diff`
 
@@ -612,12 +610,6 @@ The command `git diff` tells you exactly what changed in your code.
 :::
 
 ![](images/GPT5_specific_problem_1.png){height="30%"}
-
-## 
-
-![](images/GPT5_specific_problem_2.png){height="15%"}
-
-## 
 
 **2. 💡 Understanding code with it**
 
@@ -690,7 +682,7 @@ Look up specific packages that are able to accomplish your task before completel
 
 Examples:
 
-1.  [OpenAI whisper](https://github.com/openai/whisper)- *transcribes audio files  offline*
+1.  [OpenAI whisper](https://github.com/openai/whisper)- *transcribes audio files offline*
 
 2.  [textwash](https://github.com/ben-aaron188/textwash/tree/main) - *anonymize text offline*
 
