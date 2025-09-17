@@ -756,7 +756,9 @@ Find a workflow that balances *efficiency* and *sustainability* and that works f
 ## Pitfall 2 - Punching above your weight
 
 ::: {style="text-align:center"}
-![](images/dum_dum.png){width="600" style="max-height:unset;"}
+
+![](images/pitfall_2.png){width="600" style="max-height:unset;"}
+
 :::
 
 <details>
@@ -771,6 +773,13 @@ The sustainable route of using AI is to not have it write code that you could no
 We recommend that you only (fully) outsource tasks to AI that are basically trivial for you.
 :::
 
+</details>
+
+<details>
+<summary>Some tips for working on challenging problems using AI</summary>
+-   **[Learn before you lean](https://www.techradar.com/pro/the-genai-crutch-why-teams-must-learn-before-they-lean?utm_source=chatgpt.com)**: Understanding AI written code is the ***only*** way to write code with AI.
+
+-   **Documentation is your best friend.** Writing comments for your code (what it does and why you chose a certain strategy) is the safest way to make it maintainable.
 </details>
 
 ## Pitfall 3 - Context conundrums
@@ -825,26 +834,6 @@ Unfortunately, all the extra context is typically hidden from the user, at least
 
 ![](https://i.imgflip.com/a4v36z.jpg){width="500" style="max-height:unset;"}
 
-## Pitfall 5: Understand it or lose it
-
-![](images/pitfalls_documentation.png){width="1000"}
-
--   **Learn before you lean^1^**: Understanding AI written code is the ***only*** way to write code with AI.
-
--   **Documentation is your best friend.** Writing comments for your code (what it does and why you chose a certain strategy) is the safest way to make it maintainable.
-
-<iframe src="https://giphy.com/embed/KyGiMJokZEQvu" width="480" height="269" style frameBorder="0" class="giphy-embed" allowFullScreen>
-
-</iframe>
-
-<details>
-
-<summary>Sources</summary>
-
-1.  [The GenAI 'crutch': why teams must learn before they lean \| TechRadar](https://www.techradar.com/pro/the-genai-crutch-why-teams-must-learn-before-they-lean?utm_source=chatgpt.com)
-2.  [Risks of vibe coding](https://www.techradar.com/pro/from-vibe-to-viable-the-hidden-cost-of-ai-tech-debt?utm_source=chatgpt.com)
-
-</details>
 
 ## Questions? {.center style="text-align:center;"}
 
