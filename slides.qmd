@@ -279,7 +279,6 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 -   Ask for a battle plan
     -   Think in building blocks
     -   Assemble them yourself
--   Ask for advice
 -   Ask if you overlooked anything
 
 :::
