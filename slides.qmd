@@ -339,7 +339,6 @@ For longer, real‑life chats it’s often more useful to not think in prompts, 
 
 ## Questions? {.center style="text-align:center;"}
 
-
 # Applicable Guidelines and Regulations
 
 ## 🤖 What is AI, anyway?
@@ -499,31 +498,27 @@ Examples are: Windsurf, GitHub Copilot and Agentic development tools.
 
 ## Questions? {.center style="text-align:center;"}
 
-
 # Best Practices
 
-## 😵 Which model do I use? pt. 1
+## 😵 Which model do I use?
 
-Thankfully, we no longer need to navigate different models for our tasks, thanks to GPT5.
+::: columns
+::: {.column width="50%"}
+*How the UI looked before*
 
 ![](images/choice_of_models.png){height="50%"}
+:::
 
+::: {.column width="50%"}
 -   Different models for different tasks.
 
 -   4o series for writing/ planning.
 
 -   o3, o4 mini and o4 mini high for coding and logical reasoning.
+:::
+:::
 
-<details>
-
-<summary>More about this</summary>
-
--   For a coding task, try using the o4 mini models first, they are much faster than o3.
--   If you think the o4 models are not able to achieve your task, go with o3- it is a bigger reasoning model that can go more in-depth (at the cost of taking more time)
-
-</details>
-
-## 😵 Which model do I use? pt. 2
+## 😵 Which model do I use?
 
 ![](images/GPT5.png)
 
@@ -545,54 +540,82 @@ Thankfully, we no longer need to navigate different models for our tasks, thanks
 
 ## 👥 Using version control and Git
 
+Git is a version control system designed to track changes in your source code during software development.
+
+**With Git**
+
 ::: columns
 ::: {.column width="50%"}
-##### Without Git
 
-Summary: nightmare 👹 <iframe src="https://giphy.com/embed/2KAGlmkPywhZS"
-        width="247" height="480"
-        frameborder="0" allowfullscreen></iframe>
+![](https://i.imgflip.com/a64www.jpg){width="700" style="max-height:unset;"}
 :::
 
 ::: {.column width="50%"}
-##### With Git
+##### Summary: *struggle* but for the right reasons ⛹️‍♂️
 
--   Git keeps every change safe and rewindable
--   You can always fall back to a working version
+-   Git keeps every change safe and rewindable.
 
-<img src="images/version_control_2.jpeg" width="300"/>
+<!-- -->
+
+-   You can always fall back to a working version.
 :::
 :::
 
 <details>
 
-<summary>Learn more about what git is and how you can use it</summary>
+<summary>Learn more about git and how you can use it</summary>
 
 -   [A fantastic guide to using git and github](https://www.youtube.com/watch?v=RGOj5yH7evk&t=360s) 🍏
 -   [What is Gitlab and how it may be a better choice than Github](https://www.incredibuild.com/blog/gitlab-vs-github-comparison)?⚖
 
 </details>
 
+## 👥 Using version control and Git
+
+**Without Git**
+
+::: columns
+::: {.column width="50%"}
+::: columns
+<iframe src="https://giphy.com/embed/2KAGlmkPywhZS" width="247" height="480" frameborder="0" allowfullscreen>
+
+</iframe>
+:::
+:::
+
+::: {.column width="50%"}
+::: columns
+##### Summary: nightmare 👹
+
+-   Difficulty maintaining versions.
+
+-   No clue which version contains what changes.
+:::
+:::
+:::
+
 ## Using `git diff`
 
 The command `git diff` tells you exactly what changed in your code.
-
-::: callout-tip
-# Using `git add`
-
-Remember to use `git add <file_name>` **before** you use `git diff`. Git will only track changes for a file that is added to its system.
-:::
 
 ::: callout-warning
 # `git diff` and AI written code
 
 -   Using `git diff` is crucial when using ChatGPT to write code.
--   Even with a near-perfect prompting, tt can change parts of your code that you did not intend on changing which makes things messy even with version control.
+-   Even with a near-perfect prompting, ChatGPT can create completely unrelated changes in your code.
 :::
 
 ![](images/git_diff_1.png)
 
 ![](images/git_diff_2.png)
+
+<details>
+
+<summary>More on git diff</summary>
+
+-   [Datacamp article on git diff](https://www.datacamp.com/tutorial/git-diff-guide)
+
+</details>
 
 ## 🚫 How to (not) have it write code
 
@@ -620,9 +643,7 @@ Remember to use `git add <file_name>` **before** you use `git diff`. Git will on
 
 -   Takes longer overall (even if the start was quick)
 
-<iframe src="https://giphy.com/embed/Ty9Sg8oHghPWg" width="480" height="480" style frameBorder="0" class="giphy-embed" allowFullScreen>
-
-</iframe>
+![](https://i.imgflip.com/a64vaj.jpg){width="600" style="max-height:unset;"}
 
 ## ✅ How to have it write code
 
@@ -636,12 +657,6 @@ Remember to use `git add <file_name>` **before** you use `git diff`. Git will on
 
 ![](images/GPT5_specific_problem_1.png){height="30%"}
 
-## 
-
-![](images/GPT5_specific_problem_2.png){height="15%"}
-
-## 
-
 **2. 💡 Understanding code with it**
 
 -   Breaking down unfamiliar code
@@ -650,7 +665,7 @@ Remember to use `git add <file_name>` **before** you use `git diff`. Git will on
 
 ## 
 
--   Improving your own code base (pt1)
+-   Improving your own code base: general feedback
 
 ![](images/GPT5_understand_code_2.png)
 
@@ -658,19 +673,17 @@ Remember to use `git add <file_name>` **before** you use `git diff`. Git will on
 
 ## 
 
--   Improving your own code base (pt2) - *including use-case*
+-   Improving your own code base: with use-case
 
 ![](images/GPT5_understand_code_4.png){width="30%"}
 
 ## 📓 Takeaways for AI powered code reviews
 
--   ChatGPT generally has very high standards (looks into both major and very minor issues) - be mindful of its feedback and gauge what is most useful for you.
--   Giving more context into the use-case of your code will help it better tailor its response for you.
--   Don't give yourself a headache going too deep into its feedback, its important to know that responses will vary even if the same prompt is sent again. Keep re-reading the first point until you are convinced 🎈
+-   ChatGPT has very high standards (looks into both major and very minor issues) - take feedback with a grain of salt.
+-   More context of use-case: better suited responses
+-   Keep re-reading the first point until you are convinced 🎈
 
-<iframe src="https://giphy.com/embed/RleRfnqeBrr3uKIRog" width="480" height="271" style frameBorder="0" class="giphy-embed" allowFullScreen>
-
-</iframe>
+![](https://i.imgflip.com/a64urh.jpg){width="500" style="max-height:unset;"}
 
 ## 📏 Prompt engineering - verbosity
 
@@ -678,17 +691,17 @@ Remember to use `git add <file_name>` **before** you use `git diff`. Git will on
 
 ![](images/GPT5_prompt_engineering_1.png)
 
-## ...
+## 📏 Prompt engineering - verbosity
 
 ![](images/GPT5_prompt_engineering_2.png){width="500"}
 
-## 📏 Prompt engineering - clarity over concisensess
+## 📏 Prompt engineering - clarity over conciseness
 
 -   Asking to focus on clarity over conciseness
 
 ![](images/GPT5_prompt_engineering_3.png){width="500"}
 
-## ...
+## 📏 Prompt engineering - clarity over conciseness
 
 ![](images/GPT5_prompt_engineering_4.png){width="500"}
 
@@ -709,6 +722,18 @@ Remember to use `git add <file_name>` **before** you use `git diff`. Git will on
 
 </details>
 
+## 🙄 Do the right thing
+
+Look up specific packages that are able to accomplish your task before completely pinning it on ChatGPT. This is safer and can also be more accurate.
+
+Examples:
+
+1.  [OpenAI whisper](https://github.com/openai/whisper)- *transcribes audio files offline*
+
+2.  [textwash](https://github.com/ben-aaron188/textwash/tree/main) - *anonymize text offline*
+
+![](https://i.imgflip.com/a5je7z.jpg){width="500" style="max-height:unset;"}
+
 ## ☃️ When to take a break
 
 -   *Subtle* signs of frustration
@@ -727,7 +752,7 @@ Remember to use `git add <file_name>` **before** you use `git diff`. Git will on
 
 ::: columns
 ::: {.column width="60%"}
--   Collaboration turns into dependence - *your problem is still yours to solve;with or without it*
+-   Collaboration turns into dependence: ***your problem is still yours to solve; with or without it***
 :::
 
 ::: {.column width="40%"}
@@ -739,6 +764,8 @@ Remember to use `git add <file_name>` **before** you use `git diff`. Git will on
 
 ## 🏁 Using Projects
 
+![](images//Projects_callout.png){width="900" style="max-height:unset;"}
+
 ::: callout-tip
 ## Using Projects
 
@@ -748,10 +775,7 @@ I have found using projects to be a fantastic aid in managing my chats and using
 -   Better workflow for different projects with corresponding chats
 :::
 
-![](images/Projects_callout.png){width="834"}
-
 ## Questions? {.center style="text-align:center;"}
-
 
 # Pitfalls
 
@@ -778,7 +802,9 @@ Find a workflow that balances *efficiency* and *sustainability* and that works f
 ## 🥊 Pitfall 2 - Punching above your weight
 
 ::: {style="text-align:center"}
-![](images/dum_dum.png){width="600" style="max-height:unset;"}
+
+![](images/pitfall_2.png){width="600" style="max-height:unset;"}
+
 :::
 
 <details>
@@ -795,7 +821,16 @@ We recommend that you only (fully) outsource tasks to AI that are basically triv
 
 </details>
 
+<details>
+<summary>Some tips for working on challenging problems using AI</summary>
+-   **[Learn before you lean](https://www.techradar.com/pro/the-genai-crutch-why-teams-must-learn-before-they-lean?utm_source=chatgpt.com)**: Understanding AI written code is the ***only*** way to write code with AI.
+
+-   **Documentation is your best friend.** Writing comments for your code (what it does and why you chose a certain strategy) is the safest way to make it maintainable.
+</details>
+
+
 ## 🎛 Pitfall 3 - Context conundrums
+
 
 ::: columns
 ::: column
@@ -847,59 +882,8 @@ Unfortunately, all the extra context is typically hidden from the user, at least
 
 ![](https://i.imgflip.com/a4v36z.jpg){width="500" style="max-height:unset;"}
 
-## Pitfall 4a: Balancing privacy and efficiency
-
-Look up specific packages that are able to accomplish your task before completely pinning it on ChatGPT.
-
-![](https://i.imgflip.com/a5je7z.jpg){width="500" style="max-height:unset;"}
-
-## Pitfall 4b: Balancing privacy and efficiency
-
-Use-case: Researcher wants to find the distance between some addresses from collected data (potentially sensitive)
-
-Solutions:
-
-❌Feed all addresses into ChatGPT and ask it to compute the distances.
-
-✅ Use `geompy`, a python package that makes it very easy to locate the coordinates of addresses, cities, countries and landmarks across the globe.
-
-*Snapshot of the code*
-
-``` python
->>> from geopy.geocoders import Nominatim
->>> from geopy.distance import geodesic
->>> location1 = geolocator.geocode("175 5th Avenue NYC")
->>> location2 = geolocator.geocode("99 5th Avenue NYC")
->>> print(geodesic(location1, location2).miles)
-```
-
-## Pitfall 5: Understand it or lose it
-
-![](images/pitfalls_documentation.png){width="1000"}
-
--   **Learn before you lean^1^**: Understanding AI written code is the ***only*** way to write code with AI.
-
--   **Documentation is your best friend.** Writing comments for your code (what it does and why you chose a certain strategy) is the safest way to make it maintainable.
-
-
-<iframe 
-src="https://giphy.com/embed/KyGiMJokZEQvu" width="480" height="269" style frameBorder="0" class="giphy-embed" allowFullScreen>
-
-</iframe>
-
-
-
-<details>
-
-<summary>Sources</summary>
-
-1.  [The GenAI 'crutch': why teams must learn before they lean \| TechRadar](https://www.techradar.com/pro/the-genai-crutch-why-teams-must-learn-before-they-lean?utm_source=chatgpt.com)
-2.  [Risks of vibe coding](https://www.techradar.com/pro/from-vibe-to-viable-the-hidden-cost-of-ai-tech-debt?utm_source=chatgpt.com)
-
-</details>
 
 ## Questions? {.center style="text-align:center;"}
-
 
 ## References
 
