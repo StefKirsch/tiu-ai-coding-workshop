@@ -77,15 +77,16 @@ We want you to feel the vibes here, not surrender to them.
 ::: columns
 ::: column
 ### Tokens
-- Smalles chunk of text the model understands
+- Smallest unit of text for the model
 - Typically 3 - 4 characters
 - LLM = next token prediction
 :::
 ::: column
-### Prompts and Outputs = Context
-- Added to the end of the output
-- Model gets the signal to respond → Output
-- Model decides by itself when to stop
+### Prompt and Output Cycle 
+1. Prompt is added to the end of the conversation
+2. Model is signaled to respond → Output
+
+→ Prompts and Outputs = Context
 :::
 :::
 
