@@ -77,15 +77,18 @@ We want you to feel the vibes here, not surrender to them.
 ::: columns
 ::: column
 ### Tokens
-- Smalles chunk of text the model understands
-- Typically 3 - 4 characters
-- LLM = next token prediction
+
+-   Smalles chunk of text the model understands
+-   Typically 3 - 4 characters
+-   LLM = next token prediction
 :::
+
 ::: column
 ### Prompts and Outputs = Context
-- Added to the end of the output
-- Model gets the signal to respond -> Output
-- Model decides by itself when to stop
+
+-   Added to the end of the output
+-   Model gets the signal to respond -\> Output
+-   Model decides by itself when to stop
 :::
 :::
 
@@ -188,25 +191,21 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 
 ![](https://images.seeklogo.com/logo-png/50/1/chatgpt-logo-png_seeklogo-503286.png){width="20%"} ![](https://images.seeklogo.com/logo-png/61/1/microsoft-copilot-logo-png_seeklogo-619562.png){width="20%"} ![](https://images.seeklogo.com/logo-png/55/1/claude-logo-png_seeklogo-554540.png){width="20%"}
 
-
 ::: columns
 ::: column
-
 #### Pros ✅
 
-- Model choice
-- Iterate on prompts
-- Lots of control (including which data you enter -\> *GDPR compliance*)
-
+-   Model choice
+-   Iterate on prompts
+-   Lots of control (including which data you enter -\> *GDPR compliance*)
 :::
-::: column
 
+::: column
 #### Cons ❌
 
 -   Copy pasting
 -   No further automation
 -   Only aware of the context you give it
-
 :::
 :::
 
@@ -217,27 +216,24 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 -   Not really relevant for coding
 -   Want to learn more? See [Tilburg.ai](https://tilburg.ai/2024/12/openai-api-python-developer/)!
 
-
 ## 🔀 Ways of interacting with an LLM
 
 ### IDE plugins
 
 ::: columns
 ::: column
-
 #### Pros ✅
-  -   Automation
-  -   Context-aware of your codebase
-  -   Different modes of interaction (autocomplete, chat)
-    
+
+-   Automation
+-   Context-aware of your codebase
+-   Different modes of interaction (autocomplete, chat)
 :::
+
 ::: column
-
-
 #### Cons ❌
-  -   No control over what gets transmitted -\> critical for GDPR and IP
-  -   Can get expensive for API calls
 
+-   No control over what gets transmitted -\> critical for GDPR and IP
+-   Can get expensive for API calls
 :::
 :::
 
@@ -251,7 +247,6 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 -   Automatically calls API with prompts.
 
 ![](images/claude-code.png)
-
 
 ## 🔧 Prompt "engineering"
 
@@ -269,9 +264,8 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 
 ## 🔧 Prompt "engineering"
 
-:::columns
-:::column
-
+::: columns
+::: column
 ### 🤔 What to ask for
 
 -   Mindset: Ask for advice, not for solutions
@@ -281,10 +275,9 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
     -   Assemble them yourself
 -   Ask for advice
 -   Ask if you overlooked anything
-
 :::
-:::column
 
+::: column
 ### 💡 How to ask
 
 -   Tell it all it needs to know
@@ -293,16 +286,12 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 
 <summary>More info</summary>
 
-Remember: AI can't read your mind!
--   It doesn't know anything about you or your project
--   … and even if it does, it probably it doesn’t know what that means
--\> Talk to AI like to a new colleague that still needs a lot of onboarding. Tell it what it needs to know and how to make sense of it.
+Remember: AI can't read your mind! - It doesn't know anything about you or your project - … and even if it does, it probably it doesn’t know what that means -\> Talk to AI like to a new colleague that still needs a lot of onboarding. Tell it what it needs to know and how to make sense of it.
 
-</details>    
+</details>
 
 -   "How do I do xyz?" instead of "Do xyz for me."
 -   Be specific in your requirements (you can discuss them before with AI)
-
 :::
 :::
 
@@ -310,7 +299,6 @@ Remember: AI can't read your mind!
 ## Your role
 
 Product manager and quality assurance
-
 :::
 
 ## 🔧 Prompt "engineering"
@@ -540,18 +528,43 @@ Examples are: Windsurf, GitHub Copilot and Agentic development tools.
 
 ## 👥 Using version control and Git
 
+**Without Git**
+
+::: columns
+::: {.column width="50%"}
+::: columns
+<iframe src="https://giphy.com/embed/2KAGlmkPywhZS" width="247" height="480" frameborder="0" allowfullscreen>
+
+</iframe>
+:::
+:::
+
+::: {.column width="50%"}
+::: columns
+##### Nightmare 👹
+
+-   You don't know why your code works or why it doesn't.
+
+-   Difficulty maintaining versions.
+
+-   No clue which version contains what changes.
+:::
+:::
+:::
+
+## 👥 Using version control and Git
+
 Git is a version control system designed to track changes in your source code during software development.
 
 **With Git**
 
 ::: columns
 ::: {.column width="50%"}
-
 ![](https://i.imgflip.com/a64www.jpg){width="700" style="max-height:unset;"}
 :::
 
 ::: {.column width="50%"}
-##### Summary: *struggle* but for the right reasons ⛹️‍♂️
+##### *Struggle* but for the right reasons ⛹️‍♂️
 
 -   Git keeps every change safe and rewindable.
 
@@ -570,31 +583,7 @@ Git is a version control system designed to track changes in your source code du
 
 </details>
 
-## 👥 Using version control and Git
-
-**Without Git**
-
-::: columns
-::: {.column width="50%"}
-::: columns
-<iframe src="https://giphy.com/embed/2KAGlmkPywhZS" width="247" height="480" frameborder="0" allowfullscreen>
-
-</iframe>
-:::
-:::
-
-::: {.column width="50%"}
-::: columns
-##### Summary: nightmare 👹
-
--   Difficulty maintaining versions.
-
--   No clue which version contains what changes.
-:::
-:::
-:::
-
-## Using `git diff`
+## 🚦 Using `git diff`
 
 The command `git diff` tells you exactly what changed in your code.
 
@@ -619,25 +608,23 @@ The command `git diff` tells you exactly what changed in your code.
 
 ## 🚫 How to (not) have it write code
 
+![](images/GPT5_context_1.png)
+
 ::: callout-note
 ## 🏆 Golden Rule 1
 
-**It is your responsibility to have enough context into the problem. The lesser context you have, the less effective it might be in the long run.**
+**Having little to no expertise/context into a problem will not lead to a fruitful collaboration with AI.**
 :::
 
-![](images/GPT5_context_1.png)
+## 🚫 How to (not) have it write code: cycle of debugging
 
-## Thus began the cycle of debugging ChatGPTs code
-
--   Code provided doesn't run locally:
+-   Code provided doesn't run locally + features don't work:
 
 ![](images/GPT5_context_2.png)
 
--   Features that work in canvas fail in my machine:
-
 ![](images/GPT5_context_3.png)
 
-## End result of such workflows
+## 🚫 How to (not) have it write code: end results
 
 -   You end up debugging ChatGPTs code way more than you would like.
 
@@ -652,36 +639,37 @@ The command `git diff` tells you exactly what changed in your code.
 ::: callout-note
 ## 🏆 Golden Rule 2
 
-**Narrow and specific problems enable you to have more control and understanding of your own code and the AI generated code.**
+**Troubleshooting specific problems leads to meaningful conversations with AI.**
 :::
 
 ![](images/GPT5_specific_problem_1.png){height="30%"}
 
-**2. 💡 Understanding code with it**
+## ✅ How to have it write code
 
--   Breaking down unfamiliar code
+**2. 💡 Understanding code with it**
 
 ![](images/GPT5_understand_code_1.png)
 
-## 
+## ✅ How to have it write code
 
--   Improving your own code base: general feedback
+3.  Improving your own code base with general feedback
 
 ![](images/GPT5_understand_code_2.png)
 
--   A glimpse of the response: ![](images/GPT5_understand_code_3.png)
+-   response:
 
-## 
+![](images/GPT5_understand_code_3.png)
 
--   Improving your own code base: with use-case
+## ✅ How to have it write code
+
+3.  Improving your own code base with case-specific feedback
 
 ![](images/GPT5_understand_code_4.png){width="30%"}
 
-## 📓 Takeaways for AI powered code reviews
+## ✅ How to have it write code:  reminders
 
 -   ChatGPT has very high standards (looks into both major and very minor issues) - take feedback with a grain of salt.
 -   More context of use-case: better suited responses
--   Keep re-reading the first point until you are convinced 🎈
 
 ![](https://i.imgflip.com/a64urh.jpg){width="500" style="max-height:unset;"}
 
@@ -734,6 +722,19 @@ Examples:
 
 ![](https://i.imgflip.com/a5je7z.jpg){width="500" style="max-height:unset;"}
 
+## 🏁 Using Projects
+
+![](images//Projects_callout.png){width="900" style="max-height:unset;"}
+
+::: callout-tip
+## Using Projects
+
+I have found using projects to be a fantastic aid in managing my chats and using them mindfully.
+
+-   Add specific context or media that ChatGPT will keep in its memory for future chats.
+-   Better workflow for different projects with corresponding chats
+:::
+
 ## ☃️ When to take a break
 
 -   *Subtle* signs of frustration
@@ -756,23 +757,7 @@ Examples:
 :::
 
 ::: {.column width="40%"}
-<iframe src="https://giphy.com/embed/4foAPrZ3GVzWM" width="480" height="240" style frameBorder="0" class="giphy-embed" allowFullScreen>
-
-</iframe>
 :::
-:::
-
-## 🏁 Using Projects
-
-![](images//Projects_callout.png){width="900" style="max-height:unset;"}
-
-::: callout-tip
-## Using Projects
-
-I have found using projects to be a fantastic aid in managing my chats and using them mindfully.
-
--   Add specific context or media that ChatGPT will keep in its memory for future chats.
--   Better workflow for different projects with corresponding chats
 :::
 
 ## Questions? {.center style="text-align:center;"}
@@ -802,9 +787,7 @@ Find a workflow that balances *efficiency* and *sustainability* and that works f
 ## 🥊 Pitfall 2 - Punching above your weight
 
 ::: {style="text-align:center"}
-
-![](images/pitfall_2.png){width="600" style="max-height:unset;"}
-
+![](images/pitfall_2.png){width="900" style="max-height:unset;"}
 :::
 
 <details>
@@ -822,15 +805,16 @@ We recommend that you only (fully) outsource tasks to AI that are basically triv
 </details>
 
 <details>
+
 <summary>Some tips for working on challenging problems using AI</summary>
--   **[Learn before you lean](https://www.techradar.com/pro/the-genai-crutch-why-teams-must-learn-before-they-lean?utm_source=chatgpt.com)**: Understanding AI written code is the ***only*** way to write code with AI.
+
+-   [**Learn before you lean**](https://www.techradar.com/pro/the-genai-crutch-why-teams-must-learn-before-they-lean?utm_source=chatgpt.com): Understanding AI written code is the ***only*** way to write code with AI.
 
 -   **Documentation is your best friend.** Writing comments for your code (what it does and why you chose a certain strategy) is the safest way to make it maintainable.
+
 </details>
 
-
 ## 🎛 Pitfall 3 - Context conundrums
-
 
 ::: columns
 ::: column
@@ -844,9 +828,9 @@ The context in the example of ChatGPT
 
 -   Project context
 
--   ???
-
 -   Your prompts and the model's responses (the conversation)
+
+-   ....and more that isn't visible
 :::
 
 ::: column
@@ -881,7 +865,6 @@ Unfortunately, all the extra context is typically hidden from the user, at least
 </details>
 
 ![](https://i.imgflip.com/a4v36z.jpg){width="500" style="max-height:unset;"}
-
 
 ## Questions? {.center style="text-align:center;"}
 
