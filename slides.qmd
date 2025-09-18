@@ -192,7 +192,7 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 ::: columns
 ::: column
 
-#### Tops ✅
+#### Pros ✅
 
 - Model choice
 - Iterate on prompts
@@ -201,7 +201,7 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 :::
 ::: column
 
-#### Flops ❌
+#### Cons ❌
 
 -   Copy pasting
 -   No further automation
@@ -215,18 +215,17 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 ### (API)
 
 -   Not really relevant for coding
+-   Want to learn more? See [Tilburg.ai](https://tilburg.ai/2024/12/openai-api-python-developer/)!
 
 
 ## 🔀 Ways of interacting with an LLM
 
 ### IDE plugins
 
-![](https://images.seeklogo.com/logo-png/40/1/github-copilot-logo-png_seeklogo-407787.png){width="30%"} ![](https://analyticsindiamag.com/wp-content/uploads/2025/04/windsurf-featured-1300x731.png){width="45%"}
-
 ::: columns
 ::: column
 
-#### Tops ✅
+#### Pros ✅
   -   Automation
   -   Context-aware of your codebase
   -   Different modes of interaction (autocomplete, chat)
@@ -235,23 +234,23 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 ::: column
 
 
-#### Flops ❌
+#### Cons ❌
   -   No control over what gets transmitted -\> critical for GDPR and IP
   -   Can get expensive for API calls
 
 :::
 :::
 
+![](images/autocomplete.png){width="80%"}
 
 ## 🔀 Ways of interacting with an LLM
 
-### Agents
-
-![](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*clU4bA8DttJiyPnrRBVLWw.png){width="30%"}
-![](https://i.ytimg.com/vi/oB4JR98KRAA/mqdefault.jpg){fig-align="center"}
+### Agents (Vibe Coding)
 
 -   Goal + write access to your codebase
 -   Automatically calls API with prompts.
+
+![](images/claude-code.png)
 
 
 ## 🔧 Prompt "engineering"
@@ -278,9 +277,9 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 -   Mindset: Ask for advice, not for solutions
 -   Either very broad or very specific
 -   Ask for a battle plan
-    -   Think in building blocks afterwards
+    -   Think in building blocks
     -   Assemble them yourself
--   Ask advice on how to do it well
+-   Ask for advice
 -   Ask if you overlooked anything
 
 :::
@@ -301,7 +300,7 @@ Remember: AI can't read your mind!
 
 </details>    
 
--   "How do I xyz?" instead of "Do xyz for me."
+-   "How do I do xyz?" instead of "Do xyz for me."
 -   Be specific in your requirements (you can discuss them before with AI)
 
 :::
@@ -328,9 +327,9 @@ For longer, real‑life chats it’s often more useful to not think in prompts, 
 
 ## Typical tasks
 
--   I am using framework/package/context X. How do I do... (e.g. Jupyter notebook, R tidyverse)
+-   "I am using framework/package/context X. How do I do... (e.g. Jupyter notebook, R tidyverse)"
 
--   Research packages and frameworks that already do what you need (FAIR)
+-   Look for packages and frameworks that already do what you need (FAIR)
 
 -   Refactoring
 
@@ -343,7 +342,7 @@ For longer, real‑life chats it’s often more useful to not think in prompts, 
 
 # Applicable Guidelines and Regulations
 
-## 🤖 What is AI anyway
+## 🤖 What is AI, anyway?
 
 ![](https://media1.tenor.com/m/fHz7wfvakO8AAAAd/theyre-the-same-picture-the-office.gif){width="900" style="max-height:unset;"}
 
