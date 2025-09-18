@@ -460,7 +460,7 @@ NWO
 
 Journals
 
--   GenAI policies vary a lot, from ... to:
+-   GenAI policies vary a lot. E.g....
 
     -   No restriction on AI use at all
 
