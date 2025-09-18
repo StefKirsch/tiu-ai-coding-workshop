@@ -40,7 +40,7 @@ editor: visual
 
 -   LLMs and agents can do more and more complex tasks, see [Moore's Law for AI agents](https://theaidigest.org/time-horizons)
 -   Reliability issues remain (more on that later)
--   Crucial to **understand**, **tweak** and **test** the code
+-   Crucial to **understand**, **tweak** and **test** *your* code
 
 ## 📝 Writing Research Software with the help of AI
 
@@ -161,9 +161,10 @@ Reasoning models have the ability **and** have been specifically trained to prod
 ::: column
 ### Reasoning models
 
+-   Case-specific requests
+-   Web search, literature research 
+-   Exploration of areas that are new to you
 -   Whenever the standard LLM fails
--   Suggesting case-specific solutions
--   Web search, research, exploration on new concepts
 -   ...
 :::
 :::
@@ -176,18 +177,24 @@ Play around with different models in different cases and get a feeling for yours
 
 ## 🕴 What is an Agent then? {.incremental}
 
--   **Standard definition**: Something that has (1) **a goal** and (2) can take **actions in the real world**.
--   **Narrow definition**: A meta-LLM that can call other tools (including other LLMs), can access the command line and can write files.
+-   **Standard definition**: Something that has
+    1.   **a goal**
+    2.  can take **actions in the real world**
+-   **Narrow definition**: A meta-LLM that can 
+    1.  call other **tools** (Web search, Python, other LLMs)
+    2.  can access the command line and can write files
+    
+   → Allows autonomous workflows
 
 ::: callout-note
-Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in.
+Modern reasoning LLMs (e.g. ChatGPT 5 Thinking) have agentic capabilities built in.
 :::
 
 ## 🔀 Ways of interacting with an LLM
 
 ### Chatbot
 
-![](https://images.seeklogo.com/logo-png/50/1/chatgpt-logo-png_seeklogo-503286.png){width="20%"} ![](https://images.seeklogo.com/logo-png/61/1/microsoft-copilot-logo-png_seeklogo-619562.png){width="20%"} ![](https://images.seeklogo.com/logo-png/55/1/claude-logo-png_seeklogo-554540.png){width="20%"}
+![](https://images.seeklogo.com/logo-png/50/1/chatgpt-logo-png_seeklogo-503286.png){width="15%"} ![](https://images.seeklogo.com/logo-png/61/1/microsoft-copilot-logo-png_seeklogo-619562.png){width="15%"} ![](https://images.seeklogo.com/logo-png/55/1/claude-logo-png_seeklogo-554540.png){width="15%"}
 
 
 ::: columns
@@ -197,14 +204,15 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 
 - Model choice
 - Iterate on prompts
-- Lots of control (including which data you enter → *GDPR compliance*)
+- Lots of control (including which data you enter)\
+→ *GDPR compliance*
 
 :::
 ::: column
 
 #### Cons ❌
 
--   Copy pasting
+-   Copy-pasting
 -   No further automation
 -   Only aware of the context you give it
 
@@ -230,19 +238,20 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
   -   Automation
   -   Context-aware of your codebase
   -   Different modes of interaction (autocomplete, chat)
-    
+
 :::
 ::: column
 
 
 #### Cons ❌
-  -   No control over what gets transmitted → critical for GDPR and IP
+  -   No control over what gets transmitted\
+  → critical for GDPR and IP
   -   Can get expensive for API calls
 
 :::
 :::
 
-![](images/autocomplete.png){width="80%"}
+![](images/autocomplete.png){width="80%",fig-align="center"}
 
 ## 🔀 Ways of interacting with an LLM
 
@@ -251,7 +260,7 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 -   Goal + write access to your codebase
 -   Automatically calls API with prompts.
 
-![](images/claude-code.png)
+![](images/claude-code.png){fig-align="center"}
 
 
 ## 🔧 Prompt "engineering"
