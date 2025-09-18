@@ -40,7 +40,7 @@ editor: visual
 
 -   LLMs and agents can do more and more complex tasks, see [Moore's Law for AI agents](https://theaidigest.org/time-horizons)
 -   Reliability issues remain (more on that later)
--   Crucial to **understand**, **tweak** and **test** the code
+-   Crucial to **understand**, **tweak** and **test** *your* code
 
 ## 📝 Writing Research Software with the help of AI
 
@@ -78,17 +78,19 @@ We want you to feel the vibes here, not surrender to them.
 ::: column
 ### Tokens
 
--   Smalles chunk of text the model understands
--   Typically 3 - 4 characters
--   LLM = next token prediction
+-    Smallest unit of text for the model
+-    Typically 3 - 4 characters
+-    LLM = next token prediction
 :::
 
 ::: column
-### Prompts and Outputs = Context
 
--   Added to the end of the output
--   Model gets the signal to respond -\> Output
--   Model decides by itself when to stop
+### Prompt and Output Cycle 
+1. Prompt is added to the end of the conversation
+2. Model is signaled to respond → Output
+
+→ Prompts and Outputs = Context
+
 :::
 :::
 
@@ -163,9 +165,10 @@ Reasoning models have the ability **and** have been specifically trained to prod
 ::: column
 ### Reasoning models
 
+-   Case-specific requests
+-   Web search, literature research 
+-   Exploration of areas that are new to you
 -   Whenever the standard LLM fails
--   Suggesting case-specific solutions
--   Web search, research, exploration on new concepts
 -   ...
 :::
 :::
@@ -178,32 +181,39 @@ Play around with different models in different cases and get a feeling for yours
 
 ## 🕴 What is an Agent then? {.incremental}
 
--   **Standard definition**: Something that has (1) **a goal** and (2) can take **actions in the real world**.
--   **Narrow definition**: A meta-LLM that can call other tools (including other LLMs), can access the command line and can write files.
+-   **Standard definition**: Something that has
+    1.   **a goal**
+    2.  can take **actions in the real world**
+-   **Narrow definition**: A meta-LLM that can 
+    1.  call other **tools** (Web search, Python, other LLMs)
+    2.  can access the command line and can write files
+    
+   → Allows autonomous workflows
 
 ::: callout-note
-Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in.
+Modern reasoning LLMs (e.g. ChatGPT 5 Thinking) have agentic capabilities built in.
 :::
 
 ## 🔀 Ways of interacting with an LLM
 
 ### Chatbot
 
-![](https://images.seeklogo.com/logo-png/50/1/chatgpt-logo-png_seeklogo-503286.png){width="20%"} ![](https://images.seeklogo.com/logo-png/61/1/microsoft-copilot-logo-png_seeklogo-619562.png){width="20%"} ![](https://images.seeklogo.com/logo-png/55/1/claude-logo-png_seeklogo-554540.png){width="20%"}
+![](https://images.seeklogo.com/logo-png/50/1/chatgpt-logo-png_seeklogo-503286.png){width="15%"} ![](https://images.seeklogo.com/logo-png/61/1/microsoft-copilot-logo-png_seeklogo-619562.png){width="15%"} ![](https://images.seeklogo.com/logo-png/55/1/claude-logo-png_seeklogo-554540.png){width="15%"}
 
 ::: columns
 ::: column
 #### Pros ✅
 
--   Model choice
--   Iterate on prompts
--   Lots of control (including which data you enter -\> *GDPR compliance*)
+- Model choice
+- Iterate on prompts
+- Lots of control (including which data you enter)\
+→ *GDPR compliance*
 :::
 
 ::: column
 #### Cons ❌
 
--   Copy pasting
+-   Copy-pasting
 -   No further automation
 -   Only aware of the context you give it
 :::
@@ -223,21 +233,20 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 ::: columns
 ::: column
 #### Pros ✅
-
--   Automation
--   Context-aware of your codebase
--   Different modes of interaction (autocomplete, chat)
+  -   Automation
+  -   Context-aware of your codebase
+  -   Different modes of interaction (autocomplete, chat)
 :::
 
 ::: column
 #### Cons ❌
-
--   No control over what gets transmitted -\> critical for GDPR and IP
--   Can get expensive for API calls
+  -   No control over what gets transmitted\
+  → critical for GDPR and IP
+  -   Can get expensive for API calls
 :::
 :::
 
-![](images/autocomplete.png){width="80%"}
+![](images/autocomplete.png){width="80%",fig-align="center"}
 
 ## 🔀 Ways of interacting with an LLM
 
@@ -246,7 +255,7 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 -   Goal + write access to your codebase
 -   Automatically calls API with prompts.
 
-![](images/claude-code.png)
+![](images/claude-code.png){fig-align="center"}
 
 ## 🔧 Prompt "engineering"
 
@@ -273,7 +282,6 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 -   Ask for a battle plan
     -   Think in building blocks
     -   Assemble them yourself
--   Ask for advice
 -   Ask if you overlooked anything
 :::
 
@@ -286,7 +294,10 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 
 <summary>More info</summary>
 
-Remember: AI can't read your mind! - It doesn't know anything about you or your project - … and even if it does, it probably it doesn’t know what that means -\> Talk to AI like to a new colleague that still needs a lot of onboarding. Tell it what it needs to know and how to make sense of it.
+Remember: AI can't read your mind!
+-   It doesn't know anything about you or your project
+-   … and even if it does, it probably it doesn’t know what that means
+→ Talk to AI like to a new colleague that still needs a lot of onboarding. Tell it what it needs to know and how to make sense of it.
 
 </details>
 
@@ -446,24 +457,22 @@ NWO
 
 -   Generative AI allowed for applicants
 
-Journals
+Journals: GenAI policies vary a lot. E.g....
 
--   GenAI policies vary a lot, from ... to:
+-   No restriction on AI use at all
 
-    -   No restriction on AI use at all
+-   Required statement on AI use
 
-    -   Require statement on AI use
-
-    -   Exact list of AI models and prompts as soon as it touches data *or* when used to develop code and the analysis methods
-
--   Most journals don't have explicit policy around AI-assisted creation of code and analyses.
+-   Exact list of AI models *and* prompts 
+    -   as soon as it touches data *or* 
+    -   when used to develop code and the analysis methods
+    
+## 📚 Rules of funders and journals
 
 ::: callout-tip
 ## Our Recommendation
 
 -   Stick to the most strict guidelines of relevant funders & journals in your field
-
--   For each funder and journal, check what they mean by 'AI'.
 
 -   Don't bootstrap your own way of doing things. Look up best practices and ask for advice!
 :::
@@ -473,15 +482,19 @@ Journals
 ::: callout-important
 ## GDPR also applies to publicly available data
 
-The GDPR makes no distinction between publicly available and non-publicly available data. That means that personal data, even if found online, should not be entered into cloud-based (AI) systems.
+The GDPR makes no distinction between *publicly available* and *non-publicly available* data. 
+
+Even if found online, personal data should not be entered into cloud-based (AI) systems.
 :::
 
 ::: callout-important
 ## Data transfer via automated systems
 
-Be careful with tools that interact with an API by themselves and where you can't inspect and approve the prompts yourself. They might transfer sensitive data from your working directory without your knowledge.
+Beware of tools where you can't inspect and approve the prompts and input yourself.
 
-Examples are: Windsurf, GitHub Copilot and Agentic development tools.
+They might transfer *sensitive data* without your knowledge.
+
+Examples are: Windsurf, GitHub Copilot, Claude Code, Cursor and other Agentic development tools.
 :::
 
 ## Questions? {.center style="text-align:center;"}
