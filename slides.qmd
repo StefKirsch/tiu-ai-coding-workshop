@@ -42,7 +42,7 @@ editor: visual
 -   Reliability issues remain (more on that later)
 -   Crucial to **understand**, **tweak** and **test** the code
 
-## 📝 Some quick definitions
+## 📝 Writing Research Software with the help of AI
 
 <details>
 
@@ -72,29 +72,22 @@ We want you to feel the vibes here, not surrender to them.
 
 </iframe>
 
-<details>
+## 🤖 The inner workings of LLMs
 
-<summary>Tokens</summary>
-
-A **token** is the model’s smallest chunk of text—typically 3 – 4 characters. "All" LLMs do is predict the most likely token to come next.
-
-</details>
-
-<details>
-
-<summary>*Prompt* and *Output*</summary>
-
-The **prompt** is what you add to the context to create the next piece of output. The **output** (completion) is the model’s response generated from that prompt.
-
-</details>
-
-<details>
-
-<summary>Context</summary>
-
-For longer, real‑life chats it’s often more useful to not think in prompts, but in the full **context**. The context is the full window of tokens the model can “see”, i.e. the chat history plus anything else the LLM provider adds to the context. LLMs have a limited context size, which means they will at some point "forget" what they saw earlier in the conversation.
-
-</details>
+::: columns
+::: column
+### Tokens
+- Smalles chunk of text the model understands
+- Typically 3 - 4 characters
+- LLM = next token prediction
+:::
+::: column
+### Prompts and Outputs = Context
+- Added to the end of the output
+- Model gets the signal to respond -> Output
+- Model decides by itself when to stop
+:::
+:::
 
 ## 🤔 Plain LLM VS Reasoning Models
 
@@ -254,8 +247,8 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 
 ### Agents
 
-![](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*clU4bA8DttJiyPnrRBVLWw.png){width="30%"} 
-![](https://i.ytimg.com/vi/oB4JR98KRAA/mqdefault.jpg){width="30%"}
+![](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*clU4bA8DttJiyPnrRBVLWw.png){width="30%"}
+![](https://i.ytimg.com/vi/oB4JR98KRAA/mqdefault.jpg){fig-align="center"}
 
 -   Goal + write access to your codebase
 -   Automatically calls API with prompts.
@@ -263,7 +256,7 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 
 ## 🔧 Prompt "engineering"
 
-A little overhyped...
+Maybe a little overhyped...
 
 <details>
 
@@ -274,6 +267,8 @@ A little overhyped...
 For day-to-day use and especially AI-assisted coding, you typically don't need to overthink (engineer) your prompts as long as you keep in mind a couple of things.
 
 </details>
+
+## 🔧 Prompt "engineering"
 
 :::columns
 :::column
@@ -312,8 +307,6 @@ Remember: AI can't read your mind!
 :::
 :::
 
-## 🔧 Prompt "engineering"
-
 ::: callout-tip
 ## Your role
 
@@ -321,6 +314,17 @@ Product manager and quality assurance
 
 :::
 
+## 🔧 Prompt "engineering"
+
+<details>
+
+<summary>The Prompt VS the Context</summary>
+
+For longer, real‑life chats it’s often more useful to not think in prompts, but in the full **context**. The context is the full window of tokens the model can “see”, i.e. the chat history plus anything else the LLM provider adds to the context. LLMs have a limited context size, which means they will at some point "forget" what they saw earlier in the conversation.
+
+</details>
+
+![](https://i.imgflip.com/a5wktc.jpg){fig-align="center"}
 
 ## Typical tasks
 
