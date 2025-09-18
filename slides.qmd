@@ -84,7 +84,7 @@ We want you to feel the vibes here, not surrender to them.
 ::: column
 ### Prompts and Outputs = Context
 - Added to the end of the output
-- Model gets the signal to respond -> Output
+- Model gets the signal to respond → Output
 - Model decides by itself when to stop
 :::
 :::
@@ -196,7 +196,7 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 
 - Model choice
 - Iterate on prompts
-- Lots of control (including which data you enter -\> *GDPR compliance*)
+- Lots of control (including which data you enter → *GDPR compliance*)
 
 :::
 ::: column
@@ -235,7 +235,7 @@ Modern reasoning LLMs (e.g. o3 and o4 series) have agentic capabilities built in
 
 
 #### Cons ❌
-  -   No control over what gets transmitted -\> critical for GDPR and IP
+  -   No control over what gets transmitted → critical for GDPR and IP
   -   Can get expensive for API calls
 
 :::
@@ -296,7 +296,7 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 Remember: AI can't read your mind!
 -   It doesn't know anything about you or your project
 -   … and even if it does, it probably it doesn’t know what that means
--\> Talk to AI like to a new colleague that still needs a lot of onboarding. Tell it what it needs to know and how to make sense of it.
+→ Talk to AI like to a new colleague that still needs a lot of onboarding. Tell it what it needs to know and how to make sense of it.
 
 </details>    
 
