@@ -883,4 +883,54 @@ Unfortunately, all the extra context is typically hidden from the user, at least
 
 ![](https://i.imgflip.com/a4v36z.jpg){width="500" style="max-height:unset;"}
 
+# Next steps
+
+## Presentation Materials
+::: columns
+::: column
+![](images/qr_slides.png){width="80%"}
+:::
+::: column
+<details>
+
+<summary>Want to learn more?</summary>
+
+We added expandable sections like this one throughout the presentation. Here, you can find extra information and references for further reading and learning.
+
+</details>
+:::
+:::
+
+## Upcoming Events
+
+### The Coding Café
+
+Next session: October 23rd
+
+::: columns
+::: column
+![](images/qr_coding_cafe.png){width="80%"}
+:::
+::: column
+
+![](https://code-cafes-nl.github.io/cafe_playbook/images/tiu-cafe.jpg)
+:::
+:::
+
+
+## Upcoming Events
+
+### Open Science Game Nights - Data Horror Edition 🎃
+
+October 30th
+
+::: columns
+::: column
+![](images/qr_game_night.png){width="65%"}
+:::
+::: column
+![](https://dkou0skpxpnwz.cloudfront.net/accounts/173684/images/GHOST_games__1_.jpg){width="80%"}
+:::
+:::
+
 ## Questions? {.center style="text-align:center;"}
