@@ -888,7 +888,7 @@ Unfortunately, all the extra context is typically hidden from the user, at least
 ## Presentation Materials
 ::: columns
 ::: column
-![](images/qr_slides.png)
+![](images/qr_slides.png){width="80%"}
 :::
 ::: column
 <details>
@@ -905,11 +905,14 @@ We added expandable sections like this one throughout the presentation. Here, yo
 
 ### The Coding Café
 
+Next session: October 23rd
+
 ::: columns
 ::: column
-![](images/qr_coding_cafe.png)
+![](images/qr_coding_cafe.png){width="80%"}
 :::
 ::: column
+
 ![](https://code-cafes-nl.github.io/cafe_playbook/images/tiu-cafe.jpg)
 :::
 :::
@@ -919,12 +922,14 @@ We added expandable sections like this one throughout the presentation. Here, yo
 
 ### Open Science Game Nights - Data Horror Edition 🎃
 
+October 30th
+
 ::: columns
 ::: column
-![](images/qr_game_night.png)
+![](images/qr_game_night.png){width="65%"}
 :::
 ::: column
-![](https://dkou0skpxpnwz.cloudfront.net/accounts/173684/images/GHOST_games__1_.jpg)
+![](https://dkou0skpxpnwz.cloudfront.net/accounts/173684/images/GHOST_games__1_.jpg){width="80%"}
 :::
 :::
 
