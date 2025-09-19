@@ -12,6 +12,7 @@ format:
     smaller: true               # global smaller font size
     scrollable: true
 bibliography: references.bib
+suppress-bibliography: true
 editor: visual
 ---
 
@@ -48,7 +49,7 @@ editor: visual
 
 <summary>*Software in Research* VS *Research Software*</summary>
 
-This is a very important distinction! Here is the definition by @gruenpeter_2021_5504016, that summarizes the results of the FAIR4RS working group:
+This is a very important distinction! Here is the definition by [@gruenpeter_2021_5504016](https://zenodo.org/records/5504016), that summarizes the results of the FAIR4RS working group:
 
 > “**Research Software** includes **source code files, algorithms, scripts, computational workflows and executables** that were **created during the research process** or **for a research purpose**.
 >
@@ -349,6 +350,8 @@ For longer, real‑life chats it’s often more useful to not think in prompts, 
 <summary>The EU AI Act has a very broad definition</summary>
 
 > ‘AI system’ means a machine-based system that is designed to operate with varying levels of autonomy and that may exhibit adaptiveness after deployment, and that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments;
+
+\- [@eu_ai_act_2024_art_3](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 </details>
 
@@ -880,8 +883,3 @@ Unfortunately, all the extra context is typically hidden from the user, at least
 ![](https://i.imgflip.com/a4v36z.jpg){width="500" style="max-height:unset;"}
 
 ## Questions? {.center style="text-align:center;"}
-
-## References
-
-::: {#refs}
-:::
