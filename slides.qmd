@@ -13,6 +13,7 @@ format:
     scrollable: true
 bibliography: references.bib
 suppress-bibliography: true
+output-file: index
 editor: visual
 ---
 
