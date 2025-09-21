@@ -29,14 +29,6 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: "1.8.24"
-          
-      - name: Set up Node (for Sass)
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Compile SCSS → CSS
-        run: npx --yes sass styles-overrides.scss styles-overrides.css
 
       - name: Render Quarto
         run: |
