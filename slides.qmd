@@ -6,7 +6,6 @@ format:
     css:  styles-overrides.scss  
     slide-number: true
     progress: true
-    toc: true
     toc-depth: 1
     incremental: false
     smaller: true               # global smaller font size
@@ -19,7 +18,99 @@ editor: visual
 
 # Introduction and basics
 
-## 🧠 LLMs in a nutshell {.center}
+## 🤖 Using AI to produce software
+
+### ✨ Why is AI so good at Coding?
+
+-   Lots of **code** and **documentation** online
+-   Relatively clear rules
+-   ... but it is truly amazing
+
+### 🦾 How well is AI actually doing?
+
+-   LLMs can do more and more complex tasks, see [Moore's Law for AI agents](https://theaidigest.org/time-horizons)
+-   Reliability issues remain (more on that later)\
+→ Crucial to **understand**, **tweak** and **test** *your* code
+
+## 📝 The two paradigms of AI Coding
+
+::: columns
+::: column
+
+**AI-assisted Coding**
+
+-   AI makes suggestions
+-   User takes all decisions 
+
+**Vibe Coding**
+
+-   User specifies the requirements
+-   AI *agent* produces and takes decisions
+
+<details>
+
+<summary>*More info*</summary>
+
+**AI‑assisted coding** means using the AI as an assistant that helps you plan, write and understand code. You are still in the driver seat and have to make all important decisions. This is good, because it makes it easier (but not inevitable) that you understand what you actually produce.
+
+**Vibe Coding** goes further and delegates basically all decision-making to the AI. This can of course be very powerful, but it is basically impossible to understand what the code actually does and it can make it very challenging to fix bugs later on. Most importantly, it increases the risk of oversights that could then go completely unnoticed.
+
+</details>
+
+:::
+::: column
+<iframe src="https://giphy.com/embed/yIh6EVwpd2VJ6NbNNY" width="480" height="269" frameborder="0" class="giphy-embed" allowfullscreen>
+
+</iframe>
+:::
+:::
+
+::: callout-note
+## Find a good balance
+
+We want you to feel the vibes here, not surrender to them.
+
+:::
+
+## Research Software Management
+
+::: columns
+::: column
+Writing code is just the first step!
+
+Make it FAIR with the help of good <details>
+
+<summary>Research Software Management.</summary>
+
+When working with digital methods in research, you will encounter two types of software: Research Software and Software *in* Reseearch.
+
+[@gruenpeter_2021_5504016](https://zenodo.org/records/5504016) came up with the following distinction in the FAIR4RS working group:
+
+> “**Research Software** includes **source code files, algorithms, scripts, computational workflows and executables** that were **created during the research process** or **for a research purpose**.
+>
+> Software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc.) that are used **for research** but were **not created during or with a clear research intent** should be considered **software in research** and not Research Software.”
+
+Both require Software Management and ideally a plan on how to do it. You can read more on the topic [here](https://zenodo.org/records/7589725#.Y-OMgHbMI2w).
+
+</details>
+
+-   Version Control
+-   Dependency Management
+-   Add a [license](https://choosealicense.com/)
+-   Make sure it's reproducible\
+→ Trustworthiness of your code
+
+
+Here is an [example project](https://github.com/StefKirsch/amazing_github_research_repo).
+
+:::
+
+::: column
+![Martinez-Ortiz, C., Martinez Lavanchy, P., Sesink, L., Olivier, B. G., Meakin, J., de Jong, M., & Cruz, M. (2023). Practical guide to Software Management Plans (1.1). Zenodo. https://doi.org/10.5281/zenodo.7589725](images/smp.png){width="80%"}
+:::
+:::
+
+## 🧠 Large Language Models (LLMs) in a nutshell {.center}
 
 ```{=html}
 <iframe 
@@ -32,47 +123,6 @@ editor: visual
   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
 ```
-## ✨ Why are LLMs so good at coding?
-
--   Lots of **code** and **documentation** online
--   Relatively clear rules
--   ... but it is truly amazing.
-
-## 🦾 How well are LLMs doing right now?
-
--   LLMs and agents can do more and more complex tasks, see [Moore's Law for AI agents](https://theaidigest.org/time-horizons)
--   Reliability issues remain (more on that later)
--   Crucial to **understand**, **tweak** and **test** *your* code
-
-## 📝 Writing Research Software with the help of AI
-
-<details>
-
-<summary>*Software in Research* VS *Research Software*</summary>
-
-This is a very important distinction! Here is the definition by [\@gruenpeter_2021_5504016](https://zenodo.org/records/5504016), that summarizes the results of the FAIR4RS working group:
-
-> “**Research Software** includes **source code files, algorithms, scripts, computational workflows and executables** that were **created during the research process** or **for a research purpose**.
->
-> Software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc) that are used **for research** but were **not created during or with a clear research intent** should be considered **software in research** and not Research Software.”
-
-</details>
-
-<details>
-
-<summary>*AI‑assisted Coding* VS *Vibe Coding*</summary>
-
-We want you to feel the vibes here, not surrender to them.
-
-**AI‑assisted coding** means using the AI as an assistant that helps you plan, write and understand code. You are still in the driver seat and have to make all important decisions. This is good, because it makes it easier (but not inevitable) that you understand what you actually produce.
-
-**Vibe Coding** goes further and delegates basically all decision-making to the AI. This can of course be very powerful, but it is basically impossible to understand what the code actually does and it can make it very challenging to fix bugs later on. Most importantly, it increases the risk of oversights that could then go completely unnoticed.
-
-</details>
-
-<iframe src="https://giphy.com/embed/yIh6EVwpd2VJ6NbNNY" width="480" height="269" frameborder="0" class="giphy-embed" allowfullscreen>
-
-</iframe>
 
 ## 🤖 The inner workings of LLMs
 
@@ -195,7 +245,7 @@ Play around with different models in different cases and get a feeling for yours
 Modern reasoning LLMs (e.g. ChatGPT 5 Thinking) have agentic capabilities built in.
 :::
 
-## 🔀 Ways of interacting with an LLM
+## 🔀 Ways of coding with an LLM
 
 ### Chatbot
 
@@ -205,10 +255,11 @@ Modern reasoning LLMs (e.g. ChatGPT 5 Thinking) have agentic capabilities built 
 ::: column
 #### Pros ✅
 
--   Model choice
--   Iterate on prompts
--   Lots of control (including which data you enter)\
-    → *GDPR compliance*
+- Model choice
+- Iterate on prompts
+- Lots of control (including which\
+data you enter)\
+→ *GDPR compliance*
 :::
 
 ::: column
@@ -220,14 +271,7 @@ Modern reasoning LLMs (e.g. ChatGPT 5 Thinking) have agentic capabilities built 
 :::
 :::
 
-## 🔀 Ways of interacting with an LLM
-
-### (API)
-
--   Not really relevant for coding
--   Want to learn more? See [Tilburg.ai](https://tilburg.ai/2024/12/openai-api-python-developer/)!
-
-## 🔀 Ways of interacting with an LLM
+## 🔀 Ways of coding with an LLM
 
 ### IDE plugins
 
@@ -249,9 +293,9 @@ Modern reasoning LLMs (e.g. ChatGPT 5 Thinking) have agentic capabilities built 
 :::
 :::
 
-![](images/autocomplete.png){width="80%",fig-align="center"}
+![](images/autocomplete.png){width="80%" fig-align="center"}
 
-## 🔀 Ways of interacting with an LLM
+## 🔀 Ways of coding with an LLM
 
 ### Agents (Vibe Coding)
 
@@ -285,7 +329,6 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 -   Ask for a battle plan
     -   Think in building blocks
     -   Assemble them yourself
--   Ask if you overlooked anything
 :::
 
 ::: column
@@ -324,35 +367,9 @@ For longer, real‑life chats it’s often more useful to not think in prompts, 
 
 ![](https://i.imgflip.com/a5wktc.jpg){fig-align="center"}
 
-## Typical tasks
-
--   "I am using framework/package/context X. How do I do... (e.g. Jupyter notebook, R tidyverse)"
-
--   Look for packages and frameworks that already do what you need (FAIR)
-
--   Refactoring
-
--   Generate synthetic data
-
--   Feedback on existing code (context & style becomes super important here to not get lost on a tangent)
-
 ## Questions? {.center style="text-align:center;"}
 
 # Applicable Guidelines and Regulations
-
-## 🤖 What is AI, anyway?
-
-![](https://media1.tenor.com/m/fHz7wfvakO8AAAAd/theyre-the-same-picture-the-office.gif){width="900" style="max-height:unset;"}
-
-<details>
-
-<summary>The EU AI Act has a very broad definition</summary>
-
-> ‘AI system’ means a machine-based system that is designed to operate with varying levels of autonomy and that may exhibit adaptiveness after deployment, and that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments;
-
-\- [\@eu_ai_act_2024_art_3](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
-
-</details>
 
 ## 🚨 Why is AI use potentially problematic?
 
@@ -360,7 +377,7 @@ For longer, real‑life chats it’s often more useful to not think in prompts, 
 ::: column
 ### 🔒 Information, knowledge and data safety
 
--   Computationally heavy → Need to run in the cloud
+-   Need to run in the cloud
 -   Not European
 -   New
 
@@ -387,13 +404,6 @@ All data protection considerations have to be made regardless of the fact whethe
 :::
 :::
 
-## 💡 Guiding Principles
-
--   Adherence to local guidelines and checklists
--   Compliance with national and EU legislation
--   Research integrity and clear end responsibility
--   Rules of funders and journals
-
 ## 🎓 University guidelines
 
 General
@@ -414,16 +424,10 @@ In practice, it can be quite challenging to be and stay up to date with the late
 
 </details>
 
-::: callout-tip
-## Ask for advice
-
-Talk to your school's information manager, data steward or the central Research Data Office for support.
-:::
-
 ## ⚖ National and EU law
 
 -   GDPR
--   Intellectual property rights (for text, data and software)
+-   Intellectual property rights
 -   EU AI Act
 
 ## 🎓 Research integrity
@@ -487,7 +491,7 @@ Journals: GenAI policies vary a lot. E.g....
 
 The GDPR makes no distinction between *publicly available* and *non-publicly available* data.
 
-Even if found online, personal data should not be entered into cloud-based (AI) systems.
+E.g. Social Media, Websites etc.
 :::
 
 ::: callout-important
@@ -495,9 +499,23 @@ Even if found online, personal data should not be entered into cloud-based (AI) 
 
 Beware of tools where you can't inspect and approve the prompts and input yourself.
 
-They might transfer *sensitive data* without your knowledge.
+They might transfer *sensitive data* without your knowledge!
 
-Examples are: Windsurf, GitHub Copilot, Claude Code, Cursor and other Agentic development tools.
+Examples are: IDE plugins and Vibe-Coding tools.
+:::
+
+## 💡 Summary
+
+-   Local guidelines and checklists
+-   Compliance with national and EU legislation
+-   Research integrity and clear end responsibility
+-   Rules of funders and journals
+-   Avoid compliance slips
+
+::: callout-tip
+## Ask for advice!
+
+Talk to your school's Information Manager, Data Stewards or the central Research Data Office for [support](https://engine.surfconext.nl/authentication/sp/consume-assertion).
 :::
 
 ## Questions? {.center style="text-align:center;"}
