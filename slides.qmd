@@ -130,19 +130,18 @@ Here is an [example project](https://github.com/StefKirsch/amazing_github_resear
 ::: column
 ### Tokens
 
--    Smallest unit of text for the model
--    Typically 3 - 4 characters
--    LLM = next token prediction
+-   Smallest unit of text for the model
+-   Typically 3 - 4 characters
+-   LLM = next token prediction
 :::
 
 ::: column
+### Prompt and Output Cycle
 
-### Prompt and Output Cycle 
-1. Prompt is added to the end of the conversation
-2. Model is signaled to respond → Output
+1.  Prompt is added to the end of the conversation
+2.  Model is signaled to respond → Output
 
 → Prompts and Outputs = Context
-
 :::
 :::
 
@@ -218,7 +217,7 @@ Reasoning models have the ability **and** have been specifically trained to prod
 ### Reasoning models
 
 -   Case-specific requests
--   Web search, literature research 
+-   Web search, literature research
 -   Exploration of areas that are new to you
 -   Whenever the standard LLM fails
 -   ...
@@ -234,13 +233,13 @@ Play around with different models in different cases and get a feeling for yours
 ## 🕴 What is an Agent then? {.incremental}
 
 -   **Standard definition**: Something that has
-    1.   **a goal**
+    1.  **a goal**
     2.  can take **actions in the real world**
--   **Narrow definition**: A meta-LLM that can 
+-   **Narrow definition**: A meta-LLM that can
     1.  call other **tools** (Web search, Python, other LLMs)
     2.  can access the command line and can write files
-    
-   → Allows autonomous workflows
+
+→ Allows autonomous workflows
 
 ::: callout-note
 Modern reasoning LLMs (e.g. ChatGPT 5 Thinking) have agentic capabilities built in.
@@ -279,16 +278,18 @@ data you enter)\
 ::: columns
 ::: column
 #### Pros ✅
-  -   Automation
-  -   Context-aware of your codebase
-  -   Different modes of interaction (autocomplete, chat)
+
+-   Automation
+-   Context-aware of your codebase
+-   Different modes of interaction (autocomplete, chat)
 :::
 
 ::: column
 #### Cons ❌
-  -   No control over what gets transmitted\
-  → critical for GDPR and IP
-  -   Can get expensive for API calls
+
+-   No control over what gets transmitted\
+    → critical for GDPR and IP
+-   Can get expensive for API calls
 :::
 :::
 
@@ -339,10 +340,7 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 
 <summary>More info</summary>
 
-Remember: AI can't read your mind!
--   It doesn't know anything about you or your project
--   … and even if it does, it probably it doesn’t know what that means
-→ Talk to AI like to a new colleague that still needs a lot of onboarding. Tell it what it needs to know and how to make sense of it.
+Remember: AI can't read your mind! - It doesn't know anything about you or your project - … and even if it does, it probably it doesn’t know what that means → Talk to AI like to a new colleague that still needs a lot of onboarding. Tell it what it needs to know and how to make sense of it.
 
 </details>
 
@@ -471,10 +469,11 @@ Journals: GenAI policies vary a lot. E.g....
 
 -   Required statement on AI use
 
--   Exact list of AI models *and* prompts 
-    -   as soon as it touches data *or* 
+-   Exact list of AI models *and* prompts
+
+    -   as soon as it touches data *or*
     -   when used to develop code and the analysis methods
-    
+
 ## 📚 Rules of funders and journals
 
 ::: callout-tip
@@ -490,7 +489,7 @@ Journals: GenAI policies vary a lot. E.g....
 ::: callout-important
 ## GDPR also applies to publicly available data
 
-The GDPR makes no distinction between *publicly available* and *non-publicly available* data. 
+The GDPR makes no distinction between *publicly available* and *non-publicly available* data.
 
 E.g. Social Media, Websites etc.
 :::
@@ -599,7 +598,7 @@ Git is a version control system designed to track changes in your source code du
 :::
 
 ::: {.column width="50%"}
-##### *Struggle* but for the right reasons ⛹️‍♂️
+##### *Struggle*, but for the right reasons ⛹️‍♂️
 
 -   Git keeps every change safe and rewindable.
 
@@ -701,7 +700,7 @@ The command `git diff` tells you exactly what changed in your code.
 
 ![](images/GPT5_understand_code_4.png){width="30%"}
 
-## ✅ How to have it write code:  reminders
+## ✅ How to have it write code: reminders
 
 -   ChatGPT has very high standards (looks into both major and very minor issues) - take feedback with a grain of salt.
 -   More context of use-case: better suited responses
@@ -901,13 +900,17 @@ Unfortunately, all the extra context is typically hidden from the user, at least
 
 ![](https://i.imgflip.com/a4v36z.jpg){width="500" style="max-height:unset;"}
 
+## Questions? {.center style="text-align:center;"}
+
 # Next steps
 
 ## Presentation Materials
+
 ::: columns
 ::: column
 ![](images/qr_slides.png){width="80%"}
 :::
+
 ::: column
 <details>
 
@@ -929,12 +932,11 @@ Next session: October 23rd
 ::: column
 ![](images/qr_coding_cafe.png){width="80%"}
 :::
-::: column
 
+::: column
 ![](https://code-cafes-nl.github.io/cafe_playbook/images/tiu-cafe.jpg)
 :::
 :::
-
 
 ## Upcoming Events
 
@@ -946,9 +948,9 @@ October 30th
 ::: column
 ![](images/qr_game_night.png){width="65%"}
 :::
+
 ::: column
 ![](https://dkou0skpxpnwz.cloudfront.net/accounts/173684/images/GHOST_games__1_.jpg){width="80%"}
 :::
 :::
 
-## Questions? {.center style="text-align:center;"}
