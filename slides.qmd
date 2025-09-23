@@ -516,7 +516,7 @@ Examples are: IDE plugins and Vibe-Coding tools.
 ::: callout-tip
 ## Ask for advice!
 
-Talk to your school's Information Manager, Data Stewards or the central Research Data Office for [support](https://engine.surfconext.nl/authentication/sp/consume-assertion).
+Talk to your school's Information Manager, Data Stewards or the central Research Data Office for [support](https://www.tilburguniversity.edu/intranet/research-support-portal/rdm/advice).
 :::
 
 ## Questions? {.center style="text-align:center;"}
