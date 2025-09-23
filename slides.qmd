@@ -341,7 +341,12 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 
 <summary>More info</summary>
 
-Remember: AI can't read your mind! - It doesn't know anything about you or your project - … and even if it does, it probably it doesn’t know what that means → Talk to AI like to a new colleague that still needs a lot of onboarding. Tell it what it needs to know and how to make sense of it.
+Remember: AI can't read your mind! 
+
+-   It doesn't know anything about you or your project 
+-   … and even if it does, it probably it doesn’t know what that means
+
+→ Talk to AI like to a new colleague that still needs a lot of onboarding. Tell it what it needs to know and how to make sense of it.
 
 </details>
 
@@ -516,7 +521,7 @@ Examples are: IDE plugins and Vibe-Coding tools.
 ::: callout-tip
 ## Ask for advice!
 
-Talk to your school's Information Manager, Data Stewards or the central Research Data Office for [support](https://engine.surfconext.nl/authentication/sp/consume-assertion).
+Talk to your school's Information Manager, Data Stewards or the central Research Data Office for [support](https://www.tilburguniversity.edu/intranet/research-support-portal/rdm/advice).
 :::
 
 ## Questions? {.center style="text-align:center;"}
