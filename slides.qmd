@@ -341,7 +341,12 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
 
 <summary>More info</summary>
 
-Remember: AI can't read your mind! - It doesn't know anything about you or your project - … and even if it does, it probably it doesn’t know what that means → Talk to AI like to a new colleague that still needs a lot of onboarding. Tell it what it needs to know and how to make sense of it.
+Remember: AI can't read your mind! 
+
+-   It doesn't know anything about you or your project 
+-   … and even if it does, it probably it doesn’t know what that means
+
+→ Talk to AI like to a new colleague that still needs a lot of onboarding. Tell it what it needs to know and how to make sense of it.
 
 </details>
 
