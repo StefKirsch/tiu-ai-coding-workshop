@@ -6,6 +6,7 @@ format:
     css:  styles-overrides.scss  
     slide-number: true
     progress: true
+    toc: true
     toc-depth: 1
     incremental: false
     smaller: true               # global smaller font size
@@ -519,6 +520,8 @@ Talk to your school's Information Manager, Data Stewards or the central Research
 :::
 
 ## Questions? {.center style="text-align:center;"}
+
+# Break
 
 # Best Practices
 
