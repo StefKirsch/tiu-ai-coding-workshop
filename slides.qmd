@@ -3,7 +3,7 @@ title: "🤖😎 Feel the Vibes: AI-assisted Coding"
 format:
   revealjs:
     theme: default
-    css:  styles-overrides.scss  
+    css:  styles-overrides.css  
     slide-number: true
     progress: true
     toc: true
