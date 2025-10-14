@@ -383,6 +383,22 @@ For longer, real‑life chats it’s often more useful to not think in prompts, 
 -   Quick to introduce redundant technologies\
 → Risk of technical debt
 
+## 😎 Some alternative approaches
+
+Hard coding skills still cannot be replaced by AI.
+
+-   Visit courses, workshops and Coding Cafés
+-   Look for a role model and their work
+-   Articles and tutorials, e.g.
+    -   vignettes of R packages with\
+`browseVignettes(package = "PACKAGENAME")`
+    -   Turing Way 
+-   The developer's documentation
+
+::: callout-tip
+Documentation should always be your "True North".
+:::
+
 ## Questions? {.center style="text-align:center;"}
 
 # Applicable Guidelines and Regulations
