@@ -436,6 +436,33 @@ All data protection considerations have to be made regardless of the fact whethe
 :::
 :::
 
+## 🔒 Working with sensitive data
+
+::::columns
+:::column
+Research often involves sensitive data, such as
+
+-   Personal identifiable information (name, age, emails, ...)
+-   Special personal data (medical data, ethnicity, ...)
+-   Trade secrets, NDA-protected data
+-   ...
+:::
+
+:::column
+Top ways of using AI with sensitive data 
+
+1. Only enter metadata (column names, number of rows, aggregated data, etc.)
+2. Synthetic data
+3. Use specialized packages that run locally or in a protected cloud 
+4. Use local AI models (e.g. JanAI)
+
+:::
+::::
+
+:::callout-tip
+In most cases, the LLM does not need to see the actual data.
+:::
+
 ## 🎓 University guidelines
 
 General
@@ -819,9 +846,10 @@ I have found using projects to be a fantastic aid in managing my chats and using
 :::
 :::
 
-::: columns
-::: {.column width="60%"}
--   Collaboration turns into dependence: ***your problem is still yours to solve; with or without it***
+:::::columns
+:::{.column width="60%"}
+-   Collaboration can turn into dependence: ***your problem is still yours to solve; with or without AI***
+-   Consider alternatives sources
 :::
 
 ::: {.column width="40%"}
