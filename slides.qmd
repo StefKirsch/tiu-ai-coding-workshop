@@ -373,6 +373,16 @@ For longer, real‑life chats it’s often more useful to not think in prompts, 
 
 ![](https://i.imgflip.com/a5wktc.jpg){fig-align="center"}
 
+## 🤪 Quirks of LMMs
+
+-   Vast experience in nearly every technology... 
+-   But they haven't worked with any of them for a while
+-   They are quick to draw conclusions from "faint" memory
+-   Can't admit to not being sure about something
+-   Tend to overcomplicate things
+-   Quick to introduce redundant technologies\
+→ Risk of technical debt
+
 ## Questions? {.center style="text-align:center;"}
 
 # Applicable Guidelines and Regulations
