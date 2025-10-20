@@ -6,7 +6,7 @@ format:
     css:  styles-overrides.css  
     slide-number: true
     progress: true
-    toc: true
+    toc: false
     toc-depth: 1
     incremental: false
     smaller: true               # global smaller font size
@@ -17,115 +17,91 @@ output-file: index
 editor: visual
 ---
 
-# Introduction and basics
+# Introduction and basics {.center style="text-align:center;"}
 
 ## 🤖 Using AI to produce software
 
+\
+
+::::columns
+::: {.column width="48%"}
 ### ✨ Why is AI so good at Coding?
 
 -   Lots of **code** and **documentation** online
 -   Relatively clear rules
 -   ... but it is truly amazing
+:::
 
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
 ### 🦾 How well is AI actually doing?
 
--   LLMs can do more and more complex tasks, see [Moore's Law for AI agents](https://theaidigest.org/time-horizons)
+-   LLMs can do more and more complex tasks
 -   Reliability issues remain (more on that later)\
 → Crucial to **understand**, **tweak** and **test** *your* code
+:::
+::::
 
-## 📝 The two paradigms of AI Coding
+## 🐫 The two paradigms of AI Coding
+
+\
 
 ::: columns
 ::: column
 
-**AI-assisted Coding**
+### AI-assisted Coding
 
 -   AI makes suggestions
 -   User takes all decisions 
 
-**Vibe Coding**
+:::
+::: column
+### Vibe Coding
 
 -   User specifies the requirements
 -   AI *agent* produces and takes decisions
-
-<details>
-
-<summary>*More info*</summary>
-
-**AI‑assisted coding** means using the AI as an assistant that helps you plan, write and understand code. You are still in the driver seat and have to make all important decisions. This is good, because it makes it easier (but not inevitable) that you understand what you actually produce.
-
-**Vibe Coding** goes further and delegates basically all decision-making to the AI. This can of course be very powerful, but it is basically impossible to understand what the code actually does and it can make it very challenging to fix bugs later on. Most importantly, it increases the risk of oversights that could then go completely unnoticed.
-
-</details>
-
-:::
-::: column
-<iframe src="https://giphy.com/embed/yIh6EVwpd2VJ6NbNNY" width="480" height="269" frameborder="0" class="giphy-embed" allowfullscreen>
-
-</iframe>
 :::
 :::
+
+\
 
 ::: callout-note
 ## Find a good balance
 
-We want you to feel the vibes here, not surrender to them.
+We want you to *feel the vibes* here, not *surrender* to them.
 
 :::
 
-## Research Software Management
+## 📝 Research Software Management
+
+\
 
 ::: columns
-::: column
+::: {.column width="40%"}
 Writing code is just the first step!
 
-Make it FAIR with the help of good <details>
-
-<summary>Research Software Management.</summary>
-
-When working with digital methods in research, you will encounter two types of software: Research Software and Software *in* Reseearch.
-
-[@gruenpeter_2021_5504016](https://zenodo.org/records/5504016) came up with the following distinction in the FAIR4RS working group:
-
-> “**Research Software** includes **source code files, algorithms, scripts, computational workflows and executables** that were **created during the research process** or **for a research purpose**.
->
-> Software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc.) that are used **for research** but were **not created during or with a clear research intent** should be considered **software in research** and not Research Software.”
-
-Both require Software Management and ideally a plan on how to do it. You can read more on the topic [here](https://zenodo.org/records/7589725#.Y-OMgHbMI2w).
-
-</details>
+Make it FAIR with the help of good **Research Software Management**:
 
 -   Version Control
 -   Dependency Management
--   Add a [license](https://choosealicense.com/)
+-   Add a license
 -   Make sure it's reproducible\
 → Trustworthiness of your code
 
-
-Here is an [example project](https://github.com/StefKirsch/amazing_github_research_repo).
+You can find an example project and a link to an checklist in the description.
 
 :::
 
-::: column
-![Martinez-Ortiz, C., Martinez Lavanchy, P., Sesink, L., Olivier, B. G., Meakin, J., de Jong, M., & Cruz, M. (2023). Practical guide to Software Management Plans (1.1). Zenodo. https://doi.org/10.5281/zenodo.7589725](images/smp.png){width="80%"}
+::: {.column width="60%"}
+![Netherlands eSciecne Center and DANS. Five Recommendations for FAIR Software https://fair-software.nl/](images/fair-software.png){width="80%"}
 :::
 :::
-
-## 🧠 Large Language Models (LLMs) in a nutshell {.center}
-
-```{=html}
-<iframe 
-  width="600"
-  height="400"
-  src="https://www.youtube.com/embed/LPZh9BOjkQs?si=ifls2CZBbVzfF9nM" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share
-  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-</iframe>
-```
 
 ## 🤖 The inner workings of LLMs
+
+\
 
 ::: columns
 ::: column
@@ -148,61 +124,45 @@ Here is an [example project](https://github.com/StefKirsch/amazing_github_resear
 
 ## 🤔 Plain LLM VS Reasoning Models
 
+\
+
 ::: columns
-::: column
+::: {.column width="45%"}
 ### Standard LLM
 
-```{=html}
-<iframe src="https://giphy.com/embed/tTyTbFF9uEbPW"
-        width="480" height="270"
-        style="display:block; margin:0 auto;"
-        frameborder="0" allowfullscreen>
-</iframe>
-```
-<details>
-
-<summary>More info</summary>
-
-Standard models produce output by producing tokens. Their context is the entire previous conversation, including the response that is currently generated.
-
-All logic (“thinking”) happens internally and ad‑hoc.
-
-</details>
+-   Produces output token by token
+-   All logic is applied ad-hoc and internally
+-   Outputs are created based on the available *context*
 :::
 
-::: column
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
 ### Reasoning model
 
-```{=html}
-<iframe src="https://giphy.com/embed/WTDvmZyUDlngcu7q5L"
-        width="480" height="270"
-        style="display:block; margin:0 auto;"
-        frameborder="0" allowfullscreen>
-</iframe>
-```
-<details>
+-   Have been trained to make use of an internal "scratchpad"
+-   Allows the AI to
+    -   make a plan
+    -   temporarily store information
+    -   explore different avenues
+    -   re-assess potential answers
+-   Can access the web
 
-<summary>More info</summary>
-
-Reasoning models have the ability **and** have been specifically trained to produce tokens in **two phases**.
-
-1.  Thinking tokens: These serve as a scratchpad, for making a plan, noting things down for later, taking notes of what didn't work etc. The model is aware that this is not part of the output. You can inspect this as the user, even though proprietary providers will typically show you a summary of the thinking process and not the whole output.
-
-2.  The user-facing output: The model considers this as the "actual" output. This phase is basically how non-reasoning models operate, but in this case, we have all the notes from the previous phase, which can help a lot in producing a better result.
-
-</details>
 :::
 :::
 
-## 🤔 Plain LLM VS Reasoning Models
+## Plain LLM VS Reasoning Models {.no-scroll}
 
 ![](images/non-reasoning.png){width="900" style="max-height:unset;"}
 
-## 🤔 Plain LLM VS Reasoning Models
+## 🤔 Plain LLM VS Reasoning Models {.no-scroll}
 
 ![](images/reasoning.png){width="900" style="max-height:unset;"}
 
 ## ❔ When to use which type of model
+
+\
 
 ::: columns
 ::: column
@@ -231,54 +191,61 @@ Reasoning models have the ability **and** have been specifically trained to prod
 Play around with different models in different cases and get a feeling for yourself.
 :::
 
-## 🕴 What is an Agent then? {.incremental}
+## 🕴 What is an Agent then? {.no-scroll}
 
--   **Standard definition**: Something that has
-    1.  **a goal**
-    2.  can take **actions in the real world**
--   **Narrow definition**: A meta-LLM that can
-    1.  call other **tools** (Web search, Python, other LLMs)
-    2.  can access the command line and can write files
+\
 
+**Standard definition**: Something that has
+
+1.   **a goal**
+2.   can take **actions in the real world**
+
+**Narrow definition**: A meta-LLM that can
+
+1.  call other **tools** (Web search, Python, other LLMs)
+2.  can access the command line and can write files\
 → Allows autonomous workflows
 
 ::: callout-note
 Modern reasoning LLMs (e.g. ChatGPT 5 Thinking) have agentic capabilities built in.
 :::
 
-## 🔀 Ways of coding with an LLM
+## 🔀 Ways of coding with an LLM{.center style="text-align:center;"}
 
-### Chatbot
+## 🔀 Chatbot
 
-![](https://images.seeklogo.com/logo-png/50/1/chatgpt-logo-png_seeklogo-503286.png){width="15%"} ![](https://images.seeklogo.com/logo-png/61/1/microsoft-copilot-logo-png_seeklogo-619562.png){width="15%"} ![](https://images.seeklogo.com/logo-png/55/1/claude-logo-png_seeklogo-554540.png){width="15%"}
+\
 
 ::: columns
-::: column
-#### Pros ✅
+::: {.column width="40%"}
+### Pros ✅
 
 - Model choice
 - Iterate on prompts
-- Lots of control (including which\
-data you enter)\
+- Lots of control\
+including which data you enter)\
 → *GDPR compliance*
-:::
 
-::: column
-#### Cons ❌
+### Cons ❌
 
 -   Copy-pasting
 -   No further automation
 -   Only aware of the context you give it
 :::
+
+::: {.column width="60%"}
+
+![](images/levart_photographer-drwpcjkvxuU-unsplash.jpg)
+:::
 :::
 
-## 🔀 Ways of coding with an LLM
+## 🔀 IDE plugins {.no-scroll}
 
-### IDE plugins
+\
 
 ::: columns
 ::: column
-#### Pros ✅
+### Pros ✅
 
 -   Automation
 -   Context-aware of your codebase
@@ -286,7 +253,7 @@ data you enter)\
 :::
 
 ::: column
-#### Cons ❌
+### Cons ❌
 
 -   No control over what gets transmitted\
     → critical for GDPR and IP
@@ -296,33 +263,28 @@ data you enter)\
 
 ![](images/autocomplete.png){width="80%" fig-align="center"}
 
-## 🔀 Ways of coding with an LLM
+## 🔀 Agents (Vibe Coding)
 
-### Agents (Vibe Coding)
+\
 
+::::columns
+::: {.column width="40%"}
 -   Goal + write access to your codebase
 -   Automatically calls API with prompts.
+:::
 
+::: {.column width="60%"}
 ![](images/claude-code.png){fig-align="center"}
+:::
+
+::::
 
 ## 🔧 Prompt "engineering"
 
-Maybe a little overhyped...
+\
 
-<details>
-
-<summary>More info</summary>
-
-**Prompt engineering** is important when you ask an LLM for a complete solution or when you develop an application that routinely talks to an LLM API. In those cases phrasing and "strategic" considerations can make a big difference.
-
-For day-to-day use and especially AI-assisted coding, you typically don't need to overthink (engineer) your prompts as long as you keep in mind a couple of things.
-
-</details>
-
-## 🔧 Prompt "engineering"
-
-::: columns
-::: column
+:::: columns
+::: {.column width="45%"}
 ### 🤔 What to ask for
 
 -   Mindset: Ask for advice, not for solutions
@@ -332,28 +294,17 @@ For day-to-day use and especially AI-assisted coding, you typically don't need t
     -   Assemble them yourself
 :::
 
-::: column
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
 ### 💡 How to ask
 
 -   Tell it all it needs to know
-
-<details>
-
-<summary>More info</summary>
-
-Remember: AI can't read your mind! 
-
--   It doesn't know anything about you or your project 
--   … and even if it does, it probably it doesn’t know what that means
-
-→ Talk to AI like to a new colleague that still needs a lot of onboarding. Tell it what it needs to know and how to make sense of it.
-
-</details>
-
 -   "How do I do xyz?" instead of "Do xyz for me."
 -   Be specific in your requirements (you can discuss them before with AI)
 :::
-:::
+::::
 
 ::: callout-tip
 ## Your role
@@ -361,17 +312,7 @@ Remember: AI can't read your mind!
 Product manager and quality assurance
 :::
 
-## 🔧 Prompt "engineering"
-
-<details>
-
-<summary>The Prompt VS the Context</summary>
-
-For longer, real‑life chats it’s often more useful to not think in prompts, but in the full **context**. The context is the full window of tokens the model can “see”, i.e. the chat history plus anything else the LLM provider adds to the context. LLMs have a limited context size, which means they will at some point "forget" what they saw earlier in the conversation.
-
-</details>
-
-![](https://i.imgflip.com/a5wktc.jpg){fig-align="center"}
+\
 
 ## 🤪 Quirks of LMMs
 
@@ -385,7 +326,9 @@ For longer, real‑life chats it’s often more useful to not think in prompts, 
 
 ## 😎 Some alternative approaches
 
-Hard coding skills still cannot be replaced by AI.
+\
+
+Proper coding skills still cannot be replaced by AI.
 
 -   Visit courses, workshops and Coding Cafés
 -   Look for a role model and their work
@@ -401,25 +344,38 @@ Documentation should always be your "True North".
 
 ## Questions? {.center style="text-align:center;"}
 
-# Applicable Guidelines and Regulations
+# Applicable Guidelines and Regulations {.center style="text-align:center;"}
 
-## 🚨 Why is AI use potentially problematic?
+## 🚨 Why is AI potentially problematic?
+
+\
 
 ::: columns
 ::: column
-### 🔒 Information, knowledge and data safety
+### 🔒 Data safety
 
 -   Need to run in the cloud
 -   Not European
 -   New
 
-<details>
+::: 
+::: column
+:::
+:::
 
-<summary>Is AI really special?</summary>
+## Is AI really special? {.center style="text-align:center;"}
 
-All data protection considerations have to be made regardless of the fact whether a given system is considered **AI or not**. There is a common misconception that AI itself is the problem, e.g. because the models are trained on the prompts. **That is not correct**. Instead, the issue lies with **cloud-based systems** for which your institution/employer does not have a **data processing agreement** with the supplier.
+## 🚨 Why is AI potentially problematic?
 
-</details>
+\
+
+::: columns
+::: column
+### 🔒 Data safety
+
+-   Need to run in the cloud
+-   Not European
+-   New
 :::
 
 ::: column
@@ -429,18 +385,20 @@ All data protection considerations have to be made regardless of the fact whethe
 -   Obscure failure modes
     -   Hallucinations
     -   Lack of self-criticism
--   Plagiarism question
+-   Plagiarism?
 -   More material can be created faster
     -   Bigger chance of mistakes
     -   Greater potential for forgery
 :::
 :::
 
-## 🔒 Working with sensitive data
+## 🔒 Working with sensitive data {.no-scroll}
+
+\
 
 ::::columns
-:::column
-Research often involves sensitive data, such as
+::: {.column width="48%"}
+### Research often involves sensitive data, such as
 
 -   Personal identifiable information (name, age, emails, ...)
 -   Special personal data (medical data, ethnicity, ...)
@@ -448,8 +406,11 @@ Research often involves sensitive data, such as
 -   ...
 :::
 
-:::column
-Top ways of using AI with sensitive data 
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+### Top ways of using AI with sensitive data 
 
 1. Only enter metadata (column names, number of rows, aggregated data, etc.)
 2. Synthetic data
@@ -465,46 +426,48 @@ In most cases, the LLM does not need to see the actual data.
 
 ## 🎓 University guidelines
 
-General
+\
+
+:::: columns
+::: {.column width="40%"}
+
+### General
 
 -   [Information security policy](https://www.tilburguniversity.edu/about/conduct-and-integrity/privacy-and-security/information-security)
 -   [Knowledge security](https://www.tilburguniversity.edu/about/conduct-and-integrity/privacy-and-security/knowledge-security)
 -   [Data protection](https://www.tilburguniversity.edu/about/conduct-and-integrity/privacy-and-security/privacy-policy)
 
-GPAI specific
+### GPAI specific
 
 -   [AI guidelines for researchers](https://www.tilburguniversity.edu/intranet/organization-policy/strategy/infrastructure/research-infrastructure/ai-guidelines-researchers)
 
-<details>
+Guidelines are there to help you
+:::
 
-<summary>Guidelines are there to help you</summary>
+::: {.column width="5%"}
+:::
 
-In practice, it can be quite challenging to be and stay up to date with the latest regulations. University guidelines should be viewed as a practical interpretation for you as the end user. Unfortunately, the university can't relieve you from your legal and ethical responsibilities, so you should do your due diligence and check which rules and regulations apply in your situation.
+::: {.column width="55%"}
+![](images/tilburg-university-logo.png){width="40%" fig-align="center"}
+:::
+::::
 
-</details>
+## 📚 National and EU law
 
-## ⚖ National and EU law
+\
+
+### Laws that we all have to follow
 
 -   GDPR
 -   Intellectual property rights
 -   EU AI Act
+-   ...
 
 ## 🎓 Research integrity
 
-<details>
+\
 
-<summary>Just as any research output, the same principles also apply to **code**!</summary>
-
-In the past, **Research Software** has often been considered as a necessary intermediate product of research, but was often not worth mentioning or publishing. Times have changed though, and both Tilburg University, but also many funders and journals consider **Research Software** as a relevant and crucial output that is worth highlighting and discussing. This is for two reasons:
-
-1.  From an Open Science and FAIR perspective, sharing your code creates the necessary transparency on how you got to your results, so that your research becomes trustworthy.
-2.  Universities, funders and journals have noticed that we still often reinvent the wheel for new projects. Creating software that is easy to reuse in other projects can thus be enormously beneficial in advancing the science faster and significantly cheaper.
-
-Software has been contributing to the results of published research for a long time, and has therefore always been subject to research integrity principles. In modern times though, we see more and more that integrity in software development is not only assumed anymore, but also tested for more and more.
-
-</details>
-
-In particular relevant for GenAI use:
+### For GenAI use in particular 
 
 -   No fraudulent activities
 
@@ -516,13 +479,33 @@ In particular relevant for GenAI use:
     -   [Data Handling and Methods Reporting](https://www.tilburguniversity.edu/research/social-and-behavioral-sciences/science-committee) (TSB)
     -   [Guideline Replication Package](https://www.tilburguniversity.edu/research/economics-and-management/replication-package) (TiSEM)
 
+:::callout-tip
+Integrity principles also apply to **code**!
+:::
+
+
 ## 📚 Rules of funders and journals
 
-NWO
+\
 
--   Generative AI allowed for applicants
+::::columns
+::: {.column width="48%"}
+### NWO
 
-Journals: GenAI policies vary a lot. E.g....
+-   Generative AI allowed for application
+-   No restriction on AI use
+
+Rules might differ per funder!
+
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+### Journals
+
+GenAI policies vary a lot. E.g....
 
 -   No restriction on AI use at all
 
@@ -532,36 +515,54 @@ Journals: GenAI policies vary a lot. E.g....
 
     -   as soon as it touches data *or*
     -   when used to develop code and the analysis methods
+:::
+::::
 
 ## 📚 Rules of funders and journals
 
+\
+
+\
+
 ::: callout-tip
-## Our Recommendation
+### Our Recommendation
 
 -   Stick to the most strict guidelines of relevant funders & journals in your field
 
--   Don't bootstrap your own way of doing things. Look up best practices and ask for advice!
+-   Look up best practices and ask for advice on how to do so
 :::
 
-## ⛸ Common compliance slips
+## 🍌 Common compliance slips {.no-scroll}
+
+::::columns
+:::column
 
 ::: callout-important
-## GDPR also applies to publicly available data
+## GDPR applies to all personal data
 
-The GDPR makes no distinction between *publicly available* and *non-publicly available* data.
+There is no distinction between 
+
+-   *publicly available* and 
+-   *non-publicly available* data.
 
 E.g. Social Media, Websites etc.
 :::
 
+:::
+
+:::column
+
 ::: callout-important
 ## Data transfer via automated systems
 
-Beware of tools where you can't inspect and approve the prompts and input yourself.
+- Watch out when you can't inspect and approve the prompts and input.
 
-They might transfer *sensitive data* without your knowledge!
+- They might transfer *sensitive data* without your knowledge!
 
-Examples are: IDE plugins and Vibe-Coding tools.
+- Examples are: IDE plugins and Vibe-Coding tools.
 :::
+:::
+::::
 
 ## 💡 Summary
 
@@ -577,218 +578,191 @@ Examples are: IDE plugins and Vibe-Coding tools.
 Talk to your school's Information Manager, Data Stewards or the central Research Data Office for [support](https://www.tilburguniversity.edu/intranet/research-support-portal/rdm/advice).
 :::
 
-## Questions? {.center style="text-align:center;"}
+# Best Practices {.center style="text-align:center;"}
 
-# Break
+## 😵 Which model do I use? {.no-scroll}
 
-# Best Practices
+\
 
-## 😵 Which model do I use?
+:::: columns
+::: {.column width="48%"}
 
-::: columns
-::: {.column width="50%"}
-*How the UI looked before*
+### How the UI looked like before
 
-![](images/choice_of_models.png){height="50%"}
-:::
-
-::: {.column width="50%"}
 -   Different models for different tasks.
 
--   4o series for writing/ planning.
+-   *4o* series for writing/ planning.
 
--   o3, o4 mini and o4 mini high for coding and logical reasoning.
+-   *o3*, *o4* for coding and logical reasoning.
 :::
+
+::: {.column width="4%"}
 :::
+
+::: {.column width="48%"}
+![](images/choice_of_models.png){height="50%"}
+:::
+::::
 
 ## 😵 Which model do I use?
+
+\
 
 ![](images/GPT5.png)
 
--   Picks the appropriate model based on the task at hand!\*
+## 👥 Version control with Git {.no-scroll}
 
-<details>
+\
 
-<summary>\*More about this</summary>
+### Challenges in software development (with and without AI)
 
--   GPT5 may not always do this. It is at best, using key words in your prompt to gauge task complexity (and deciding further course of action)
--   Sometimes it will think way too little and sometimes start reasoning about something it doesn't need reasoning for.
--   It is always an advantage to know a bit about the different models. This video tells you about them in detail and with use-cases.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uluRM4yIras?si=3caDpUQO9zF904OO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-
-</iframe>
-
-</details>
-
-## 👥 Using version control and Git
-
-**Without Git**
-
-::: columns
+:::: columns
 ::: {.column width="50%"}
-::: columns
-<iframe src="https://giphy.com/embed/2KAGlmkPywhZS" width="247" height="480" frameborder="0" allowfullscreen>
 
-</iframe>
-:::
+-   Saving makes iterations instantly permanent.
+
+-   Changes can break working code.
+
+-   High mental load to grasp code base and its development.
+
+-   Ad-hoc versioning (e.g. with filenames) is cumbersome.
+
+→ Issues get exacerbated by AI-assisted coding.
 :::
 
 ::: {.column width="50%"}
-::: columns
-##### Nightmare 👹
-
--   You don't know why your code works or why it doesn't.
-
--   Difficulty maintaining versions.
-
--   No clue which version contains what changes.
 :::
-:::
-:::
+::::
 
-## 👥 Using version control and Git
+## 👥 Version control with Git
 
-Git is a version control system designed to track changes in your source code during software development.
-
-**With Git**
+\
 
 ::: columns
 ::: {.column width="50%"}
-![](https://i.imgflip.com/a64www.jpg){width="700" style="max-height:unset;"}
+### Git allows you to...
+
+-   Track changes to your code.
+
+-   Manage versions with meaningful descriptions.
+
+-   Back up your work safely in the cloud (GitHub, GitLab...) 
 :::
 
 ::: {.column width="50%"}
-##### *Struggle*, but for the right reasons ⛹️‍♂️
 
--   Git keeps every change safe and rewindable.
-
-<!-- -->
-
--   You can always fall back to a working version.
+![Image created with ChatGPT and edited](images/a94yru.jpg){width="700" style="max-height:unset;"}
 :::
 :::
 
-<details>
+## 👥 Version control with Git
 
-<summary>Learn more about git and how you can use it</summary>
+\
 
--   [A fantastic guide to using git and github](https://www.youtube.com/watch?v=RGOj5yH7evk&t=360s) 🍏
--   [What is Gitlab and how it may be a better choice than Github](https://www.incredibuild.com/blog/gitlab-vs-github-comparison)?⚖
+:::: columns
+::: {.column width="48%"}
 
-</details>
+### Preview changes before comitting
 
-## 🚦 Using `git diff`
-
-The command `git diff` tells you exactly what changed in your code.
-
-::: callout-warning
-# `git diff` and AI written code
-
--   Using `git diff` is crucial when using ChatGPT to write code.
--   Even with a near-perfect prompting, ChatGPT can create completely unrelated changes in your code.
+- Valuable to maintain code hygiene
+- Extra gate for code to become definitive.
+- Spot "improvements" your code, that you did not prompt for.
+- A chance to review the code, the syntax and style before accepting it.
 :::
 
-![](images/git_diff_1.png)
-
-![](images/git_diff_2.png)
-
-<details>
-
-<summary>More on git diff</summary>
-
--   [Datacamp article on git diff](https://www.datacamp.com/tutorial/git-diff-guide)
-
-</details>
-
-## 🚫 How to (not) have it write code
-
-![](images/GPT5_context_1.png)
-
-::: callout-note
-## 🏆 Golden Rule 1
-
-**Having little to no expertise/context into a problem will not lead to a fruitful collaboration with AI.**
+::: {.column width="4%"}
 :::
 
-## 🚫 How to (not) have it write code: cycle of debugging
+::: {.column width="48%"}
 
--   Code provided doesn't run locally + features don't work:
 
-![](images/GPT5_context_2.png)
+![](images/git_diff_5.png)
+:::
+::::
 
-![](images/GPT5_context_3.png)
+## 🚫 How to (not) write code with AI  {.center style="text-align:center;"}
 
-## 🚫 How to (not) have it write code: end results
+## 🎯 Beware of large tasks in one shot
 
--   You end up debugging ChatGPTs code way more than you would like.
+![](images/chatgpt_meditation.png)
+
+## 🐛 Beware of bugs
+
+AI produces overly eager results without really thinking them all the way through.
+
+![](images/chatgpt_meditation2.png)
+
+## 🔁 Beware of vicious cycles
+
+::::columns
+::: {.column width="35%"}
+
+\
+
+-   You end up debugging code way more than you would like.
 
 -   Takes longer overall (even if the start was quick)
-
-![](https://i.imgflip.com/a64vaj.jpg){width="600" style="max-height:unset;"}
-
-## ✅ How to have it write code
-
-**1. Narrow the scope of the problem**
-
-::: callout-note
-## 🏆 Golden Rule 2
-
-**Troubleshooting specific problems leads to meaningful conversations with AI.**
 :::
 
-![](images/GPT5_specific_problem_1.png){height="30%"}
+::: {.column width="5%"}
+:::
 
-## ✅ How to have it write code
+::: {.column .right width="60%"}
+![](images/a959dd.jpg){width="600" style="max-height:unset;"}
+:::
+::::
 
-**2. 💡 Understanding code with it**
+## ✅ How to have AI write code  {.center style="text-align:center;"}
+
+## 🤏 Narrow the scope
+
+![](images/GPT5_specific_problem_1.png){width="700" style="max-height:unset;" fig-align="center"}
+
+## 💡 A tool to understand code {.no-scroll}
 
 ![](images/GPT5_understand_code_1.png)
 
-## ✅ How to have it write code
-
-3.  Improving your own code base with general feedback
+## 🏁 Improving your own code base through feedback
 
 ![](images/GPT5_understand_code_2.png)
 
--   response:
+## 🏁 Improving your own code base through feedback
 
 ![](images/GPT5_understand_code_3.png)
 
-## ✅ How to have it write code
-
-3.  Improving your own code base with case-specific feedback
+## 🏁 Improving your own code base through feedback
 
 ![](images/GPT5_understand_code_4.png){width="30%"}
 
-## ✅ How to have it write code: reminders
+## 😯 Things to keep in mind
 
--   ChatGPT has very high standards (looks into both major and very minor issues) - take feedback with a grain of salt.
--   More context of use-case: better suited responses
+-   LLMs have very high standards (look into both major and very minor issues) 
+-   Take feedback with a grain of salt.
+-   More context of use-case → better responses
 
-![](https://i.imgflip.com/a64urh.jpg){width="500" style="max-height:unset;"}
+## 📏 Prompt engineering {.center style="text-align:center;"}
 
-## 📏 Prompt engineering - verbosity
+## Verbosity
 
 -   Limit verbosity (in general), you can always dig for more if *you* want
 
 ![](images/GPT5_prompt_engineering_1.png)
 
-## 📏 Prompt engineering - verbosity
+## 🦜 Verbosity
 
 ![](images/GPT5_prompt_engineering_2.png){width="500"}
 
-## 📏 Prompt engineering - clarity over conciseness
+## 🔍 Clarity over conciseness
 
 -   Asking to focus on clarity over conciseness
 
 ![](images/GPT5_prompt_engineering_3.png){width="500"}
 
-## 📏 Prompt engineering - clarity over conciseness
+## 🔍 Clarity over conciseness
 
 ![](images/GPT5_prompt_engineering_4.png){width="500"}
 
-## 📏 Prompt engineering - assigning roles
+## 👹 Assigning roles
 
 -   On assigning roles and more
 
@@ -805,60 +779,53 @@ The command `git diff` tells you exactly what changed in your code.
 
 </details>
 
-## 🙄 Do the right thing
+## 🧰 Specialized packages
 
-Look up specific packages that are able to accomplish your task before completely pinning it on ChatGPT. This is safer and can also be more accurate.
+Rather than using the AI for your processing, look for specialized packages for a specific task.
+
+-   More flexible
+-   Safer
+-   Often more accurate
 
 Examples:
 
-1.  [OpenAI whisper](https://github.com/openai/whisper)- *transcribes audio files offline*
+-  *Whisper* for accurate transcription of audio files.
 
-2.  [textwash](https://github.com/ben-aaron188/textwash/tree/main) - *anonymize text offline*
+-  *textwash* for anonymization of text data.
 
-![](https://i.imgflip.com/a5je7z.jpg){width="500" style="max-height:unset;"}
 
 ## 🏁 Using Projects
 
-![](images//Projects_callout.png){width="900" style="max-height:unset;"}
-
-::: callout-tip
-## Using Projects
-
-I have found using projects to be a fantastic aid in managing my chats and using them mindfully.
+Projects are a fantastic aid in managing chats and using them mindfully.
 
 -   Add specific context or media that ChatGPT will keep in its memory for future chats.
 -   Better workflow for different projects with corresponding chats
-:::
+
+
+![](images//Projects_callout.png){width="900" style="max-height:unset;"}
 
 ## ☃️ When to take a break
 
--   *Subtle* signs of frustration
-
 ::: columns
-::: {.column width="70%"}
-![](images/GPT5_frustration_1.png)
-:::
+::: {.column width="35%"}
+*Subtle* signs of frustration ...
 
-::: {.column width="30%"}
-<iframe src="https://giphy.com/embed/y1WDIwAZRSmru" width="400" height="300" style frameBorder="0" class="giphy-embed" allowFullScreen>
+\
 
-</iframe>
-:::
-:::
-
-:::::columns
-:::{.column width="60%"}
 -   Collaboration can turn into dependence: ***your problem is still yours to solve; with or without AI***
 -   Consider alternatives sources
+
 :::
 
-::: {.column width="40%"}
-:::
+::: {.column width="5%"}
 :::
 
-## Questions? {.center style="text-align:center;"}
+::: {.column width="60%"}
+![](images/oversights.png)
+:::
+::::
 
-# Pitfalls
+# Pitfalls {.center style="text-align:center;"}
 
 ## ✂ Pitfall 1 - Taking shortcuts
 
