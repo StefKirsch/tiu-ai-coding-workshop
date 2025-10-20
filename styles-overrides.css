@@ -1,4 +1,5 @@
 .callout {
+  background-color: #fffbe6 !important;
   font-size: 1.7rem !important;
   max-width: 700px;
   margin: 1.5em auto;
@@ -17,4 +18,16 @@
 
 .reveal h3 {
   font-size: 2rem !important;
+}
+
+/* Light pastel yellow–gold gradient*/
+.reveal {
+  background: linear-gradient(
+    135deg,
+    #fffbe6 0%,
+    #fff9d1 40%,
+    #fff6c2 70%,
+    #ffecb3 100%
+  );
+  color: #111; /* Black text*/
 }
