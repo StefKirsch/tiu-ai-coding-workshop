@@ -364,6 +364,9 @@ Documentation should always be your "True North".
 -   Need to run in the cloud
 -   Not European
 -   New
+
+Is AI really any special?
+
 :::
 
 ::: column
@@ -750,23 +753,6 @@ AI produces overly eager results without really thinking them all the way throug
 
 ![](images/GPT5_prompt_engineering_4.png){width="500"}
 
-## 👹 Assigning roles
-
--   On assigning roles and more
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/X7YjqKk-7Y0?si=hYKV42m7p6FMOUWD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-
-    </iframe>
-
-<details>
-
-<summary>More examples with resources</summary>
-
-1.  [Ethan Mollick on prompt engineering](https://www.moreusefulthings.com/instructor-prompts)
-2.  [TU Delft's wiki on prompting ChatGPT for researchers](https://hri-wiki.tudelft.nl/llm/chat-gpt-prompts)
-
-</details>
-
 ## 🧰 Specialized packages
 
 Rather than using the AI for your processing, look for specialized packages for a specific task.
@@ -782,7 +768,7 @@ Examples:
 -  *textwash* for anonymization of text data.
 
 
-## 🏁 Using Projects
+## 📂 Using Projects
 
 Projects are a fantastic aid in managing chats and using them mindfully.
 
@@ -790,7 +776,7 @@ Projects are a fantastic aid in managing chats and using them mindfully.
 -   Better workflow for different projects with corresponding chats
 
 
-![](images//Projects_callout.png){width="900" style="max-height:unset;"}
+![](images/projects.png)
 
 ## ☃️ When to take a break
 
@@ -815,57 +801,57 @@ Projects are a fantastic aid in managing chats and using them mindfully.
 
 # Pitfalls {.center style="text-align:center;"}
 
-## ✂ Pitfall 1 - Taking shortcuts
+## 🩳 Pitfall 1 - Taking shortcuts
 
-<details>
+:::: columns
+::: {.column width="45%"}
 
-<summary>Shortcuts often turn out costly in the end.</summary>
+\
 
-It is very tempting to just ask the AI to do a whole work package for you, especially when you are under time pressure. Even worse still, the code will probably work, which hides the potential cost in the long run.
+Shortcuts often turn out costly in the end.
 
-The result is often code that doesn't fit the logic and style of the rest of your project, adds unnecessary dependencies or in some other way does not fit well into the bigger picture.
+-   Technical debt
+-   Mistakes and hallucinations
 
-</details>
+:::
 
-![](https://i.imgflip.com/a4v6za.jpg)
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+![](images/shortcuts.png)
+:::
+::::
 
 ::: callout-tip
 ## Our Recommendation
 
-Find a workflow that balances *efficiency* and *sustainability* and that works for you. Then stick to it.
+Find a workflow that works for you while balancing *efficiency* and *sustainability*. Then stick to it.
 :::
+
 
 ## 🥊 Pitfall 2 - Punching above your weight
 
-::: {style="text-align:center"}
-![](images/pitfall_2.png){width="900" style="max-height:unset;"}
+::::columns
+::: {.column width="35%"}
+
+### Remedies
+
+-   Be intentional which packages and technologies you introduce
+-   Get a feeling for them yourself
+-   Code = your understanding + help from AI 
 :::
 
-<details>
-
-<summary>Only ask AI to do what you could also do yourself.</summary>
-
-The sustainable route of using AI is to not have it write code that you could not have produced yourself. This of course doesn't mean that you can't ask AI **help you** write that code!
-
-::: callout-tip
-## Our Recommendation
-
-We recommend that you only (fully) outsource tasks to AI that are basically trivial for you.
+::: {.column width="5%"}
 :::
 
-</details>
+::: {.column width="60%"}
+![](images/pitfall_2.png)
+:::
 
-<details>
+::::
 
-<summary>Some tips for working on challenging problems using AI</summary>
-
--   [**Learn before you lean**](https://www.techradar.com/pro/the-genai-crutch-why-teams-must-learn-before-they-lean?utm_source=chatgpt.com): Understanding AI written code is the ***only*** way to write code with AI.
-
--   **Documentation is your best friend.** Writing comments for your code (what it does and why you chose a certain strategy) is the safest way to make it maintainable.
-
-</details>
-
-## 🎛 Pitfall 3 - Context conundrums
+## 🤯 Pitfall 3 - Context conundrums {.no-scroll}
 
 ::: columns
 ::: column
@@ -885,88 +871,37 @@ The context in the example of ChatGPT
 :::
 
 ::: column
-![](https://i.imgflip.com/a4uupf.jpg){width="500" style="max-height:unset;"}
+![](images/context_1.png){width="80%"}
 :::
 :::
 
-## 🌊 Pitfall 3a - Context window overflow
+## 🌊 Context window overflow {.no-scroll}
 
-<details>
+:::: columns
+::: {.column width="45%"}
 
-<summary>LLMs can only remember so much</summary>
+\
 
-Especially in longer conversations, you can quickly exceed the functional context window, which is often much less than the nominal ones (e.g., 10k words for ChatGPT 5).
+-   LLMs come with a limited context window (e.g., 10k words for ChatGPT 5)
 
-This means that the model will forget what was said earlier, especially if it was somewhere in the middle of the conversation.
-
-</details>
-
-![](https://i.imgflip.com/a4v4gn.jpg){width="500" style="max-height:unset;"}
-
-## 🐷 Pitfall 3b - Muddy the (context) water
-
-<details>
-
-<summary>A little context hygiene goes a long way.</summary>
-
-Many of the advertised features, like "custom instructions," "memory," and "projects," boil down to adding extra context to the conversation history (aka context stuffing). In most cases, this is helpful and feels like genuine personalization that adds convenience. But it can also lead to strange outcomes when the AI can't quite decide which bit of the context is actually relevant at a given time. It can also change the behavior of the model in unexpected ways.
-
-Unfortunately, all the extra context is typically hidden from the user, at least while chatting with the model. At the time of writing, however, most providers allow you to inspect, modify, or delete unwanted context fluff, albeit it being scattered across various corners of the UI. A quick web search or asking the AI of choice can typically help you identify and remove the culprits, though.
-
-</details>
-
-![](https://i.imgflip.com/a4v36z.jpg){width="500" style="max-height:unset;"}
-
-
-# Next steps
-
-## Presentation Materials
-
-::: columns
-::: column
-![](images/qr_slides.png){width="80%"}
+-   Context, instructions etc. further up in the conversation will be "forgotten"
 :::
 
-::: column
-<details>
-
-<summary>Want to learn more?</summary>
-
-We added expandable sections like this one throughout the presentation. Here, you can find extra information and references for further reading and learning.
-
-</details>
-:::
+::: {.column width="10%"}
 :::
 
-## Upcoming Events
-
-### The Coding Café
-
-Next session: October 23rd
-
-::: columns
-::: column
-![](images/qr_coding_cafe.png){width="80%"}
+::: {.column width="45%"}
+![](images/context_2.png){width="80%"}
 :::
+::::
 
-::: column
-![](https://code-cafes-nl.github.io/cafe_playbook/images/tiu-cafe.jpg)
-:::
-:::
+## 🐷 Muddy (context) water
 
-## Upcoming Events
+\
 
-### Open Science Game Nights - Data Horror Edition 🎃
+-   AI providers often stuff context to "personalize" their product.
+-   A lot of that extra context is hidden.
 
-October 30th
+→ Can to lead to unexpected behavior.
 
-::: columns
-::: column
-![](images/qr_game_night.png){width="65%"}
-:::
-
-::: column
-![](https://dkou0skpxpnwz.cloudfront.net/accounts/173684/images/GHOST_games__1_.jpg){width="80%"}
-:::
-:::
-
+→ Context hygiene becomes important.
