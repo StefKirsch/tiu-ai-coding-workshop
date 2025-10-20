@@ -2,7 +2,7 @@ name: Render & Publish Quarto (Pages)
 
 on:
   push:
-    branches: [main]
+    branches: [version-for-recording]
   workflow_dispatch:
 
 permissions:
