@@ -351,28 +351,7 @@ Proper coding skills still cannot be replaced by AI.
 Documentation should always be your "True North".
 :::
 
-## Questions? {.center style="text-align:center;"}
-
 # Applicable Guidelines and Regulations {.center style="text-align:center;"}
-
-## 🚨 Why is AI potentially problematic?
-
-\
-
-::: columns
-::: column
-### 🔒 Data safety
-
--   Need to run in the cloud
--   Not European
--   New
-
-::: 
-::: column
-:::
-:::
-
-## Is AI really special? {.center style="text-align:center;"}
 
 ## 🚨 Why is AI potentially problematic?
 
@@ -938,7 +917,6 @@ Unfortunately, all the extra context is typically hidden from the user, at least
 
 ![](https://i.imgflip.com/a4v36z.jpg){width="500" style="max-height:unset;"}
 
-## Questions? {.center style="text-align:center;"}
 
 # Next steps
 
