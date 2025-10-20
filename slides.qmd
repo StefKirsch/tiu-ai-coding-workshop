@@ -928,3 +928,5 @@ The context in the example of ChatGPT
 → Can to lead to unexpected behavior.
 
 → Context hygiene becomes important.
+
+## Thanks for watching! {.center style="text-align:center;"}
