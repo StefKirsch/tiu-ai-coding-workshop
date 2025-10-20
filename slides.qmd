@@ -227,7 +227,7 @@ Modern reasoning LLMs (e.g. ChatGPT 5 Thinking) have agentic capabilities built 
 
 ::: columns
 ::: {.column width="40%"}
-### Pros ✅
+### ✅ Pros 
 
 - Model choice
 - Iterate on prompts
@@ -235,7 +235,7 @@ Modern reasoning LLMs (e.g. ChatGPT 5 Thinking) have agentic capabilities built 
 including which data you enter)\
 → *GDPR compliance*
 
-### Cons ❌
+### ❌ Cons 
 
 -   Copy-pasting
 -   No further automation
@@ -254,7 +254,7 @@ including which data you enter)\
 
 ::: columns
 ::: column
-### Pros ✅
+### ✅ Pros 
 
 -   Automation
 -   Context-aware of your codebase
@@ -262,7 +262,7 @@ including which data you enter)\
 :::
 
 ::: column
-### Cons ❌
+### ❌ Cons 
 
 -   No control over what gets transmitted\
     → critical for GDPR and IP
