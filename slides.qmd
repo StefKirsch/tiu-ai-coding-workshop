@@ -724,15 +724,17 @@ AI produces overly eager results without really thinking them all the way throug
 
 ## 😯 Things to keep in mind
 
+\ 
+
+\ 
+
 -   LLMs have very high standards (look into both major and very minor issues) 
 -   Take feedback with a grain of salt.
 -   More context of use-case → better responses
 
 ## 📏 Prompt engineering {.center style="text-align:center;"}
 
-## Verbosity
-
--   Limit verbosity (in general), you can always dig for more if *you* want
+## 🦜 Verbosity
 
 ![](images/GPT5_prompt_engineering_1.png)
 
@@ -741,8 +743,6 @@ AI produces overly eager results without really thinking them all the way throug
 ![](images/GPT5_prompt_engineering_2.png){width="500"}
 
 ## 🔍 Clarity over conciseness
-
--   Asking to focus on clarity over conciseness
 
 ![](images/GPT5_prompt_engineering_3.png){width="500"}
 
