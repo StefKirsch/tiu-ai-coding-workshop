@@ -195,16 +195,25 @@ Play around with different models in different cases and get a feeling for yours
 
 \
 
-**Standard definition**: Something that has
+::::columns
+:::column
+### General definition
+Something that has ...
 
 1.   **a goal**
 2.   can take **actions in the real world**
+:::
+:::column
+### Narrow definition
 
-**Narrow definition**: A meta-LLM that can
+A meta-LLM that can ...
 
-1.  call other **tools** (Web search, Python, other LLMs)
-2.  can access the command line and can write files\
+1.  call other **tools** (web search, Python, other LLMs)
+2.  can access the command line and can write files
+
 → Allows autonomous workflows
+:::
+::::
 
 ::: callout-note
 Modern reasoning LLMs (e.g. ChatGPT 5 Thinking) have agentic capabilities built in.
