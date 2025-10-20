@@ -421,13 +421,13 @@ In most cases, the LLM does not need to see the actual data.
 
 ### General
 
--   [Information security policy](https://www.tilburguniversity.edu/about/conduct-and-integrity/privacy-and-security/information-security)
--   [Knowledge security](https://www.tilburguniversity.edu/about/conduct-and-integrity/privacy-and-security/knowledge-security)
--   [Data protection](https://www.tilburguniversity.edu/about/conduct-and-integrity/privacy-and-security/privacy-policy)
+-   Information security policy
+-   Knowledge security
+Data protection
 
 ### GPAI specific
 
--   [AI guidelines for researchers](https://www.tilburguniversity.edu/intranet/organization-policy/strategy/infrastructure/research-infrastructure/ai-guidelines-researchers)
+-   AI guidelines for researchers
 
 Guidelines are there to help you
 :::
@@ -464,8 +464,8 @@ Guidelines are there to help you
 
 -   Ensure reproducibility and transparency
 
-    -   [Data Handling and Methods Reporting](https://www.tilburguniversity.edu/research/social-and-behavioral-sciences/science-committee) (TSB)
-    -   [Guideline Replication Package](https://www.tilburguniversity.edu/research/economics-and-management/replication-package) (TiSEM)
+    -   Data Handling and Methods Reporting (TSB)
+    -   Guideline Replication Package (TiSEM)
 
 :::callout-tip
 Integrity principles also apply to **code**!
@@ -702,7 +702,7 @@ AI produces overly eager results without really thinking them all the way throug
 
 ## ✅ How to have AI write code  {.center style="text-align:center;"}
 
-## 🤏 Narrow the scope
+## 🤏 Narrow the scope  {.no-scroll}
 
 ![](images/GPT5_specific_problem_1.png){width="700" style="max-height:unset;" fig-align="center"}
 
@@ -710,15 +710,15 @@ AI produces overly eager results without really thinking them all the way throug
 
 ![](images/GPT5_understand_code_1.png)
 
-## 🏁 Improving your own code base through feedback
+## 🏁 Asking for feedback
 
 ![](images/GPT5_understand_code_2.png)
 
-## 🏁 Improving your own code base through feedback
+## 🏁 Asking for feedback
 
 ![](images/GPT5_understand_code_3.png)
 
-## 🏁 Improving your own code base through feedback
+## 🏁 Asking for feedback
 
 ![](images/GPT5_understand_code_4.png){width="30%"}
 
