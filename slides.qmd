@@ -325,6 +325,8 @@ Product manager and quality assurance
 
 ## 🤪 Quirks of LMMs
 
+\
+
 -   Vast experience in nearly every technology... 
 -   But they haven't worked with any of them for a while
 -   They are quick to draw conclusions from "faint" memory
@@ -525,6 +527,8 @@ GenAI policies vary a lot. E.g....
 
 ## 🍌 Common compliance slips {.no-scroll}
 
+\
+
 ::::columns
 :::column
 
@@ -557,6 +561,8 @@ E.g. Social Media, Websites etc.
 
 ## 💡 Summary
 
+\
+
 -   Local guidelines and checklists
 -   Compliance with national and EU legislation
 -   Research integrity and clear end responsibility
@@ -566,7 +572,7 @@ E.g. Social Media, Websites etc.
 ::: callout-tip
 ## Ask for advice!
 
-Talk to your school's Information Manager, Data Stewards or the central Research Data Office for [support](https://www.tilburguniversity.edu/intranet/research-support-portal/rdm/advice).
+Talk to your school's Information Manager, Data Stewards or the central Research Data Office for support.
 :::
 
 # Best Practices {.center style="text-align:center;"}
@@ -715,11 +721,11 @@ AI produces overly eager results without really thinking them all the way throug
 
 ## 🏁 Asking for feedback
 
-![](images/GPT5_understand_code_2.png)
+![](images/GPT5_understand_code_2.png){width="70%"}
 
 ## 🏁 Asking for feedback
 
-![](images/GPT5_understand_code_3.png)
+![](images/GPT5_understand_code_3.png){width="70%"}
 
 ## 🏁 Asking for feedback
 
@@ -755,6 +761,8 @@ AI produces overly eager results without really thinking them all the way throug
 
 ## 🧰 Specialized packages
 
+\
+
 Rather than using the AI for your processing, look for specialized packages for a specific task.
 
 -   More flexible
@@ -770,21 +778,34 @@ Examples:
 
 ## 📂 Using Projects
 
+\
+
+:::: columns
+
+::: {.column width="35%"}
 Projects are a fantastic aid in managing chats and using them mindfully.
 
 -   Add specific context or media that ChatGPT will keep in its memory for future chats.
 -   Better workflow for different projects with corresponding chats
+:::
 
+::: {.column width="5%"}
+:::
 
+::: {.column width="60%"}
 ![](images/projects.png)
+:::
+
+::::
 
 ## ☃️ When to take a break
 
 ::: columns
 ::: {.column width="35%"}
-*Subtle* signs of frustration ...
 
 \
+
+*Subtle* signs of frustration ...
 
 -   Collaboration can turn into dependence: ***your problem is still yours to solve; with or without AI***
 -   Consider alternatives sources
@@ -804,7 +825,7 @@ Projects are a fantastic aid in managing chats and using them mindfully.
 ## 🩳 Pitfall 1 - Taking shortcuts
 
 :::: columns
-::: {.column width="45%"}
+::: {.column width="40%"}
 
 \
 
@@ -818,7 +839,7 @@ Shortcuts often turn out costly in the end.
 ::: {.column width="10%"}
 :::
 
-::: {.column width="45%"}
+::: {.column width="50%"}
 ![](images/shortcuts.png)
 :::
 ::::
@@ -882,7 +903,8 @@ The context in the example of ChatGPT
 
 \
 
--   LLMs come with a limited context window (e.g., 10k words for ChatGPT 5)
+-   LLMs come with a limited context window\
+(e.g., 10k words for ChatGPT 5)
 
 -   Context, instructions etc. further up in the conversation will be "forgotten"
 :::
