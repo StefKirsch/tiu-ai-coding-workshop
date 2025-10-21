@@ -10,14 +10,18 @@ format:
     toc-depth: 1
     incremental: false
     smaller: true               # global smaller font size
-    scrollable: true
+    scrollable: false
+    transition: fade            # none | fade | slide | convex | concave | zoom
+    transition-speed: slow      
 bibliography: references.bib
 suppress-bibliography: true
 output-file: index
 editor: visual
 ---
 
+::: {.slide data-transition="concave-in fade-out"}
 # 1. Introduction and basics {.center style="text-align:center;"}
+:::
 
 ## 🤖 Using AI to produce software
 
@@ -152,13 +156,16 @@ You can find an example project and a link to an checklist in the description.
 :::
 :::
 
-## Plain LLM VS Reasoning Models {.no-scroll}
+## Plain LLM VS Reasoning Models
 
-![](images/non-reasoning.png){width="900" style="max-height:unset;"}
+::: {.center-middle}
+![](images/non-reasoning.png){width="1000" style="max-height:unset;" fig-align="center"}
+:::
+
 
 ## 🤔 Plain LLM VS Reasoning Models {.no-scroll}
 
-![](images/reasoning.png){width="900" style="max-height:unset;"}
+![](images/reasoning.png){width="1000" style="max-height:unset;" fig-align="center"}
 
 ## ❔ When to use which type of model
 
@@ -215,10 +222,6 @@ other LLMs)
 → Allows autonomous workflows
 :::
 ::::
-
-::: callout-note
-Modern reasoning LLMs (e.g. ChatGPT 5 Thinking) have agentic capabilities built in.
-:::
 
 ## 🔀 Ways of coding with an LLM{.center style="text-align:center;"}
 
@@ -354,7 +357,9 @@ Proper coding skills still cannot be replaced by AI.
 Documentation should always be your "True North".
 :::
 
+::: {.slide data-transition="zoom-in fade-out"}
 # 2. Applicable Guidelines and Regulations {.center style="text-align:center;"}
+:::
 
 ## 🚨 Why is AI potentially problematic?
 
@@ -368,7 +373,7 @@ Documentation should always be your "True North".
 -   Not European
 -   New
 
-Is AI really any special?
+Is AI really that special?
 
 :::
 
@@ -576,7 +581,9 @@ E.g. Social Media, Websites etc.
 Talk to your school's Information Manager, Data Stewards or the central Research Data Office for support.
 :::
 
+::: {.slide data-transition="slide-in fade-out"}
 # 3. Best Practices {.center style="text-align:center;"}
+:::
 
 ## 😵 Which model do I use? {.no-scroll}
 
@@ -682,13 +689,13 @@ Talk to your school's Information Manager, Data Stewards or the central Research
 
 ## 🎯 Beware of large tasks in one shot
 
-![](images/chatgpt_meditation.png)
+![](images/chatgpt_meditation.png){fig-align="center"}
 
 ## 🐛 Beware of bugs
 
 AI produces overly eager results without really thinking them all the way through.
 
-![](images/chatgpt_meditation2.png)
+![](images/chatgpt_meditation2.png){fig-align="center"}
 
 ## 🔁 Beware of vicious cycles
 
@@ -722,15 +729,21 @@ AI produces overly eager results without really thinking them all the way throug
 
 ## 🏁 Asking for feedback
 
-![](images/GPT5_understand_code_2.png){width="70%"}
+\
+
+![](images/GPT5_understand_code_2.png){width="900" style="max-height:unset;" fig-align="center"}
 
 ## 🏁 Asking for feedback
 
-![](images/GPT5_understand_code_3.png){width="70%"}
+\
+
+![](images/GPT5_understand_code_3.png){fig-align="center"}
 
 ## 🏁 Asking for feedback
 
-![](images/GPT5_understand_code_4.png){width="30%"}
+\
+
+![](images/GPT5_understand_code_4.png){width="900" style="max-height:unset;" fig-align="center"}
 
 ## 😯 Things to keep in mind
 
@@ -821,7 +834,9 @@ Projects are a fantastic aid in managing chats and using them mindfully.
 :::
 ::::
 
+::: {.slide data-transition="convex-in fade-out"}
 # 4. Pitfalls {.center style="text-align:center;"}
+:::
 
 ## 🩳 Pitfall 1 - Taking shortcuts
 
@@ -929,4 +944,6 @@ The context in the example of ChatGPT
 
 → Context hygiene becomes important.
 
+::: {.slide data-transition="concave-in fade-out"}
 ## Thanks for watching! {.center style="text-align:center;"}
+:::
