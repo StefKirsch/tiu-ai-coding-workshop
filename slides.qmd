@@ -534,20 +534,6 @@ GenAI policies vary a lot. E.g....
 :::
 ::::
 
-## 📚 Rules of funders and journals
-
-\
-
-\
-
-::: callout-tip
-### Our Recommendation
-
--   Stick to the most strict guidelines of relevant funders & journals in your field
-
--   Look up best practices and ask for advice on how to do so
-:::
-
 ## 🍌 Common compliance slips {.no-scroll}
 
 \
