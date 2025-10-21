@@ -5,6 +5,12 @@
   margin: 1.5em auto;
 }
 
+/* Belt-and-suspenders: explicitly center figcaption */
+.reveal .slides figcaption,
+.reveal .slides .figure-caption {
+  text-align: center !important;
+}
+
 /*Prevent scrolling with {.no-scroll}*/
 .reveal .slides section[data-scroll="false"],
 .reveal .slides section.no-scroll {

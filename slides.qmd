@@ -248,7 +248,7 @@ including which data you enter)\
 
 ::: {.column width="60%"}
 
-![](images/levart_photographer-drwpcjkvxuU-unsplash.jpg)
+![Photo by Levart_Photographer on Unsplash](images/levart_photographer-drwpcjkvxuU-unsplash.jpg)
 :::
 :::
 
@@ -364,8 +364,8 @@ Documentation should always be your "True North".
 
 \
 
-::: columns
-::: column
+:::: columns
+::: {.column width="40%"}
 ### 🔒 Data safety
 
 -   Need to run in the cloud
@@ -373,10 +373,55 @@ Documentation should always be your "True North".
 -   New
 
 Is AI really that special?
-
 :::
 
+::: {.column width="60%"}
+![Photo by NASA on Unsplash](images/nasa-Q1p7bh3SHj8-unsplash.jpg)
+:::
+
+::::
+
+## 🔒 Working with sensitive data {.no-scroll}
+
+\
+
+::::columns
+::: {.column width="48%"}
+### Research often involves sensitive data, such as
+
+-   Personally identifiable information\
+(name, age, emails, ...)
+-   Special personal data\
+(medical data, ethnicity, ...)
+-   Trade secrets, NDA-protected data
+-   ...
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+### Top ways of using AI with sensitive data 
+
+1. Work with metadata (column names, number of rows, aggregated data, ...)
+2. Synthetic data
+3. Specialized packages that run locally or in a protected cloud 
+4. Local AI models (e.g. JanAI)
+
+:::
+::::
+
+:::callout-tip
+In most cases, the LLM does not need to see the actual data.
+:::
+
+## 🚨 Why is AI potentially problematic?
+
+:::: columns
 ::: column
+
+\
+
 ### 🎓 Integrity
 
 -   GenAI will happily attempt to do anything
@@ -388,39 +433,12 @@ Is AI really that special?
     -   Bigger chance of mistakes
     -   Greater potential for forgery
 :::
+
+::: column
+![Photo by Jen Theodore on Unsplash](images/jen-theodore-tWqyWrqLntU-unsplash.jpg){width="80%" fig-align="center"}
 :::
 
-## 🔒 Working with sensitive data {.no-scroll}
-
-\
-
-::::columns
-::: {.column width="48%"}
-### Research often involves sensitive data, such as
-
--   Personal identifiable information (name, age, emails, ...)
--   Special personal data (medical data, ethnicity, ...)
--   Trade secrets, NDA-protected data
--   ...
-:::
-
-::: {.column width="4%"}
-:::
-
-::: {.column width="48%"}
-### Top ways of using AI with sensitive data 
-
-1. Only enter metadata (column names, number of rows, aggregated data, etc.)
-2. Synthetic data
-3. Use specialized packages that run locally or in a protected cloud 
-4. Use local AI models (e.g. JanAI)
-
-:::
 ::::
-
-:::callout-tip
-In most cases, the LLM does not need to see the actual data.
-:::
 
 ## 🎓 University guidelines
 
@@ -433,7 +451,7 @@ In most cases, the LLM does not need to see the actual data.
 
 -   Information security policy
 -   Knowledge security
-Data protection
+-   Privacy policy
 
 ### GPAI specific
 
